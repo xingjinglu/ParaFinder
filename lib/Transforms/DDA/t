@@ -1,0 +1,1929 @@
+417c417
+<   DEBUG(errs() << "insert InitLDDLightShadowFunction \n");
+---
+> 
+476a477
+> 
+480c481
+<   BasicBlock *LoopHeader, *LoopPredecessor, *NewEntry;
+---
+>   BasicBlock *LoopHeader, *LoopPredecessor;
+495,496d495
+<     // No LoopPredecessor not means error.  
+<     // And is there a case withoug Predecessor ?
+503,511d501
+<   // Extract Induction Variable.
+<     PHINode *PHN = CurLoop->getCanonicalInductionVariable();
+<     if( PHN != NULL ){
+<       PHN->dump();
+<       PHN->getIncomingBlock(0)->dump();
+<       PHN->getIncomingValue(0)->dump();
+<       DEBUG( errs() << PHN->getName() << "\n" );
+<     }
+< 
+513,514d502
+<     NewEntry = BasicBlock::Create(F.getContext(), "entry", &F, LoopHeader);
+<     LoopPredecessor->replaceSuccessorsPhiUsesWith(NewEntry);
+516,517c504,505
+<     If = BasicBlock::Create(F.getContext(), "ProfIf", &F, LoopHeader);
+<     IfTrue = BasicBlock::Create(F.getContext(), "ProfIfTrue", &F,
+---
+>     If = BasicBlock::Create(F.getContext(), "ProfileIf", &F, LoopHeader);
+>     IfTrue = BasicBlock::Create(F.getContext(), "ProfileIfTrue", &F,
+519c507
+<     IfFalse = BasicBlock::Create(F.getContext(), "ProfIfFalse", &F,
+---
+>     IfFalse = BasicBlock::Create(F.getContext(), "ProfileIfFalse", &F,
+523a512
+> 
+527c516
+<         "ProfFlag" );
+---
+>         "ProfileFlag" );
+530,532c519
+<     BranchInst *TermIfNewEntry = BranchInst::Create(LoopHeader, NewEntry);
+<     BranchInst *TermIfFalse = BranchInst::Create(NewEntry, IfFalse);
+<     //BranchInst *TermIfFalse = BranchInst::Create(LoopHeader, IfFalse);
+---
+>     BranchInst *TermIfFalse = BranchInst::Create(LoopHeader, IfFalse);
+538,541c525
+< #ifdef _DDA_DEBUG
+<     LoopHeader->dump();
+<     LoopHeader->getParent()->dump();
+< #endif
+---
+> 
+565a550
+> 
+603d587
+< 
+604a589
+> 
+631d615
+<     DEBUG(errs() <<"insert function call:  AddPresentToPrecedeTraceFunction\n" );
+633,635d616
+< #ifdef _DDA_DEBUG
+<     LoopBody->dump();
+< #endif
+637,638c618
+<     BranchInst *TermIfTrue = BranchInst::Create(NewEntry, IfTrue);
+<     //BranchInst *TermIfTrue = BranchInst::Create(LoopHeader, IfTrue);
+---
+>     BranchInst *TermIfTrue = BranchInst::Create(LoopHeader, IfTrue);
+669a650
+> 
+672c653
+<           ExitIf = BasicBlock::Create(F.getContext(), "ProfExitIf", &F,
+---
+>           ExitIf = BasicBlock::Create(F.getContext(), "ProfileExitIf", &F,
+675c656
+<               "ProfExitIfTrue", &F, ExitingBlock);
+---
+>               "ProfileExitIfTrue", &F, ExitingBlock);
+677c658
+<               "ProfExitIfFalse", &F, ExitingBlock);
+---
+>               "ProfileExitIfFalse", &F, ExitingBlock);
+681c662
+<               "ProfExitFlag" );
+---
+>               "ProfileExitFlag" );
+692d672
+<           DEBUG(errs() << "insert AddPresentToPrecedeTraceFunction \n");
+719,721d698
+< 
+<   // If the FirstInst is PHI node, there is no dbg info.
+<   // We visit the next Inst instead.
+724,727d700
+<   while( FileName == "0" ){
+<     FirstInst++;
+<     FileName = getInstFileName( &(*FirstInst) );
+<   }
+885a859,1086
+> #if 0
+> 
+>   // Declare and Insert Local Variables here. 
+>   // Declare local variable  LDDTLoopFunc in the front of Function.
+>   inst_iterator FirstInst = inst_begin(F);
+>   Type *VarType = Type::getInt32Ty(F.getContext());
+>   Twine StackVarStr("LDDTLoopFunc");
+>   AllocaInst * StackVar = new AllocaInst(VarType, Twine("LDDTLoopFunc"), &(*FirstInst) ) ; 
+>   StackVar->setAlignment(4);
+> 
+> 
+>   // Visit all of the instructions in the function.
+>   // And instrument load/store operation in the current function when needed.
+>   visit(F);
+> 
+> 
+>   // Insert DDA Profiling Controller Codes.
+>   //#ifdef _DDA_OUTERMOST_PROFILING
+> 
+>   // Init Declared Variables: DDABeginCurFunc = 0.
+>   Constant *ConsInt = ConstantInt::get(VarType, 0);
+>   StoreInst *SI1 = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), &(*FirstInst));
+> 
+> 
+>   //LoadInst *newLoadInst = new LoadInst((Value*)newStackVar, "temp1", &(*firstInst));
+>   //StoreInst *storeInst = new StoreInst( (Value*)consint, (Value*)stackVar, &(*firstInst));
+>   StringRef GVarStr("LDDProfLoopID");
+>   GlobalVariable *GVar = F.getParent()->getGlobalVariable(GVarStr);
+>   StringRef GVarStr1("LDDProfLoopIter");
+>   GlobalVariable *GVarIterID = F.getParent()->getGlobalVariable(GVarStr1);
+>   //StoreInst *SI2 = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), &(*FirstInst));
+> 
+>   // Diff from Module.getGlobalContext(). 
+>   llvm::LLVMContext &Context = llvm::getGlobalContext();
+> #if 0
+>   IRBuilder<> builder(context);
+>   LoadInst *newLoadInst = builder.CreateLoad((Value*)newStackVar, "temp"); 
+>   newLoadInst->insertAfter(&(*firstInst));
+>   //LoadInst *newLoadInst = new LoadInst((Value*)newStackVar, s1, &(*firstInst));
+> #endif
+> 
+>   //
+>   LI = &getAnalysis<LoopInfo>(F);
+>   Loop *CurLoop = NULL;
+>   BasicBlock *LoopHeader, *LoopPredecessor;
+>   BasicBlock *If, *IfTrue, *IfFalse;
+>   for(LoopInfo::reverse_iterator LIB = LI->rbegin(), LIE = LI->rend(); LIB != LIE; ++LIB ){
+>     CurLoop = *LIB; 
+>     NumLoops++;
+>     cout<< "profiling loop: "<< NumLoops << endl;
+> 
+>     // Get loop header and predecessor.  
+>     if( (LoopHeader = CurLoop->getHeader()) == NULL){
+>       std::cout << "No loop header in Function \n"<< F.getName().str(); 
+>       DEBUG(errs() << "No loop header in Function \n"<< F.getName().str(); ); 
+>       return 0;
+>     }
+> 
+>     // Get the loop line.
+>     //BasicBlock::iterator BIFI = LoopHeader->begin(); 
+>     //Instruction *FirstInst = &*(++BIFI); 
+> 
+>     // Not need this ???
+> #if 1 
+>     if( (LoopPredecessor = CurLoop->getLoopPredecessor()) == NULL){
+>       std::cout << "No loop predecessorr in Function \n"<< F.getName().str();  
+>       DEBUG(errs() << "No loop predecessorr in Function \n"<< F.getName().str(); ); 
+>       return 0;
+>     }
+> #endif
+> 
+> #if 0
+>     //cout<<"GVar type "<< GVar->getType()->getTypeID() << endl;
+>     //cout<<"Stack type" << StackVar->getType()->getTypeID() << endl;
+> #endif
+> 
+>     // Create and inserte profiling controller block. 
+>     Type* type = Type::getInt32Ty(getGlobalContext());
+>     If = BasicBlock::Create(F.getContext(), "ProfileIf", &F, LoopHeader);
+>     IfTrue = BasicBlock::Create(F.getContext(), "ProfileIfTrue", &F, LoopHeader);
+>     IfFalse = BasicBlock::Create(F.getContext(), "ProfileIfFalse", &F, LoopHeader);
+>     LoadInst *GVarLoad = new LoadInst(GVar, Twine(""), If);
+> 
+>     //if (MDNode *MD = I.getMetadata("dbg"))
+>     //  CallI->setMetadata("dbg", MD); 
+> 
+>     //PtrToIntInst *GVarInt = new PtrToIntInst::PtrToIntInst( GVar, type,  Twine(""), If);
+>     //Value* IfCond = new ICmpInst(*If, ICmpInst::ICMP_SLT, cast<Value>( ConstantInt::getIntegerValue(Type::getInt32Ty(getGlobalContext()), APInt(32, 1))),cast<Value>( ConstantInt::getIntegerValue(Type::getInt32Ty(getGlobalContext()), APInt(32, 1))), "ProfileFlag" );
+> 
+> 
+>     // Create and Insert DDAProfilingFlang = N;
+>     Value* IfCond = new ICmpInst(*If, ICmpInst::ICMP_EQ, cast<Value>(GVarLoad),  ConstantInt::getIntegerValue(type, APInt(32, 0)), "ProfileFlag" );
+>     BranchInst *ControlFlag = BranchInst::Create(IfTrue, IfFalse, IfCond, If); 
+>     BranchInst *TermIfFalse = BranchInst::Create(LoopHeader, IfFalse);
+>     Constant *ConsInt = ConstantInt::get(type, NumLoops);
+>     StoreInst *Stor2GVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), IfTrue);
+> 
+>     //instrumentInit( AddNewProfilingBufferFunction, *(IfTrue->end()) ); 
+> 
+>     // Create LoopPos, FuncName
+>     GlobalVariable *LoopPos, *FuncName;  
+>     std::string FileName;
+> 
+>     BasicBlock::iterator BIFI = LoopHeader->begin(); 
+>     FileName = getInstFileName(&(*BIFI) );      
+>     while( BIFI != LoopHeader->end() && FileName == "0"  ){
+>       BIFI++;
+>       FileName = getInstFileName(&(*BIFI) );      
+>     }
+> 
+>     Instruction *FirstInst = &*(BIFI); 
+> 
+>     //Instruction * FirstInst= &( *(LoopHeader->begin()) );
+>     //FirstInst->dump();
+>     FileName = getInstFileName(FirstInst);
+> 
+>     // Get the Loop Line number.
+>     //MDNode * LMDN = CurLoop->getLoopID();
+>     ///LMDN->dump();
+>     //
+>     int LoopLine = getInstLineNumber(FirstInst);
+>     ostringstream Convert;
+>     Convert << LoopLine;
+>     std::string LoopPosStr = FileName + Convert.str();
+>     cout << "LoopPosStr: " << LoopPosStr << endl;
+> 
+>     //std::string FuncNameStr = F.getName().str();
+>     int status;
+>     std::string FuncNameStr = FirstInst->getParent()->getParent()->getName().str();
+> 
+>     // demangling the name.
+>     char *DMFuncNameStr = __cxa_demangle(FuncNameStr.c_str(), 0, 0, &status);
+>     if( status == 0 ){
+>       FuncNameStr = DMFuncNameStr;
+>       free( DMFuncNameStr);
+>     }
+>     int left = FuncNameStr.find("(");
+>     FuncNameStr = FuncNameStr.substr(0, left);
+>     cout << "Func Name : " << FuncNameStr << endl;
+> 
+>     Constant *LoopPosCst = ConstantDataArray::getString(F.getParent()->getContext(), StringRef(LoopPosStr) ); 
+>     LoopPos = new GlobalVariable(*CurModule, LoopPosCst->getType(), true, GlobalValue::ExternalLinkage, LoopPosCst, LoopPosStr);                     
+> 
+> 
+>     Constant *FuncNameCst = ConstantDataArray::getString(F.getParent()->getContext(), StringRef(FuncNameStr) ); 
+>     FuncName = new GlobalVariable(*CurModule, FuncNameCst->getType(), true, GlobalValue::ExternalLinkage, FuncNameCst, FuncNameStr);                     
+> 
+>     ConsInt = ConstantInt::get(type, 1);
+>     StoreInst *Stor2StackVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), IfTrue);
+> 
+>     // ProfilingLoopIterID = 1; 
+>     StoreInst *Stor2IterID = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVarIterID), IfTrue);
+> 
+>     std::cout<<"insert AddNewProfilingBufferFunction"<< std::endl;
+>     //
+> 
+>     //instrumentaddnewbuffer( AddNewProfilingBufferFunction, (Value*) FuncName, (Value*) LoopPos, *( ++(IfTrue->begin()) ) ); 
+>     //instrumentInit( AddNewProfilingBufferFunction, *( ++(IfTrue->begin()) ) ); 
+> 
+>     // Insert ProfilingLoopIterID += DDABeginCurFunc;  in the loop.body
+>     TerminatorInst *LHTermInst =LoopHeader->getTerminator();
+>     BasicBlock *LoopBody = LHTermInst->getSuccessor(0);
+>     IRBuilder<> TheBuilder(LoopBody->getContext());
+>     TheBuilder.SetInsertPoint(&(LoopBody->front()));
+>     TheBuilder.SetInsertPoint(&(LoopBody->front()));
+>     LoadInst *IterIDLoad = new LoadInst(GVarIterID, Twine(""), &(LoopBody->front()));
+>     //if (MDNode *MD = ((LoopBody->front())).getMetadata("dbg"))
+>     //  IterIDFuncLoad->setMetadata("dbg", MD); 
+>     LoadInst *CurFuncLoad = new LoadInst(StackVar, Twine(""), &(LoopBody->front()));
+> 
+>     // if (MDNode *MD = ((LoopBody->front())).getMetadata("dbg"))
+>     //   CurFuncLoad->setMetadata("dbg", MD); 
+> 
+>     Value *IterIDAdd = TheBuilder.CreateAdd(cast<Value>(IterIDLoad), cast<Value>(CurFuncLoad), Twine("")); 
+>     //Value *IterIDAdd = TheBuilder.CreateAdd(cast<Value>(IterIDLoad), cast<Value>(ConsInt), Twine("")); 
+>     Value *StorAdd2IterID = TheBuilder.CreateStore(cast<Value>(IterIDAdd), cast<Value>(GVarIterID));
+> 
+> 
+>     BranchInst *TermIfTrue = BranchInst::Create(LoopHeader, IfTrue);
+>     //F.dump();
+> 
+>     // Todo: multi successors in predecessor.
+>     // Let the predecessor point to the profiling controller block.
+>     TerminatorInst *TermInst = LoopPredecessor->getTerminator();
+>     int num = TermInst->getNumSuccessors();
+>     for( int i = 0; i < num; i++ ){ 
+>       BasicBlock *SuccessorBlock = TermInst->getSuccessor(i); // Multi Successor
+>       if( SuccessorBlock == LoopHeader )
+>         TermInst->setSuccessor(i, If);
+>     }
+> 
+> 
+>     // Get LoopExitingBlocks and insert profiling controller block for exit.
+>     SmallVector<BasicBlock*, 8> LoopExitingBlocks; 
+>     CurLoop->getExitingBlocks(LoopExitingBlocks);      
+>     cout << "Exiting Blocks: "<< LoopExitingBlocks.size() << endl;
+> 
+> 
+>     // Create and instert the profiling controller block if we let DDABeginCurFunc = 1 before.
+>     BasicBlock *ExitingBlock, *ExitIf, *ExitIfTrue, *ExitIfFalse;
+>     for(SmallVector<BasicBlock*, 8>::iterator BB = LoopExitingBlocks.begin(), BE = LoopExitingBlocks.end(); BB != BE; BB++){
+>       ExitingBlock = *BB;
+>       //cout << "ExitingBlock dump"<< endl;
+>       //ExitingBlock->dump();
+>       TerminatorInst *BBTermInst =ExitingBlock->getTerminator();
+>       num =  BBTermInst->getNumSuccessors();
+>       for( int i = 0; i < num; i++ )
+>       { 
+> 
+>         BasicBlock *SuccessorBlock = BBTermInst->getSuccessor(i); // Multi Successor
+>         if(!CurLoop->contains(SuccessorBlock)){
+>           ExitIf = BasicBlock::Create(F.getContext(), "ProfileExitIf", &F, ExitingBlock);
+>           ExitIfTrue = BasicBlock::Create(F.getContext(), "ProfileExitIfTrue", &F, ExitingBlock);
+>           ExitIfFalse = BasicBlock::Create(F.getContext(), "ProfileExitIfFalse", &F, ExitingBlock);
+>           LoadInst *StackVarLoad = new LoadInst(StackVar, Twine(""), ExitIf);
+>           Value* ExitIfCond = new ICmpInst(*ExitIf, ICmpInst::ICMP_EQ, StackVarLoad,  ConstantInt::getIntegerValue(type, APInt(32, 1)), "ProfileExitFlag" );
+>           BranchInst *ControlFlag = BranchInst::Create(ExitIfTrue, ExitIfFalse, ExitIfCond, ExitIf);
+>           Constant *ConsInt = ConstantInt::get(VarType, 0);
+>           StoreInst *Stor2GVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), ExitIfTrue);
+>           StoreInst *Stor2StackVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), ExitIfTrue);
+> 
+>           BBTermInst->setSuccessor(i, ExitIf);
+>           BranchInst *TermIfTrue = BranchInst::Create(SuccessorBlock, ExitIfTrue);
+>           BranchInst *TermIfFalse = BranchInst::Create(SuccessorBlock, ExitIfFalse);
+>         }
+>       }
+> 
+>     } 
+886a1088,1089
+>   }
+> #endif  
+1015,1016c1218,1219
+<   return true;
+< }
+---
+> #if 0
+>   //#ifdef _DDA_OUTERMOST_PROFILING
+1017a1221,1227
+>   // Declare and Insert Local Variables here. 
+>   // Declare local variable  DDABeginCurFunc in the front of Function.
+>   inst_iterator FirstInst = inst_begin(F);
+>   Type *VarType = Type::getInt32Ty(F.getContext());
+>   Twine StackVarStr("LDDTLoopFunc");
+>   AllocaInst * StackVar = new AllocaInst(VarType, Twine("LDDTLoopFunc"), &(*FirstInst) ) ; 
+>   StackVar->setAlignment(4);
+1020,1024d1229
+< #define PRINT_MODULE dbgs() << \
+<   "\n\n=============== Module Begin ==============\n" << M << \
+< "\n================= Module End   ==============\n"
+< bool LDDLightShadow::runOnModule(Module &M){
+<   Context = &M.getContext();
+1026,1033c1231
+<   DEBUG(dbgs() 
+<       << "*************************************************\n"
+<       << "*************************************************\n"
+<       << "**                                             **\n"
+<       << "** LDDLightShadow PROFILING INSTRUMENTATION  **\n"
+<       << "**                                             **\n"
+<       << "*************************************************\n"
+<       << "*************************************************\n");
+---
+>   // Insert DDA Profiling Controller Codes.
+1035,1037c1233,1235
+<   // Get debug info
+<   CurModule = &M;
+<   dbgKind = M.getContext().getMDKindID("dbg");
+---
+>   // Init Declared Variables: DDABeginCurFunc = 0.
+>   Constant *ConsInt = ConstantInt::get(VarType, 0);
+>   StoreInst *SI1 = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), &(*FirstInst));
+1039d1236
+<   // Find the Module with main function.
+1041,1051c1238,1244
+<   // Initialization in every module.
+<   Type *type = Type::getInt32Ty(getGlobalContext());
+<   Constant *consint = ConstantInt::get(type, 0);
+<   GlobalVariable *GLoopID = new GlobalVariable(M, type, false, 
+<       GlobalVariable::AvailableExternallyLinkage , 
+<       ConstantInt::getIntegerValue(type, APInt(32, 0)), 
+<       Twine("LDDProfLoopID") );
+<   GlobalVariable *GLoopIter = new GlobalVariable(M, type, false, 
+<       GlobalVariable::AvailableExternallyLinkage , 
+<       ConstantInt::getIntegerValue(type, APInt(32, 0)), 
+<       Twine("LDDProfLoopIter") );
+---
+>   //LoadInst *newLoadInst = new LoadInst((Value*)newStackVar, "temp1", &(*firstInst));
+>   //StoreInst *storeInst = new StoreInst( (Value*)consint, (Value*)stackVar, &(*firstInst));
+>   StringRef GVarStr("LDDProfLoopID");
+>   GlobalVariable *GVar = F.getParent()->getGlobalVariable(GVarStr);
+>   StringRef GVarStr1("LDDProfLoopIter");
+>   GlobalVariable *GVarIterID = F.getParent()->getGlobalVariable(GVarStr1);
+>   //StoreInst *SI2 = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), &(*FirstInst));
+1053c1246,1253
+<   cout<< "global type: "<< GLoopID->getType()->getTypeID() << endl;;
+---
+>   // Diff from Module.getGlobalContext(). 
+>   llvm::LLVMContext &Context = llvm::getGlobalContext();
+> #if 0
+>   IRBuilder<> builder(context);
+>   LoadInst *newLoadInst = builder.CreateLoad((Value*)newStackVar, "temp"); 
+>   newLoadInst->insertAfter(&(*firstInst));
+>   //LoadInst *newLoadInst = new LoadInst((Value*)newStackVar, s1, &(*firstInst));
+> #endif
+1055,1056c1255,1263
+<   //GlobalVariable *intval = new GlobalVariable(M, type, false, 
+<   //                          GlobalValue::ExternalLinkage, consint, s2);
+---
+>   //
+>   LI = &getAnalysis<LoopInfo>(F);
+>   Loop *CurLoop = NULL;
+>   BasicBlock *LoopHeader, *LoopPredecessor;
+>   BasicBlock *If, *IfTrue, *IfFalse;
+>   for(LoopInfo::reverse_iterator LIB = LI->rbegin(), LIE = LI->rend(); LIB != LIE; ++LIB ){
+>     CurLoop = *LIB; 
+>     NumLoops++;
+>     cout<< "profiling loop: "<< NumLoops << endl;
+1057a1265,1270
+>     // Get loop header and predecessor.  
+>     if( (LoopHeader = CurLoop->getHeader()) == NULL){
+>       std::cout << "No loop header in Function \n"<< F.getName().str(); 
+>       DEBUG(errs() << "No loop header in Function \n"<< F.getName().str(); ); 
+>       return 0;
+>     }
+1059,1062c1272,1274
+<   Type *VoidTy = Type::getVoidTy(M.getContext());
+<   VoidPtrTy = Type::getInt8PtrTy(M.getContext());
+<   SizeTy = IntegerType::getInt64Ty(M.getContext());
+<   SizeInt32Ty = IntegerType::getInt32Ty(M.getContext());
+---
+>     // Get the loop line.
+>     //BasicBlock::iterator BIFI = LoopHeader->begin(); 
+>     //Instruction *FirstInst = &*(++BIFI); 
+1064,1077c1276,1283
+<   // Create function prototypes declaration. 
+<   M.getOrInsertFunction("__checkLoadLShadow", VoidTy, VoidPtrTy, SizeTy, NULL);
+<   M.getOrInsertFunction("__checkStoreLShadow", VoidTy, VoidPtrTy, SizeTy, NULL);
+<   //M.getOrInsertFunction("__storecheck", VoidTy, VoidPtrTy, SizeTy, VoidPtrTy,
+<   //                     VoidPtrTy, NULL);
+<   M.getOrInsertFunction("__checkLoadStackVarLShadow", VoidTy, VoidPtrTy, 
+<       SizeTy,NULL);
+<   M.getOrInsertFunction("__checkStoreStackVarLShadow", VoidTy, VoidPtrTy, 
+<       SizeTy,NULL);
+<   //M.getOrInsertFunction("__initprofiling", VoidTy, VoidPtrTy, SizeTy, NULL);
+<   M.getOrInsertFunction("__initLDDLightShadow", VoidTy,  NULL);
+<   M.getOrInsertFunction("__finiLDDLightShadow", VoidTy,  NULL);
+<   M.getOrInsertFunction("__addPresentToPrecedeTrace", VoidTy,  NULL);
+<   M.getOrInsertFunction("__outputLDDDependenceLShadow", VoidTy,  NULL);
+---
+>     // Not need this ???
+> #if 1 
+>     if( (LoopPredecessor = CurLoop->getLoopPredecessor()) == NULL){
+>       std::cout << "No loop predecessorr in Function \n"<< F.getName().str();  
+>       DEBUG(errs() << "No loop predecessorr in Function \n"<< F.getName().str(); ); 
+>       return 0;
+>     }
+> #endif
+1078a1285,1288
+> #if 0
+>     //cout<<"GVar type "<< GVar->getType()->getTypeID() << endl;
+>     //cout<<"Stack type" << StackVar->getType()->getTypeID() << endl;
+> #endif
+1080c1290,1512
+<   // Instrument 'main' for init at the front of main.
+---
+>     // Create and inserte profiling controller block. 
+>     Type* type = Type::getInt32Ty(getGlobalContext());
+>     If = BasicBlock::Create(F.getContext(), "ProfileIf", &F, LoopHeader);
+>     IfTrue = BasicBlock::Create(F.getContext(), "ProfileIfTrue", &F, LoopHeader);
+>     IfFalse = BasicBlock::Create(F.getContext(), "ProfileIfFalse", &F, LoopHeader);
+>     LoadInst *GVarLoad = new LoadInst(GVar, Twine(""), If);
+> 
+>     //if (MDNode *MD = I.getMetadata("dbg"))
+>     //  CallI->setMetadata("dbg", MD); 
+> 
+>     //PtrToIntInst *GVarInt = new PtrToIntInst::PtrToIntInst( GVar, type,  Twine(""), If);
+>     //Value* IfCond = new ICmpInst(*If, ICmpInst::ICMP_SLT, cast<Value>( ConstantInt::getIntegerValue(Type::getInt32Ty(getGlobalContext()), APInt(32, 1))),cast<Value>( ConstantInt::getIntegerValue(Type::getInt32Ty(getGlobalContext()), APInt(32, 1))), "ProfileFlag" );
+> 
+> 
+>     // Create and Insert DDAProfilingFlang = N;
+>     Value* IfCond = new ICmpInst(*If, ICmpInst::ICMP_EQ, cast<Value>(GVarLoad),  ConstantInt::getIntegerValue(type, APInt(32, 0)), "ProfileFlag" );
+>     BranchInst *ControlFlag = BranchInst::Create(IfTrue, IfFalse, IfCond, If); 
+>     BranchInst *TermIfFalse = BranchInst::Create(LoopHeader, IfFalse);
+>     Constant *ConsInt = ConstantInt::get(type, NumLoops);
+>     StoreInst *Stor2GVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), IfTrue);
+> 
+>     //instrumentInit( AddNewProfilingBufferFunction, *(IfTrue->end()) ); 
+> 
+>     // Create LoopPos, FuncName
+>     GlobalVariable *LoopPos, *FuncName;  
+>     std::string FileName;
+> 
+>     BasicBlock::iterator BIFI = LoopHeader->begin(); 
+>     FileName = getInstFileName(&(*BIFI) );      
+>     while( BIFI != LoopHeader->end() && FileName == "0"  ){
+>       BIFI++;
+>       FileName = getInstFileName(&(*BIFI) );      
+>     }
+> 
+>     Instruction *FirstInst = &*(BIFI); 
+> 
+>     //Instruction * FirstInst= &( *(LoopHeader->begin()) );
+>     //FirstInst->dump();
+>     FileName = getInstFileName(FirstInst);
+> 
+>     // Get the Loop Line number.
+>     //MDNode * LMDN = CurLoop->getLoopID();
+>     ///LMDN->dump();
+>     //
+>     int LoopLine = getInstLineNumber(FirstInst);
+>     ostringstream Convert;
+>     Convert << LoopLine;
+>     std::string LoopPosStr = FileName + Convert.str();
+>     cout << "LoopPosStr: " << LoopPosStr << endl;
+> 
+>     //std::string FuncNameStr = F.getName().str();
+>     int status;
+>     std::string FuncNameStr = FirstInst->getParent()->getParent()->getName().str();
+> 
+>     // demangling the name.
+>     char *DMFuncNameStr = __cxa_demangle(FuncNameStr.c_str(), 0, 0, &status);
+>     if( status == 0 ){
+>       FuncNameStr = DMFuncNameStr;
+>       free( DMFuncNameStr);
+>     }
+>     int left = FuncNameStr.find("(");
+>     FuncNameStr = FuncNameStr.substr(0, left);
+>     cout << "Func Name : " << FuncNameStr << endl;
+> 
+>     Constant *LoopPosCst = ConstantDataArray::getString(F.getParent()->getContext(), StringRef(LoopPosStr) ); 
+>     LoopPos = new GlobalVariable(*CurModule, LoopPosCst->getType(), true, GlobalValue::ExternalLinkage, LoopPosCst, LoopPosStr);                     
+> 
+> 
+>     Constant *FuncNameCst = ConstantDataArray::getString(F.getParent()->getContext(), StringRef(FuncNameStr) ); 
+>     FuncName = new GlobalVariable(*CurModule, FuncNameCst->getType(), true, GlobalValue::ExternalLinkage, FuncNameCst, FuncNameStr);                     
+> 
+>     ConsInt = ConstantInt::get(type, 1);
+>     StoreInst *Stor2StackVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), IfTrue);
+> 
+>     // ProfilingLoopIterID = 1; 
+>     StoreInst *Stor2IterID = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVarIterID), IfTrue);
+> 
+>     std::cout<<"insert AddNewProfilingBufferFunction"<< std::endl;
+>     //
+> 
+>     //instrumentaddnewbuffer( AddNewProfilingBufferFunction, (Value*) FuncName, (Value*) LoopPos, *( ++(IfTrue->begin()) ) ); 
+>     //instrumentInit( AddNewProfilingBufferFunction, *( ++(IfTrue->begin()) ) ); 
+> 
+>     // Insert ProfilingLoopIterID += DDABeginCurFunc;  in the loop.body
+>     TerminatorInst *LHTermInst =LoopHeader->getTerminator();
+>     BasicBlock *LoopBody = LHTermInst->getSuccessor(0);
+>     IRBuilder<> TheBuilder(LoopBody->getContext());
+>     TheBuilder.SetInsertPoint(&(LoopBody->front()));
+>     TheBuilder.SetInsertPoint(&(LoopBody->front()));
+>     LoadInst *IterIDLoad = new LoadInst(GVarIterID, Twine(""), &(LoopBody->front()));
+>     //if (MDNode *MD = ((LoopBody->front())).getMetadata("dbg"))
+>     //  IterIDFuncLoad->setMetadata("dbg", MD); 
+>     LoadInst *CurFuncLoad = new LoadInst(StackVar, Twine(""), &(LoopBody->front()));
+> 
+>     // if (MDNode *MD = ((LoopBody->front())).getMetadata("dbg"))
+>     //   CurFuncLoad->setMetadata("dbg", MD); 
+> 
+>     Value *IterIDAdd = TheBuilder.CreateAdd(cast<Value>(IterIDLoad), cast<Value>(CurFuncLoad), Twine("")); 
+>     //Value *IterIDAdd = TheBuilder.CreateAdd(cast<Value>(IterIDLoad), cast<Value>(ConsInt), Twine("")); 
+>     Value *StorAdd2IterID = TheBuilder.CreateStore(cast<Value>(IterIDAdd), cast<Value>(GVarIterID));
+> 
+> 
+>     BranchInst *TermIfTrue = BranchInst::Create(LoopHeader, IfTrue);
+>     //F.dump();
+> 
+>     // Todo: multi successors in predecessor.
+>     // Let the predecessor point to the profiling controller block.
+>     TerminatorInst *TermInst = LoopPredecessor->getTerminator();
+>     int num = TermInst->getNumSuccessors();
+>     for( int i = 0; i < num; i++ ){ 
+>       BasicBlock *SuccessorBlock = TermInst->getSuccessor(i); // Multi Successor
+>       if( SuccessorBlock == LoopHeader )
+>         TermInst->setSuccessor(i, If);
+>     }
+> 
+> 
+>     // Get LoopExitingBlocks and insert profiling controller block for exit.
+>     SmallVector<BasicBlock*, 8> LoopExitingBlocks; 
+>     CurLoop->getExitingBlocks(LoopExitingBlocks);      
+>     cout << "Exiting Blocks: "<< LoopExitingBlocks.size() << endl;
+> 
+> 
+>     // Create and instert the profiling controller block if we let DDABeginCurFunc = 1 before.
+>     BasicBlock *ExitingBlock, *ExitIf, *ExitIfTrue, *ExitIfFalse;
+>     for(SmallVector<BasicBlock*, 8>::iterator BB = LoopExitingBlocks.begin(), BE = LoopExitingBlocks.end(); BB != BE; BB++){
+>       ExitingBlock = *BB;
+>       //cout << "ExitingBlock dump"<< endl;
+>       //ExitingBlock->dump();
+>       TerminatorInst *BBTermInst =ExitingBlock->getTerminator();
+>       int num =  BBTermInst->getNumSuccessors();
+>       for( int i = 0; i < num; i++ )
+>       { 
+> 
+>         BasicBlock *SuccessorBlock = BBTermInst->getSuccessor(i); // Multi Successor
+>         if(!CurLoop->contains(SuccessorBlock)){
+>           ExitIf = BasicBlock::Create(F.getContext(), "ProfileExitIf", &F, ExitingBlock);
+>           ExitIfTrue = BasicBlock::Create(F.getContext(), "ProfileExitIfTrue", &F, ExitingBlock);
+>           ExitIfFalse = BasicBlock::Create(F.getContext(), "ProfileExitIfFalse", &F, ExitingBlock);
+>           LoadInst *StackVarLoad = new LoadInst(StackVar, Twine(""), ExitIf);
+>           Value* ExitIfCond = new ICmpInst(*ExitIf, ICmpInst::ICMP_EQ, StackVarLoad,  ConstantInt::getIntegerValue(type, APInt(32, 1)), "ProfileExitFlag" );
+>           BranchInst *ControlFlag = BranchInst::Create(ExitIfTrue, ExitIfFalse, ExitIfCond, ExitIf);
+>           Constant *ConsInt = ConstantInt::get(VarType, 0);
+>           StoreInst *Stor2GVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(GVar), ExitIfTrue);
+>           StoreInst *Stor2StackVar = new StoreInst( cast<Value>(ConsInt), cast<Value>(StackVar), ExitIfTrue);
+> 
+>           BBTermInst->setSuccessor(i, ExitIf);
+>           BranchInst *TermIfTrue = BranchInst::Create(SuccessorBlock, ExitIfTrue);
+>           BranchInst *TermIfFalse = BranchInst::Create(SuccessorBlock, ExitIfFalse);
+>         }
+>       }
+> 
+>     } 
+> 
+>   }
+> #endif  
+> 
+> 
+>   return true;
+> }
+> 
+> 
+> 
+> #define PRINT_MODULE dbgs() << \
+>   "\n\n=============== Module Begin ==============\n" << M << \
+> "\n================= Module End   ==============\n"
+> bool LDDLightShadow::runOnModule(Module &M){
+>   Context = &M.getContext();
+> 
+>   DEBUG(dbgs() 
+>       << "*************************************************\n"
+>       << "*************************************************\n"
+>       << "**                                             **\n"
+>       << "** LDDLightShadow PROFILING INSTRUMENTATION  **\n"
+>       << "**                                             **\n"
+>       << "*************************************************\n"
+>       << "*************************************************\n");
+> 
+>   // Get debug info
+>   CurModule = &M;
+>   dbgKind = M.getContext().getMDKindID("dbg");
+> 
+>   // Find the Module with main function.
+> 
+>   // Initialization in every module.
+>   Type *type = Type::getInt32Ty(getGlobalContext());
+>   Constant *consint = ConstantInt::get(type, 0);
+>   GlobalVariable *GLoopID = new GlobalVariable(M, type, false, 
+>       GlobalVariable::AvailableExternallyLinkage , 
+>       ConstantInt::getIntegerValue(type, APInt(32, 0)), 
+>       Twine("LDDProfLoopID") );
+>   GlobalVariable *GLoopIter = new GlobalVariable(M, type, false, 
+>       GlobalVariable::AvailableExternallyLinkage , 
+>       ConstantInt::getIntegerValue(type, APInt(32, 0)), 
+>       Twine("LDDProfLoopIter") );
+> 
+>   cout<< "global type: "<< GLoopID->getType()->getTypeID() << endl;;
+> 
+>   //GlobalVariable *intval = new GlobalVariable(M, type, false, 
+>   //                          GlobalValue::ExternalLinkage, consint, s2);
+> 
+> 
+>   Type *VoidTy = Type::getVoidTy(M.getContext());
+>   VoidPtrTy = Type::getInt8PtrTy(M.getContext());
+>   SizeTy = IntegerType::getInt64Ty(M.getContext());
+>   SizeInt32Ty = IntegerType::getInt32Ty(M.getContext());
+> 
+>   // Create function prototypes declaration. 
+>   M.getOrInsertFunction("__checkLoadLShadow", VoidTy, VoidPtrTy, SizeTy, NULL);
+>   M.getOrInsertFunction("__checkStoreLShadow", VoidTy, VoidPtrTy, SizeTy, NULL);
+>   //M.getOrInsertFunction("__storecheck", VoidTy, VoidPtrTy, SizeTy, VoidPtrTy,
+>   //                     VoidPtrTy, NULL);
+>   M.getOrInsertFunction("__checkLoadStackVarLShadow", VoidTy, VoidPtrTy, 
+>       SizeTy,NULL);
+>   M.getOrInsertFunction("__checkStoreStackVarLShadow", VoidTy, VoidPtrTy, 
+>       SizeTy,NULL);
+>   //M.getOrInsertFunction("__initprofiling", VoidTy, VoidPtrTy, SizeTy, NULL);
+>   M.getOrInsertFunction("__initLDDLightShadow", VoidTy,  NULL);
+>   M.getOrInsertFunction("__finiLDDLightShadow", VoidTy,  NULL);
+>   M.getOrInsertFunction("__addPresentToPrecedeTrace", VoidTy,  NULL);
+>   M.getOrInsertFunction("__outputLDDDependenceLShadow", VoidTy,  NULL);
+> 
+> 
+>   // Instrument 'main' for init at the front of main.
+1133,1143d1564
+< #if 0
+<   BasicBlock *LoopBody = I.getParent();
+<   BasicBlock::iterator FirstInst = LoopBody->begin();
+<   PHINode *PHN = dyn_cast<PHINode>(FirstInst);  // 
+<   if( PHN == NULL )
+<     Builder->SetInsertPoint(&I);
+<   else{
+<     FirstInst++;
+<     Builder->SetInsertPoint(++FirstInst);
+<   }
+<  #endif
+1210,1214c1631
+< 
+< //
+< //
+< void LDDLightShadow::visitLoadInst(LoadInst &LI)
+< {
+---
+> void LDDLightShadow::visitLoadInst(LoadInst &LI){
+1216a1634
+> 
+1224,1225c1642
+<   // Filter un-need profiling vars(FUnPV).
+<   // FUnPV: 1) return val. 
+---
+>   // Filter un-need profiling vars.
+1237c1654,1655
+<       // Is it LocalSharedVars?
+---
+> 
+>       // is LocalSharedVars?
+1247d1664
+< 
+1249d1665
+<       // FUnPV: 2) Local private vars.
+1250a1667
+> 
+1254d1670
+<     }
+1255a1672
+>     }
+1258c1675
+<       return;  // bug?
+---
+>       return;
+1288a1706,1708
+>         //cout <<"init VarCurName: " <<  VarCurName.str() << endl;
+> 
+>         //bbit->dump();
+1289a1710,1712
+>         //bbit->dump();
+>         //cout << "next name: " << bbit->getName().str() << endl;
+> 
+1292a1716,1717
+>           //bbit->dump();
+>           //cout << "here name = \n"<< bbit->getName().str()<< endl ;
+1298c1723
+<         //     && VarCurName == VarPrevName )
+---
+>         //     && VarCurName == VarPrevName ){
+1304a1730
+>             //while( VarPrevName == VarCurName){
+1321,1358d1746
+<         }
+< 
+< 
+<         //  bbitprev is the last related getelementptr.
+<         //  getElementType() isPrimitiveType() 
+<         //  PointerType::getArrayElementType getAllocatedType
+<         //  bbitprev->dump();
+<         Value *operand = bbitprev->getOperand(0);
+< 
+<         //operand->dump();
+< 
+<         // Get Variable name.
+<         Var = operand->getName();
+<         //  If the name == "", take the name of Inst as the operand name.
+<         if( Var.str() == "" ){
+<           Var = bbitprev->getName();  
+<         }
+< 
+<         //  Var = LI.getOperand(0)->getName();
+< 
+<         //  Is it local array?
+<         if(isa<AllocaInst>(operand)){
+<           if ( isa<ArrayType>((cast<AllocaInst>(operand)->getAllocatedType()))){
+<             PointerType *OprPointerType = cast<AllocaInst>(operand)->getType();
+<             Type* ArrayEleType = OprPointerType->getArrayElementType();
+< 
+<             //ArrayEleType->dump(); 
+<             // Get the array element type.
+<             while( isa<ArrayType>(ArrayEleType) ) 
+<               ArrayEleType = ArrayEleType->getArrayElementType();
+<             //ArrayEleType->dump(); 
+<             //cout << endl; 
+< 
+<             if( ArrayEleType->isIntegerTy() || 
+<                 ArrayEleType->isFloatingPointTy() || 
+<                 ArrayEleType->isDoubleTy()  ) 
+<               cout<< endl  << "local primitive array: "<< Var.str() << endl;
+<             DoProfile = 1;
+1360,1365d1747
+<           //cout << "local: "<< Var.str() << endl;
+<         }
+<       }
+<     }
+<   }
+< 
+1367,1377d1748
+<   // Extract written/read variables information.
+<   //
+<   GlobalVariable *GAddrPos, *GVarName;
+<   std::string File = getInstFileName(&LI);
+<   // If cannot get FileName, don't profiling the instruction.
+<   if( File == "0"){
+<    DEBUG(errs() << "No File Name for LoadInst \n"; );    
+<     return;
+<   }
+<   unsigned int  Line = getInstLineNumber(&LI);
+<   //StringRef Func = LI.getParent()->getParent()->getName();
+1379,1449c1750,1763
+<   // Generate VarName and AddrPos.
+<   ostringstream Convert;
+<   Convert << Line;
+<   string StrPos = File + Convert.str();
+< 
+<   // Create global Variable name to store AddrPos.
+<   std::string PosName = "GAddrPos";
+<   std::string FileName;
+<   unsigned int LinePos = File.find("/");
+<   if( LinePos != std::string::npos )
+<     File = File.substr( LinePos+1, File.length() );
+<   unsigned int DotPos = File.find(".");
+<   if( DotPos == std::string::npos )
+<     FileName = File;
+<   else
+<     FileName = File.substr(0, DotPos);
+<   PosName += FileName;
+<   if( Pos[StrPos] ){
+<     GAddrPos = Pos[StrPos]; 
+<   }
+<   else{
+<     Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos)); 
+<     GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+<         GlobalValue::ExternalLinkage, AddrPos, PosName); 
+<     Pos[StrPos] = GAddrPos; 
+<   }
+< 
+<   // Create Global Variable Name to store VarName. 
+<   std::string  GlobalVarName = "GVarName";
+<   GlobalVarName += FileName; 
+<   //std::cout<< "new name " << GlobalVarName << std::endl;
+<   if( Name[Var.str()] ){
+<     GVarName = Name[Var.str()];
+<   }
+<   else{
+<     Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+<     GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+<         GlobalValue::ExternalLinkage, VarName, GlobalVarName); 
+<     Name[Var.str()] = GVarName;
+<   }
+< 
+<   cout << StrPos << " "<< Var.str() << " " << File << " " << Line << endl;
+<   if( !DoProfile )
+<     instrument(LI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+<         (Value*)GVarName,  CheckLoadFunction, LI);
+<   // The function Contains the Target Loop, prof stackvar.
+<   else if( isInOrigFunc ){
+<     Function *F = LI.getParent()->getParent();
+<     inst_iterator FirstInst = inst_begin(F); 
+<     Value* DDABeginCurFuncDec = &(*FirstInst);
+<     LoadInst *CurFuncLoad = new LoadInst(DDABeginCurFuncDec, Twine(""), &LI);
+<     instrumentstackvar(LI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+<         (Value*)GVarName, (Value*)CurFuncLoad, 
+<         CheckLoadStackVarFunction, LI);
+<   }
+<   else ;
+<   ++LoadsInstrumented;
+< 
+< }
+< 
+< 
+< void LDDLightShadow::visitStoreInst(StoreInst &SI)
+< {
+<   // Instrument a store instruction with a store check.
+<   // Is the size precise and available all the time?
+<   uint64_t Bytes = TD->getTypeStoreSize(SI.getValueOperand()->getType());
+<   Value *AccessSize = ConstantInt::get(SizeTy, Bytes);
+< 
+<   StringRef Var = SI.getPointerOperand()->getName();
+< 
+<   //cout << "begin store var name :" << Var.str() << endl;
+---
+>           //  bbitprev is the last related getelementptr.
+>           //  getElementType() isPrimitiveType() 
+>           //  PointerType::getArrayElementType getAllocatedType
+>           //  bbitprev->dump();
+>           Value *operand = bbitprev->getOperand(0);
+> 
+>           //operand->dump();
+> 
+>           // Get Variable name.
+>           Var = operand->getName();
+>           //  If the name == "", take the name of Inst as the operand name.
+>           if( Var.str() == "" ){
+>             Var = bbitprev->getName();  
+>           }
+1451,1456c1765
+<   // Filter un-need profiling vars.
+<   //
+<   if( Var.str() == "retval" ){
+<     cout << "return value: " << Var.str()<< endl;
+<     return ;
+<   }
+---
+>           //  Var = LI.getOperand(0)->getName();
+1458,1460c1767,1787
+<   int DoProfile = 0;
+<   std::vector<string>::iterator LSVB, LSVE; 
+<   Value *StoreValue = SI.getOperand(1);
+---
+>           //  Is it local array?
+>           if(isa<AllocaInst>(operand)){
+>             if ( isa<ArrayType>((cast<AllocaInst>(operand)->getAllocatedType()))){
+>               PointerType *OprPointerType = cast<AllocaInst>(operand)->getType();
+>               Type* ArrayEleType = OprPointerType->getArrayElementType();
+> 
+>               //ArrayEleType->dump(); 
+>               // Get the array element type.
+>               while( isa<ArrayType>(ArrayEleType) ) 
+>                 ArrayEleType = ArrayEleType->getArrayElementType();
+>               //ArrayEleType->dump(); 
+>               //cout << endl; 
+> 
+>               if( ArrayEleType->isIntegerTy() || 
+>                   ArrayEleType->isFloatingPointTy() || 
+>                   ArrayEleType->isDoubleTy()  ) 
+>                 cout<< endl  << "local primitive array: "<< Var.str() << endl;
+>               DoProfile = 1;
+>             }
+>             //cout << "local: "<< Var.str() << endl;
+>           }
+1462,1465d1788
+<   // 1) Auto Variables.
+<   if(isa<AllocaInst>(StoreValue ) ){
+<     //SI.dump();
+<     if(!isa<PointerType>(cast<AllocaInst>(StoreValue)->getAllocatedType() )){
+1467,1473d1789
+<       // is LocalSharedVars?
+<       for( LSVB = LocalSharedVars.begin(), LSVE = LocalSharedVars.end(); 
+<           LSVB != LSVE; ++LSVB){
+<         if( *LSVB == Var.str()){
+<           DoProfile = 1; 
+<           //cout <<"Store Profile: " <<  *LSVB << endl;
+<           break;
+1475,1478d1790
+<       } 
+<       if( !DoProfile ){
+<         //cout <<Var.str() << "--------------- Not Profile in StoreInst"<< endl;
+<         return ;
+1481,1486d1792
+<     }
+<     // Local Pointers itself, not pointed objects.
+<     else{
+<       return; 
+<     }
+<   }
+1488,1492c1794
+<   // Global array and pointers. 
+<   // Local array and pointers with getelelemntptr.
+<   else{
+<     //SI.dump();
+<     if(isa<PointerType>(SI.getOperand(1)->getType())){
+---
+>       }
+1494,1497d1795
+<       // fixme ? maybe not work some day.
+<       BasicBlock::iterator bbit(&SI);
+<       BasicBlock *bb = SI.getParent();
+<       //bbit->dump(); 
+1499,1509c1797,1817
+<       // load getlementptr
+<       if( bbit == bb->begin() ){
+<         //bbit->dump();
+<         if( ConstantExpr *CE = dyn_cast<ConstantExpr>(bbit->getOperand(1)))
+<           if( CE->getOpcode() == Instruction::GetElementPtr){
+<             Value *operand = CE->getOperand(0);            
+<             cout << operand->getName().str() << endl; // get the right name 
+<             Var = operand->getName(); 
+<             if(isa<AllocaInst>(operand))
+<               DoProfile = 1; 
+<           }
+---
+>       // Extract written/read variables information.
+>       GlobalVariable *GAddrPos, *GVarName;
+>       std::string File = getInstFileName(&LI);
+>       // If cannot get FileName, don't profiling the instruction.
+>       if( File == "0")
+>         return;
+>       unsigned int  Line = getInstLineNumber(&LI);
+>       //StringRef Func = LI.getParent()->getParent()->getName();
+> 
+>       // Generate VarName and AddrPos.
+>       ostringstream Convert;
+>       Convert << Line;
+>       string StrPos = File + Convert.str();
+> 
+>       // Create global Variable name to store AddrPos.
+>       std::string PosName = "GAddrPos";
+>       unsigned int DotPos = File.find(".");
+>       std::string FileName = File.substr(0, DotPos);
+>       PosName += FileName;
+>       if( Pos[StrPos] ){
+>         GAddrPos = Pos[StrPos]; 
+1511d1818
+<       // multi-dims array or pointers.
+1513,1521c1820,1824
+<         // keep the lates related getelementptr
+<         BasicBlock::iterator bbitprev = bbit;         
+<         int FindOrigName = 0;
+<         StringRef VarCurName = Var;
+<         StringRef VarPrevName; 
+<         //cout <<"VarCurName: " <<  VarCurName.str() << endl;
+< 
+<         --bbit;
+<         //bbit->dump();
+---
+>         Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos)); 
+>         GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+>             GlobalValue::ExternalLinkage, AddrPos, PosName); 
+>         Pos[StrPos] = GAddrPos; 
+>       }
+1523,1527c1826,1838
+<         // Advance to the final getelementptr.
+<         while( bbit != bb->begin() && bbit->getName() != VarCurName ) {
+<           --bbit;
+<           //bbit->dump();
+<         }
+---
+>       // Create Global Variable Name to store VarName. 
+>       std::string  GlobalVarName = "GVarName";
+>       GlobalVarName += FileName; 
+>       //std::cout<< "new name " << GlobalVarName << std::endl;
+>       if( Name[Var.str()] ){
+>         GVarName = Name[Var.str()];
+>       }
+>       else{
+>         Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+>         GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+>             GlobalValue::ExternalLinkage, VarName, GlobalVarName); 
+>         Name[Var.str()] = GVarName;
+>       }
+1529,1537c1840
+<         // 
+<         //
+<         // only there is getelementptr instuction need to tackkle...
+<         VarPrevName = bbit->getName(); 
+<         //if( bbit->getOpcode() == Instruction::GetElementPtr  
+<         //   && VarCurName == VarPrevName )
+<         if( VarCurName == VarPrevName ){
+<           //cout << " find name \n";
+<           FindOrigName = 1;
+---
+>       //cout << StrPos << " "<< Var.str() << " " << File << " " << Line << endl;
+1539,1540c1842,1857
+<           // To be opt. 
+<           while(bbit != bb->begin()){ 
+---
+>       if( !DoProfile )
+>         instrument(LI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+>             (Value*)GVarName,  CheckLoadFunction, LI);
+> 
+>       // The function Contains the Target Loop, prof stackvar.
+>       else if( isInOrigFunc ){
+>         Function *F = LI.getParent()->getParent();
+>         inst_iterator FirstInst = inst_begin(F); 
+>         Value* DDABeginCurFuncDec = &(*FirstInst);
+>         LoadInst *CurFuncLoad = new LoadInst(DDABeginCurFuncDec, Twine(""), &LI);
+>         instrumentstackvar(LI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+>             (Value*)GVarName, (Value*)CurFuncLoad, 
+>             CheckLoadStackVarFunction, LI);
+>       }
+>       else ;
+>       ++LoadsInstrumented;
+1542,1546c1859
+<             // Same name rule.
+<             if( VarPrevName == VarCurName ){
+<               // load or getelementptr
+<               VarCurName = bbit->getOperand(0)->getName();   
+<               bbitprev = bbit;
+---
+>     }
+1548,1552d1860
+<             }
+<             --bbit;
+<             VarPrevName = bbit->getName(); 
+<             //bbit->dump();
+<           }
+1553a1862,1877
+>     void LDDLightShadow::visitStoreInst(StoreInst &SI){
+>       // Instrument a store instruction with a store check.
+>       // Is the size precise and available all the time?
+>       uint64_t Bytes = TD->getTypeStoreSize(SI.getValueOperand()->getType());
+>       Value *AccessSize = ConstantInt::get(SizeTy, Bytes);
+> 
+>       StringRef Var = SI.getPointerOperand()->getName();
+> 
+>       //cout << "begin store var name :" << Var.str() << endl;
+> 
+>       // Filter un-need profiling vars.
+>       //
+>       if( Var.str() == "retval" ){
+>         cout << "return value: " << Var.str()<< endl;
+>         return ;
+>       }
+1555,1557c1879,1899
+<           // Tackle begin
+<           if( VarPrevName == VarCurName ){
+<             bbitprev = bbit;
+---
+>       int DoProfile = 0;
+>       std::vector<string>::iterator LSVB, LSVE; 
+>       Value *StoreValue = SI.getOperand(1);
+> 
+>       // 1) Auto Variables.
+>       if(isa<AllocaInst>(StoreValue ) ){
+>         //SI.dump();
+>         if(!isa<PointerType>(cast<AllocaInst>(StoreValue)->getAllocatedType() )){
+> 
+>           // is LocalSharedVars?
+>           for( LSVB = LocalSharedVars.begin(), LSVE = LocalSharedVars.end(); 
+>               LSVB != LSVE; ++LSVB){
+>             if( *LSVB == Var.str()){
+>               DoProfile = 1; 
+>               //cout <<"Store Profile: " <<  *LSVB << endl;
+>               break;
+>             }
+>           } 
+>           if( !DoProfile ){
+>             //cout <<Var.str() << "--------------- Not Profile in StoreInst"<< endl;
+>             return ;
+1561,1573c1903
+< 
+< 
+< 
+< 
+<         // bbitprev is the last related getelementptr.
+<         // getElementType()   isPrimitiveType()   
+<         // PointerType::getArrayElementType 
+<         // getAllocatedType
+<         // bbitprev->dump();
+<         Value * operand;
+<         if( FindOrigName ){
+<           operand = bbitprev->getOperand(0);  // load addr / getelementptr
+<         }
+---
+>         // Local Pointers itself, not pointed objects.
+1575c1905
+<           operand = bbitprev->getOperand(1);  // it is still SI.
+---
+>           return; 
+1576a1907
+>       }
+1578c1909,1913
+<         //operand->dump();
+---
+>       // Global array and pointers. 
+>       // Local array and pointers with getelelemntptr.
+>       else{
+>         //SI.dump();
+>         if(isa<PointerType>(SI.getOperand(1)->getType())){
+1579a1915,1918
+>           // fixme ? maybe not work some day.
+>           BasicBlock::iterator bbit(&SI);
+>           BasicBlock *bb = SI.getParent();
+>           //bbit->dump(); 
+1580a1920,1939
+>           // load getlementptr
+>           if( bbit == bb->begin() ){
+>             //bbit->dump();
+>             if( ConstantExpr *CE = dyn_cast<ConstantExpr>(bbit->getOperand(1)))
+>               if( CE->getOpcode() == Instruction::GetElementPtr){
+>                 Value *operand = CE->getOperand(0);            
+>                 cout << operand->getName().str() << endl; // get the right name 
+>                 Var = operand->getName(); 
+>                 if(isa<AllocaInst>(operand))
+>                   DoProfile = 1; 
+>               }
+>           }
+>           // multi-dims array or pointers.
+>           else{
+>             // keep the lates related getelementptr
+>             BasicBlock::iterator bbitprev = bbit;         
+>             int FindOrigName = 0;
+>             StringRef VarCurName = Var;
+>             StringRef VarPrevName; 
+>             //cout <<"VarCurName: " <<  VarCurName.str() << endl;
+1582,1587c1941,1942
+<         // Get Variable name. fix me?
+<         Var = operand->getName();
+<         if( Var.str() == "" ){
+<           Var = bbitprev->getName();
+<         }
+<         //  Var = SI.getPointerOperand()->getName();
+---
+>             --bbit;
+>             //bbit->dump();
+1589c1944,1948
+<         //cout << "store last name: " << Var.str() << endl;
+---
+>             // Advance to the final getelementptr.
+>             while( bbit != bb->begin() && bbit->getName() != VarCurName ) {
+>               --bbit;
+>               //bbit->dump();
+>             }
+1591,1610c1950,2032
+<         //  Is it local array?
+<         if(isa<AllocaInst>(operand)){
+<           if (isa<ArrayType>( (cast<AllocaInst>(operand)->getAllocatedType()))){
+<             PointerType *OprPointerType = cast<AllocaInst>(operand)->getType();
+<             Type* ArrayEleType = OprPointerType->getArrayElementType();
+< 
+<             //ArrayEleType->dump(); 
+<             // Get the array element type.
+<             while( isa<ArrayType>(ArrayEleType) ) 
+<               ArrayEleType = ArrayEleType->getArrayElementType();
+<             //ArrayEleType->dump(); 
+< 
+<             if( ArrayEleType->isIntegerTy() || 
+<                 ArrayEleType->isFloatingPointTy() || 
+<                 ArrayEleType->isDoubleTy()  ) 
+<               cout<< endl  << "local primitive array: "<< Var.str() << endl;
+<             DoProfile = 1;
+<           }
+<           //cout << "local: "<< Var.str() << endl;
+<         }
+---
+>             // 
+>             //
+>             // only there is getelementptr instuction need to tackkle...
+>             VarPrevName = bbit->getName(); 
+>             //if( bbit->getOpcode() == Instruction::GetElementPtr  
+>             //   && VarCurName == VarPrevName ){
+>             if( VarCurName == VarPrevName ){
+>               //cout << " find name \n";
+>               FindOrigName = 1;
+> 
+>               // To be opt. 
+>               while(bbit != bb->begin()){ 
+>                 //while( VarPrevName == VarCurName){
+> 
+>                 // Same name rule.
+>                 if( VarPrevName == VarCurName ){
+>                   // load or getelementptr
+>                   VarCurName = bbit->getOperand(0)->getName();   
+>                   bbitprev = bbit;
+> 
+>                 }
+>                 --bbit;
+>                 VarPrevName = bbit->getName(); 
+>                 //bbit->dump();
+>               }
+> 
+> 
+>               // Tackle begin
+>               if( VarPrevName == VarCurName ){
+>                 bbitprev = bbit;
+>               }
+> 
+>               }
+> 
+> 
+> 
+> 
+>               // bbitprev is the last related getelementptr.
+>               // getElementType()   isPrimitiveType()   
+>               // PointerType::getArrayElementType 
+>               // getAllocatedType
+>               // bbitprev->dump();
+>               Value * operand;
+>               if( FindOrigName ){
+>                 operand = bbitprev->getOperand(0);  // load addr / getelementptr
+>               }
+>               else{
+>                 operand = bbitprev->getOperand(1);  // it is still SI.
+>               }
+> 
+>               //operand->dump();
+> 
+> 
+> 
+>               // Get Variable name. fix me?
+>               Var = operand->getName();
+>               if( Var.str() == "" ){
+>                 Var = bbitprev->getName();
+>               }
+>               //  Var = SI.getPointerOperand()->getName();
+> 
+>               //cout << "store last name: " << Var.str() << endl;
+> 
+>               //  Is it local array?
+>               if(isa<AllocaInst>(operand)){
+>                 if (isa<ArrayType>( (cast<AllocaInst>(operand)->getAllocatedType()))){
+>                   PointerType *OprPointerType = cast<AllocaInst>(operand)->getType();
+>                   Type* ArrayEleType = OprPointerType->getArrayElementType();
+> 
+>                   //ArrayEleType->dump(); 
+>                   // Get the array element type.
+>                   while( isa<ArrayType>(ArrayEleType) ) 
+>                     ArrayEleType = ArrayEleType->getArrayElementType();
+>                   //ArrayEleType->dump(); 
+> 
+>                   if( ArrayEleType->isIntegerTy() || 
+>                       ArrayEleType->isFloatingPointTy() || 
+>                       ArrayEleType->isDoubleTy()  ) 
+>                     cout<< endl  << "local primitive array: "<< Var.str() << endl;
+>                   DoProfile = 1;
+>                 }
+>                 //cout << "local: "<< Var.str() << endl;
+>               }
+1613,1614c2035,2036
+<       }
+<     }
+---
+>             }
+>           }
+1617c2039
+<   }
+---
+>           }
+1619,1620c2041,2042
+<   GlobalVariable *GAddrPos, *GVarName;
+<   std::string File = getInstFileName(&SI);
+---
+>           GlobalVariable *GAddrPos, *GVarName;
+>           std::string File = getInstFileName(&SI);
+1622,1625c2044,2047
+<   // If cannot get FileName, don't profiling the instruction.
+<   if( File == "0")
+<     return;
+<   unsigned int  Line = getInstLineNumber(&SI);
+---
+>           // If cannot get FileName, don't profiling the instruction.
+>           if( File == "0")
+>             return;
+>           unsigned int  Line = getInstLineNumber(&SI);
+1628,1630c2050,2052
+<   ostringstream Convert;
+<   Convert << Line;
+<   string StrPos = File + Convert.str();
+---
+>           ostringstream Convert;
+>           Convert << Line;
+>           string StrPos = File + Convert.str();
+1632c2054
+<   //string StrPos = File.str();
+---
+>           //string StrPos = File.str();
+1634,1653c2056,2060
+<   // Create global Variable name to store AddrPos.
+<   std::string PosName = "GAddrPos";
+<   std::string FileName;
+<   unsigned int LinePos = File.find("/");
+<   if( LinePos != std::string::npos )
+<     File = File.substr(LinePos+1, File.length());
+<   LinePos = File.find("-");
+<   if( LinePos != std::string::npos )
+<     File = File.substr( 0, LinePos );
+<   unsigned int DotPos = File.find(".");
+<   if( DotPos == std::string::npos ) 
+<     FileName = File; 
+<   else
+<     FileName = File.substr(0, DotPos);
+<   PosName += FileName;
+< 
+<   // Create Global Variable Name to store VarName. 
+<   std::string  GlobalVarName = "GVarName";
+<   GlobalVarName += FileName;
+<   //std::cout<< "new name " << GlobalVarName << std::endl;
+---
+>           // Create global Variable name to store AddrPos.
+>           std::string PosName = "GAddrPos";
+>           unsigned int DotPos = File.find(".");
+>           std::string FileName = File.substr(0, DotPos);
+>           PosName += FileName;
+1654a2062,2065
+>           // Create Global Variable Name to store VarName. 
+>           std::string  GlobalVarName = "GVarName";
+>           GlobalVarName += FileName;
+>           //std::cout<< "new name " << GlobalVarName << std::endl;
+1657,1665c2068,2077
+<   if( Pos[StrPos] ){
+<     GAddrPos = Pos[StrPos]; 
+<   }
+<   else{
+<     Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos));
+<     GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+<         GlobalValue::ExternalLinkage, AddrPos, PosName); 
+<     Pos[StrPos] = GAddrPos; 
+<   }
+---
+> 
+>           if( Pos[StrPos] ){
+>             GAddrPos = Pos[StrPos]; 
+>           }
+>           else{
+>             Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos));
+>             GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+>                 GlobalValue::ExternalLinkage, AddrPos, PosName); 
+>             Pos[StrPos] = GAddrPos; 
+>           }
+1668,1676c2080,2088
+<   if( Name[Var.str()] ){
+<     GVarName = Name[Var.str()];
+<   }
+<   else{
+<     Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+<     GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+<         GlobalValue::ExternalLinkage, VarName, GlobalVarName);
+<     Name[Var.str()] = GVarName;
+<   }
+---
+>           if( Name[Var.str()] ){
+>             GVarName = Name[Var.str()];
+>           }
+>           else{
+>             Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+>             GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+>                 GlobalValue::ExternalLinkage, VarName, GlobalVarName);
+>             Name[Var.str()] = GVarName;
+>           }
+1678,1693c2090,2105
+<   //instrument(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+<   //           (Value*)GVarName, StoreCheckFunction, SI);
+<   //instrumentInit(InitProfilingFunction, SI);
+< 
+< 
+<   if( !DoProfile )
+<     instrument(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+<         (Value*)GVarName,  CheckStoreFunction, SI);
+<   else if ( isInOrigFunc ) {
+<     Function *F = SI.getParent()->getParent();
+<     inst_iterator FirstInst = inst_begin(F); 
+<     Value* DDABeginCurFuncDec = &(*FirstInst);
+<     LoadInst *CurFuncLoad = new LoadInst(DDABeginCurFuncDec, Twine(""), &SI);
+<     instrumentstackvar(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+<         (Value*)GVarName, (Value*)CurFuncLoad, 
+<         CheckStoreStackVarFunction, SI);
+---
+>           //instrument(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+>           //           (Value*)GVarName, StoreCheckFunction, SI);
+>           //instrumentInit(InitProfilingFunction, SI);
+> 
+> 
+>           if( !DoProfile )
+>             instrument(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+>                 (Value*)GVarName,  CheckStoreFunction, SI);
+>           else if ( isInOrigFunc ) {
+>             Function *F = SI.getParent()->getParent();
+>             inst_iterator FirstInst = inst_begin(F); 
+>             Value* DDABeginCurFuncDec = &(*FirstInst);
+>             LoadInst *CurFuncLoad = new LoadInst(DDABeginCurFuncDec, Twine(""), &SI);
+>             instrumentstackvar(SI.getPointerOperand(), AccessSize,(Value*)GAddrPos, 
+>                 (Value*)GVarName, (Value*)CurFuncLoad, 
+>                 CheckStoreStackVarFunction, SI);
+1695,1696c2107,2108
+<   }
+<   else;
+---
+>           }
+>           else;
+1698,1699c2110,2111
+<   ++StoresInstrumented;
+< }
+---
+>           ++StoresInstrumented;
+>         }
+1702,1703c2114
+< void LDDLightShadow::visitReturnInst(ReturnInst &I)
+< {
+---
+>         void LDDLightShadow::visitReturnInst(ReturnInst &I){
+1705,1708c2116,2119
+<   return;
+<   // is main function ?
+<   Function * F = I.getParent()->getParent();
+<   string FuncName = F->getName().str();
+---
+>           return;
+>           // is main function ?
+>           Function * F = I.getParent()->getParent();
+>           string FuncName = F->getName().str();
+1710c2121
+<   if( FuncName == "main"){
+---
+>           if( FuncName == "main"){
+1712,1713c2123,2124
+<     //OutputDependenceFunction = F->getParent()->getFunction(" __outputdependence");
+<     //assert(OutputDependenceFunction && "__outputdependence function has disappeared!\n");
+---
+>             //OutputDependenceFunction = F->getParent()->getFunction(" __outputdependence");
+>             //assert(OutputDependenceFunction && "__outputdependence function has disappeared!\n");
+1715,1719c2126,2130
+<     //TD = &getAnalysis<DataLayout>(); // 20130325
+<     //IRBuilder<> FuncBuilder(F->getContext());
+<     //Builder = &FuncBuilder;
+<     printf("instrument OutputLDDDependenceFunction \n ");
+<     instrumentInit( OutputLDDDependenceFunction, I);
+---
+>             //TD = &getAnalysis<DataLayout>(); // 20130325
+>             //IRBuilder<> FuncBuilder(F->getContext());
+>             //Builder = &FuncBuilder;
+>             printf("instrument OutputLDDDependenceFunction \n ");
+>             instrumentInit( OutputLDDDependenceFunction, I);
+1722c2133
+<   } 
+---
+>           } 
+1724c2135
+< }
+---
+>         }
+1726,1731c2137,2142
+< void LDDLightShadow::visitAtomicRMWInst(AtomicRMWInst &I){
+<   // Instument an AtomicRMW instruction with a store check.
+<   Value *AccessSize = ConstantInt::get(SizeTy, TD->getTypeStoreSize(I.getType()));
+<   //instrument(I.getPointerOperand(), AccessSize, StoreCheckFunction, I);
+<   ++AtomicsInstrumented;
+< }
+---
+>         void LDDLightShadow::visitAtomicRMWInst(AtomicRMWInst &I){
+>           // Instument an AtomicRMW instruction with a store check.
+>           Value *AccessSize = ConstantInt::get(SizeTy, TD->getTypeStoreSize(I.getType()));
+>           //instrument(I.getPointerOperand(), AccessSize, StoreCheckFunction, I);
+>           ++AtomicsInstrumented;
+>         }
+1733,1744c2144,2155
+< void LDDLightShadow::visitAtomicCmpXchgInst(AtomicCmpXchgInst &I){
+<   // Instrument an AtomicCmpXchg instruction with a store check.
+<   Value *AccessSize = ConstantInt::get(SizeTy, TD->getTypeStoreSize(I.getType()));
+< 
+<   GlobalVariable *GAddrPos, *GVarName;
+<   StringRef Var = I.getPointerOperand()->getName();
+<   std::string File = getInstFileName(&I);
+<   // If cannot get FileName, don't profiling the instruction.
+<   if( File == "0")
+<     return;
+<   unsigned int  Line = getInstLineNumber(&I);
+<   //StringRef Func = LI.getParent()->getParent()->getName();
+---
+>         void LDDLightShadow::visitAtomicCmpXchgInst(AtomicCmpXchgInst &I){
+>           // Instrument an AtomicCmpXchg instruction with a store check.
+>           Value *AccessSize = ConstantInt::get(SizeTy, TD->getTypeStoreSize(I.getType()));
+> 
+>           GlobalVariable *GAddrPos, *GVarName;
+>           StringRef Var = I.getPointerOperand()->getName();
+>           std::string File = getInstFileName(&I);
+>           // If cannot get FileName, don't profiling the instruction.
+>           if( File == "0")
+>             return;
+>           unsigned int  Line = getInstLineNumber(&I);
+>           //StringRef Func = LI.getParent()->getParent()->getName();
+1747,1749c2158,2160
+<   ostringstream Convert;
+<   Convert << Line;
+<   string StrPos = File + Convert.str();
+---
+>           ostringstream Convert;
+>           Convert << Line;
+>           string StrPos = File + Convert.str();
+1753,1773c2164,2184
+<   // Create global Variable name to store AddrPos.
+<   std::string PosName = "GAddrPos";
+<   unsigned int DotPos = File.find(".");
+<   std::string FileName = File.substr(0, DotPos);
+<   PosName += FileName;
+< 
+<   // Create Global Variable Name to store VarName. 
+<   std::string  GlobalVarName = "GVarName";
+<   GlobalVarName += FileName;
+<   //std::cout<< "new name " << GlobalVarName << std::endl;
+< 
+<   //string StrPos = File.str();
+<   if( Pos[StrPos] ){
+<     GAddrPos = Pos[StrPos]; 
+<   }
+<   else{
+<     Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos));
+<     GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+<         GlobalValue::ExternalLinkage, AddrPos, PosName); 
+<     Pos[StrPos] = GAddrPos; 
+<   }
+---
+>           // Create global Variable name to store AddrPos.
+>           std::string PosName = "GAddrPos";
+>           unsigned int DotPos = File.find(".");
+>           std::string FileName = File.substr(0, DotPos);
+>           PosName += FileName;
+> 
+>           // Create Global Variable Name to store VarName. 
+>           std::string  GlobalVarName = "GVarName";
+>           GlobalVarName += FileName;
+>           //std::cout<< "new name " << GlobalVarName << std::endl;
+> 
+>           //string StrPos = File.str();
+>           if( Pos[StrPos] ){
+>             GAddrPos = Pos[StrPos]; 
+>           }
+>           else{
+>             Constant *AddrPos = ConstantDataArray::getString(*Context, StringRef(StrPos));
+>             GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+>                 GlobalValue::ExternalLinkage, AddrPos, PosName); 
+>             Pos[StrPos] = GAddrPos; 
+>           }
+1778,1786c2189,2197
+<   if( Name[Var.str()] ){
+<     GVarName = Name[Var.str()];
+<   }
+<   else{
+<     Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+<     GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+<         GlobalValue::ExternalLinkage, VarName, GlobalVarName); 
+<     Name[Var.str()] = GVarName;
+<   }
+---
+>           if( Name[Var.str()] ){
+>             GVarName = Name[Var.str()];
+>           }
+>           else{
+>             Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+>             GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+>                 GlobalValue::ExternalLinkage, VarName, GlobalVarName); 
+>             Name[Var.str()] = GVarName;
+>           }
+1788,1791c2199,2202
+<   instrument(I.getPointerOperand(), AccessSize, (Value*) GAddrPos, 
+<       (Value*)GVarName, CheckStoreFunction, I);
+<   ++AtomicsInstrumented;
+< }
+---
+>           instrument(I.getPointerOperand(), AccessSize, (Value*) GAddrPos, 
+>               (Value*)GVarName, CheckStoreFunction, I);
+>           ++AtomicsInstrumented;
+>         }
+1793,1796c2204,2207
+< void LDDLightShadow::visitMemIntrinsic(MemIntrinsic &MI){
+<   // Instrument llvm.mem[set|set|cpy|move].* calls with load/store checks.
+<   Builder->SetInsertPoint(&MI);
+<   Value *AccessSize = Builder->CreateIntCast(MI.getLength(), SizeTy, false);
+---
+>         void LDDLightShadow::visitMemIntrinsic(MemIntrinsic &MI){
+>           // Instrument llvm.mem[set|set|cpy|move].* calls with load/store checks.
+>           Builder->SetInsertPoint(&MI);
+>           Value *AccessSize = Builder->CreateIntCast(MI.getLength(), SizeTy, false);
+1799,1834c2210,2245
+<   GlobalVariable *GAddrPos, *GVarName;
+<   StringRef Var = MI.getPointerOperand()->getName();
+<   StringRef File = getInstFileName(&MI);
+<   unsigned int  Line = getInstLineNumber(&MI);
+<   //StringRef Func = LI.getParent()->getParent()->getName();
+< 
+<   ostringstream Convert;
+<   Convert << Line;
+<   string StrPos = File.str() + Convert.str();
+< 
+<   //string StrPos = File.str();
+<   if( Pos[StrPos] ){
+<     GAddrPos = Pos[StrPos]; 
+<   }
+<   else{
+<     Constant *AddrPos = ConstantDataArray::getString(
+<         *Context, StringRef(StrPos)); 
+<     GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+<         GlobalValue::ExternalLinkage, AddrPos, "GAddrPos"); 
+<     Pos[StrPos] = GAddrPos; 
+<   }
+<   if( Name[Var.str()] ){
+<     GVarName = Name[Var.str()];
+<   }
+<   else{
+<     Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+<     GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+<         GlobalValue::ExternalLinkage, VarName, "GVarName"); 
+<     Name[Var.str()] = GVarName;
+<   }
+<   // memcpy and memmove have a source memory area but memset doesn't
+<   if(MemTransferInst *MTI = dyn_cast<MemTransferInst>(&MI))
+<     instrument(MTI->getSource(), AccessSize, (Value*)GAddrPos, 
+<         (Value*) GVarName, CheckLoadFunction, MI);
+<   instrument(MI.getDest(), AccessSize, (Value*)GAddrPos, (Value*)GvarName,  
+<       CheckStoreFunction, MI);
+---
+>           GlobalVariable *GAddrPos, *GVarName;
+>           StringRef Var = MI.getPointerOperand()->getName();
+>           StringRef File = getInstFileName(&MI);
+>           unsigned int  Line = getInstLineNumber(&MI);
+>           //StringRef Func = LI.getParent()->getParent()->getName();
+> 
+>           ostringstream Convert;
+>           Convert << Line;
+>           string StrPos = File.str() + Convert.str();
+> 
+>           //string StrPos = File.str();
+>           if( Pos[StrPos] ){
+>             GAddrPos = Pos[StrPos]; 
+>           }
+>           else{
+>             Constant *AddrPos = ConstantDataArray::getString(
+>                 *Context, StringRef(StrPos)); 
+>             GAddrPos = new GlobalVariable(*CurModule, AddrPos->getType(), true, 
+>                 GlobalValue::ExternalLinkage, AddrPos, "GAddrPos"); 
+>             Pos[StrPos] = GAddrPos; 
+>           }
+>           if( Name[Var.str()] ){
+>             GVarName = Name[Var.str()];
+>           }
+>           else{
+>             Constant *VarName = ConstantDataArray::getString(*Context, Var); 
+>             GVarName = new GlobalVariable(*CurModule, VarName->getType(), true, 
+>                 GlobalValue::ExternalLinkage, VarName, "GVarName"); 
+>             Name[Var.str()] = GVarName;
+>           }
+>           // memcpy and memmove have a source memory area but memset doesn't
+>           if(MemTransferInst *MTI = dyn_cast<MemTransferInst>(&MI))
+>             instrument(MTI->getSource(), AccessSize, (Value*)GAddrPos, 
+>                 (Value*) GVarName, CheckLoadFunction, MI);
+>           instrument(MI.getDest(), AccessSize, (Value*)GAddrPos, (Value*)GvarName,  
+>               CheckStoreFunction, MI);
+1836,1837c2247,2248
+<   ++IntrinsicsInstrumented;
+< }
+---
+>           ++IntrinsicsInstrumented;
+>         }
+1839,1878c2250,2288
+< // LDDLightShadow::LoopScope
+< void LDDLightShadow::visitCallInst(CallInst &CI)
+< {
+<   //CI.dump();
+<   std::string FuncName;
+<   Function * Func = CI.getCalledFunction();
+<   if( Func != NULL )
+<     FuncName = Func->getName().str(); 
+<   else // Indirect funcall call returns NULL.
+<     FuncName = "";
+<   int LineNo;
+<   if( FuncName == "llvm.dbg.declare" ){
+<     if( MDNode *Dbg = CI.getMetadata(dbgKind) ){
+<       DILocation Loc(Dbg);
+<       //Dbg->dump();
+<       //cout<<"CalledFuncFileName: " <<  Loc.getFilename().str() << endl;
+<       //return(Loc.getDirectory().str() + "/" + Loc.getFilename().str());
+<       LineNo = Loc.getLineNumber();
+<     }    
+<     //cout << "xxxxxxxx LineNo: " << LineNo << endl;
+<     std::map<int, int>::iterator LSB, LSE;
+<     for( LSB = LoopScope.begin(), LSE = LoopScope.end(); LSB != LSE; ++LSB){
+<       if( LineNo < LSB->first ){
+<         //cout<< "LineNo: "<< LineNo <<" FLineNo" << LSB->first<< endl;
+<         Value* Var1 = CI.getArgOperand(0);
+<         DILocation Loc((MDNode*)Var1); 
+<         std::string VarName = ((MDNode*)Var1)->getOperand(0)->getName().str();
+<         LocalSharedVars.push_back(VarName);
+<         break;
+<       }
+<       else if( LineNo < LSB->second ){
+<         //StringRef Var = LI.getPointerOperand()->getName();
+<         //Value* Var1 = CI.getArgOperand(0);
+<         //DILocation Loc((MDNode*)Var1); 
+<         //std::string VarName = ((MDNode*)Var1)->getOperand(0)->getName().str();
+<         //LocalSharedVars.push_back(VarName);
+<         //cout <<"OperandName " << VarName << endl;
+<         break;
+<       } 
+<     }
+---
+>         // LDDLightShadow::LoopScope
+>         void LDDLightShadow::visitCallInst(CallInst &CI){
+>           //CI.dump();
+>           std::string FuncName;
+>           Function * Func = CI.getCalledFunction();
+>           if( Func != NULL )
+>             FuncName = Func->getName().str(); 
+>           else // Indirect funcall call returns NULL.
+>             FuncName = "";
+>           int LineNo;
+>           if( FuncName == "llvm.dbg.declare" ){
+>             if( MDNode *Dbg = CI.getMetadata(dbgKind) ){
+>               DILocation Loc(Dbg);
+>               //Dbg->dump();
+>               //cout<<"CalledFuncFileName: " <<  Loc.getFilename().str() << endl;
+>               //return(Loc.getDirectory().str() + "/" + Loc.getFilename().str());
+>               LineNo = Loc.getLineNumber();
+>             }    
+>             //cout << "xxxxxxxx LineNo: " << LineNo << endl;
+>             std::map<int, int>::iterator LSB, LSE;
+>             for( LSB = LoopScope.begin(), LSE = LoopScope.end(); LSB != LSE; ++LSB){
+>               if( LineNo < LSB->first ){
+>                 //cout<< "LineNo: "<< LineNo <<" FLineNo" << LSB->first<< endl;
+>                 Value* Var1 = CI.getArgOperand(0);
+>                 DILocation Loc((MDNode*)Var1); 
+>                 std::string VarName = ((MDNode*)Var1)->getOperand(0)->getName().str();
+>                 LocalSharedVars.push_back(VarName);
+>                 break;
+>               }
+>               else if( LineNo < LSB->second ){
+>                 //StringRef Var = LI.getPointerOperand()->getName();
+>                 //Value* Var1 = CI.getArgOperand(0);
+>                 //DILocation Loc((MDNode*)Var1); 
+>                 //std::string VarName = ((MDNode*)Var1)->getOperand(0)->getName().str();
+>                 //LocalSharedVars.push_back(VarName);
+>                 //cout <<"OperandName " << VarName << endl;
+>                 break;
+>               } 
+>             }
+1880c2290
+<   }
+---
+>           }
+1882,1884c2292,2294
+<   //std::cout<<"CalledFunc " <<  Func->getName().str() << endl;
+<   return;
+< }
+---
+>           //std::cout<<"CalledFunc " <<  Func->getName().str() << endl;
+>           return;
+>         }
+1887,1901c2297,2311
+<   std::string 
+< LDDLightShadow::getInstFileName(Instruction*I)
+< {
+<   if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+<     DILocation Loc(Dbg);
+<     // Dbg->dump();
+<     return( Loc.getFilename().str() );
+<     //return(Loc.getDirectory().str() + "/" + Loc.getFilename().str());
+<   }
+<   else{
+<     cout<<"getInstFileName can not get dbg information "<< endl;
+<     //I->dump();
+<     return "0";    
+<   }
+< }
+---
+>         std::string 
+>           LDDLightShadow::getInstFileName(Instruction*I)
+>           {
+>             if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+>               DILocation Loc(Dbg);
+>               // Dbg->dump();
+>               return( Loc.getFilename().str() );
+>               //return(Loc.getDirectory().str() + "/" + Loc.getFilename().str());
+>             }
+>             else{
+>               cout<<"getInstFileName can not get dbg information "<< endl;
+>               //I->dump();
+>               return "0";    
+>             }
+>           }
+1903,1916c2313,2326
+< unsigned int LDDLightShadow::getInstLineNumber(Instruction*I)
+< {
+<   if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+<     DILocation Loc(Dbg);
+<     return( Loc.getLineNumber() );
+<   }
+<   else{
+<     cout<<"getInstFileName can not get dbg information "<< endl;
+<     return 0;    
+<   }
+< }
+<   std::string 
+< LDDLightShadow::getInstFuncName(Instruction*I)
+< {
+---
+>         unsigned int LDDLightShadow::getInstLineNumber(Instruction*I)
+>         {
+>           if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+>             DILocation Loc(Dbg);
+>             return( Loc.getLineNumber() );
+>           }
+>           else{
+>             cout<<"getInstFileName can not get dbg information "<< endl;
+>             return 0;    
+>           }
+>         }
+>         std::string 
+>           LDDLightShadow::getInstFuncName(Instruction*I)
+>           {
+1918c2328
+<   if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+---
+>             if( MDNode *Dbg = I->getMetadata(dbgKind) ){
+1920,1923c2330,2333
+<     if( Dbg->getFunction() )
+<       return ( Dbg->getFunction()->getName().str() );
+<     else
+<       return "no function" ;
+---
+>               if( Dbg->getFunction() )
+>                 return ( Dbg->getFunction()->getName().str() );
+>               else
+>                 return "no function" ;
+1925,1929c2335,2339
+<   }
+<   else{
+<     cout<<"getInstFuncName can not get dbg information "<< endl;
+<     return 0;    
+<   }
+---
+>             }
+>             else{
+>               cout<<"getInstFuncName can not get dbg information "<< endl;
+>               return 0;    
+>             }
+1931,1934c2341,2344
+<   BasicBlock *bb = I->getParent();
+<   Function* f = bb->getParent();
+<   return( f->getName().str() );
+< }
+---
+>             BasicBlock *bb = I->getParent();
+>             Function* f = bb->getParent();
+>             return( f->getName().str() );
+>           }
+1937,1939c2347,2349
+<   StringRef
+< LDDLightShadow::getPointerName(Instruction &I)
+< {
+---
+>         StringRef
+>           LDDLightShadow::getPointerName(Instruction &I)
+>           {
+1941,1942c2351,2352
+<   return "xx";
+< }
+---
+>             return "xx";
+>           }
