@@ -1,0 +1,12893 @@
+cscope 15 $HOME/software/llvm-3.2-svn/lib               0000087494
+	@CMakeLists.txt
+
+1 #`
+SuµÜt
+'‡nd `TabËG’' 
+lib¿r›s
+ 
+¬e
+ 
+added
+ 
+Ú
+ 
+the
+ 
+tİ
+-
+Ëv–
+ 
+CMakeLi¡s
+.
+txt
+
+
+3 
+	$add_subdœeùÜy
+(
+VMCÜe
+)
+
+4 
+	$add_subdœeùÜy
+(
+CodeG’
+)
+
+5 
+	$add_subdœeùÜy
+(
+B™code
+)
+
+6 
+	$add_subdœeùÜy
+(
+T¿nsfÜms
+)
+
+7 
+	$add_subdœeùÜy
+(
+Lšk”
+)
+
+8 
+	$add_subdœeùÜy
+(
+AÇlysis
+)
+
+9 
+	$add_subdœeùÜy
+(
+MC
+)
+
+10 
+	$add_subdœeùÜy
+(
+Objeù
+)
+
+11 
+	$add_subdœeùÜy
+(
+DebugInfo
+)
+
+12 
+	$add_subdœeùÜy
+(
+ExecutiÚEngše
+)
+
+13 
+	$add_subdœeùÜy
+(
+T¬g‘
+)
+
+14 
+	$add_subdœeùÜy
+(
+AsmP¬£r
+)
+
+15 
+	`add_subdœeùÜy
+(
+Archive
+)
+
+	@LLVMBuild.txt
+
+1 ;===- ./
+lib
+/
+LLVMBud
+.
+txt
+ --------------------------------------*- 
+CÚf
+ -*--===;
+
+3 ; 
+The
+ 
+LLVM
+ 
+Comp”
+ 
+	gInäa¡ruùu»
+
+
+5 ; 
+This
+ 
+fe
+ 
+is
+ 
+di¡ribu‹d
+ 
+und”
+ 
+the
+ 
+Univ”s™y
+ 
+of
+ 
+IÎšois
+ 
+O³n
+ 
+	gSourû
+
+
+6 ; 
+	gLiûn£
+. 
+S“
+ 
+	gLICENSE
+.
+TXT
+ 
+	gd‘as
+.
+
+10 ; 
+This
+ 
+is
+ 
+ª
+ 
+LLVMBud
+ 
+desütiÚ
+ 
+fe
+ 
+the
+ 
+compÚ’ts
+ 
+š
+ 
+this
+ 
+	gsubdœeùÜy
+.
+
+12 ; 
+FÜ
+ 
+mÜe
+ 
+šfÜm©iÚ
+ 
+Ú
+ 
+the
+ 
+LLVMBud
+ 
+	gsy¡em
+, 
+¶—£
+ 
+	g£e
+:
+
+14 ; 
+	gh‰p
+:
+
+18 [
+commÚ
+]
+
+19 
+	gsubdœeùÜ›s
+ = 
+AÇlysis
+ 
+Archive
+ 
+AsmP¬£r
+ 
+B™code
+ 
+CodeG’
+ 
+DebugInfo
+ 
+ExecutiÚEngše
+ 
+Lšk”
+ 
+MC
+ 
+Objeù
+ 
+SuµÜt
+ 
+TabËG’
+ 
+T¬g‘
+ 
+T¿nsfÜms
+ 
+VMCÜe
+
+
+21 [
+compÚ’t_0
+]
+
+22 
+ty³
+ = 
+Group
+
+
+23 
+Çme
+ = 
+Lib¿r›s
+
+
+24 
+·»Á
+ = 
+$ROOT
+
+
+	@Makefile
+
+1 ##===- 
+lib
+/
+Makefe
+ ----------------------------------------*- Makefile -*-===##
+
+2 #
+#Th
+LLVM
+ 
+Comp”
+ 
+Inäa¡ruùu»
+
+
+3 #
+#Thi 
+fe
+ 
+is
+ 
+di¡ribu‹d
+ 
+und”
+ 
+the
+ 
+Univ”s™y
+ 
+of
+ 
+IÎšois
+ 
+O³n
+ 
+Sourû
+
+
+4 #Liûn£. 
+S“
+ 
+LICENSE
+.
+TXT
+ 
+d‘as
+.
+
+6 
+	gLEVEL
+ = ..
+
+8 
+šşude
+ 
+$
+(
+LEVEL
+)/
+Makefe
+.
+cÚfig
+
+
+10 
+PARALLEL_DIRS
+ :ğ
+VMCÜe
+ 
+AsmP¬£r
+ 
+B™code
+ 
+Archive
+ 
+AÇlysis
+ 
+T¿nsfÜms
+ 
+CodeG’
+ \
+
+11 
+T¬g‘
+ 
+ExecutiÚEngše
+ 
+Lšk”
+ 
+MC
+ 
+Objeù
+ 
+DebugInfo
+
+
+13 
+šşude
+ 
+$
+(
+LEVEL
+)/
+Makefe
+.
+commÚ
+
+
+	@tags
+
+1 !
+	g_TAG_FILE_FORMAT
+ 2 /
+ex‹nded
+ 
+	gfÜm©
+; --fÜm©=1 
+wl
+ 
+nÙ
+ 
+­³nd
+ ;"o†ines/
+
+2 !
+	g_TAG_FILE_SORTED
+ 1 /0=
+unsÜ‹d
+, 1=
+sÜ‹d
+, 2=
+fŞdÿ£
+/
+
+3 !
+_TAG_PROGRAM_AUTHOR
+ 
+D¬»n
+ 
+H›b”t
+ /
+dh›b”t
+@
+u£rs
+.
+sourûfÜge
+.
+Ãt
+/
+
+4 !
+_TAG_PROGRAM_NAME
+ 
+Exub”ªt
+ 
+Cgs
+
+
+5 !
+_TAG_PROGRAM_URL
+ 
+h‰p
+:
+
+6 !
+_TAG_PROGRAM_VERSION
+ 5.8
+
+7 
+A
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ A = 4
+$
+/;"ƒƒnum:llvm::ARM_PROC::IFlags
+
+8 
+A6
+ 
+	gT¬g‘
+/
+	gX86
+/
+	gMCT¬g‘Desc
+/
+	gX86Ba£Info
+.
+	gh
+ /^ 
+	gA6
+ = 15 << 
+Op0Shiá
+, 
+	gA7
+ = 16 << Op0Shiá,
+	g$
+/;"ƒƒnum:llvm::X86II::__anon350
+
+9 
+A7
+ 
+	gT¬g‘
+/
+	gX86
+/
+	gMCT¬g‘Desc
+/
+	gX86Ba£Info
+.
+	gh
+ /^ 
+	gA6
+ = 15 << 
+Op0Shiá
+, 
+	gA7
+ = 16 << Op0Shiá,
+	g$
+/;"ƒƒnum:llvm::X86II::__anon350
+
+10 
+AA
+ 
+	gAÇlysis
+/
+	gLšt
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon5::Lint file:
+
+11 
+AA
+ 
+	gCodeG’
+/
+	gIÆšeSpËr
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon155::InlineSpiller file:
+
+12 
+AA
+ 
+	gCodeG’
+/
+	gMachšeCSE
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon161::MachineCSE file:
+
+13 
+AA
+ 
+	gCodeG’
+/
+	gMachšeLICM
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+; \/\/ 
+AlŸs
+ 
+ª®ysis
+ 
+	gšfo
+.
+	g$
+/;" m class:__anon156::MachineLICM file:
+
+14 
+AA
+ 
+	gCodeG’
+/
+	gMachšeSšk
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon101::MachineSinking file:
+
+15 
+AA
+ 
+	gCodeG’
+/
+	gPo¡RAScheduËrLi¡
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon102::SchedulePostRATDList file:
+
+16 
+AA
+ 
+	gCodeG’
+/
+	gRegi¡”CßËsûr
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon114::RegisterCoalescer file:
+
+17 
+AA
+ 
+	gCodeG’
+/
+	gS–eùiÚDAG
+/
+	gDAGCombš”
+.
+	gıp
+ /^ 
+	gAlŸsAÇlysis
+ &
+	gAA
+;
+	g$
+/;" m class:__anon68::DAGCombiner file:
+
+18 
+AA
+ 
+	gCodeG’
+/
+	gS–eùiÚDAG
+/
+	gScheduËDAGVLIW
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon84::ScheduleDAGVLIW file:
+
+19 
+AA
+ 
+	gCodeG’
+/
+	gS–eùiÚDAG
+/
+	gS–eùiÚDAGBud”
+.
+	gh
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:llvm::SelectionDAGBuilder
+
+20 
+AA
+ 
+	gCodeG’
+/
+	gTwoAdd»ssIn¡ruùiÚPass
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon104::TwoAddressInstructionPass file:
+
+21 
+AA
+ 
+	gT¿nsfÜms
+/
+	gIPO
+/
+	gFunùiÚA‰rs
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon578::FunctionAttrs file:
+
+22 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gD—dStÜeElimš©iÚ
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon552::DSE file:
+
+23 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gD—dStÜeElimš©iÚ
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon554::CouldRef file:
+
+24 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gD—dStÜeElimš©iÚ
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon555::CouldAlias file:
+
+25 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gGVN
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon536::ValueTable file:
+
+26 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gLICM
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+; \/\/ 
+Cu¼’t
+ AlŸsAÇlysi 
+	gšfÜm©iÚ$
+/;" m struct:__anon568::LICM file:
+
+27 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gObjCARC
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon503::ProvenanceAnalysis file:
+
+28 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gObjCARC
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon510::ObjCARCContract file:
+
+29 
+AA
+ 
+	gT¿nsfÜms
+/
+	gSÿÏr
+/
+	gSšk
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m class:__anon556::Sinking file:
+
+30 
+AA
+ 
+	gT¿nsfÜms
+/
+	gUts
+/
+	gLoİSim¶ify
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon483::LoopSimplify file:
+
+31 
+AA
+ 
+	gT¿nsfÜms
+/
+	gVeùÜize
+/
+	gBBVeùÜize
+.
+	gıp
+ /^ 
+AlŸsAÇlysis
+ *
+	gAA
+;
+	g$
+/;" m struct:__anon604::BBVectorize file:
+
+32 
+AAEv®
+ 
+	gAÇlysis
+/
+	gAlŸsAÇlysisEv®u©Ü
+.
+	gıp
+ /^ 
+	$AAEv®
+(è: 
+	$FunùiÚPass
+(
+ID
+è{
+$
+/;" f class:__anon47::AAEval
+
+33 
+AAEv®
+ 
+AÇlysis
+/
+AlŸsAÇlysisEv®u©Ü
+.
+ıp
+ /^ cÏs 
+	cAAEv®
+ : 
+public
+ 
+FunùiÚPass
+ {
+$
+/;" c‚amespace:__anon47 file:
+
+34 
+ABI
+ 
+T¬g‘
+/
+Ms
+/
+MsLÚgB¿nch
+.
+ıp
+ /^ ABI;
+$
+/;" m class:__anon437::MipsLongBranch file:
+
+35 
+ABI_FP_16b™_fÜm©
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_16b™_fÜm© = 38,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+36 
+ABI_FP_d’Üm®
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_d’Üm® = 20,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+37 
+ABI_FP_exû±iÚs
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_exû±iÚ ğ21,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+38 
+ABI_FP_numb”_mod–
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_numb”_mod– = 23,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+39 
+ABI_FP_İtimiz©iÚ_gßls
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_İtimiz©iÚ_gßl ğ31,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+40 
+ABI_FP_roundšg
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_roundšg = 19,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+41 
+ABI_FP_u£r_exû±iÚs
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_FP_u£r_exû±iÚ ğ22,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+42 
+ABI_H¬dFP_u£
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_H¬dFP_u£ = 27,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+43 
+ABI_PCS_GOT_u£
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_PCS_GOT_u£ = 17,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+44 
+ABI_PCS_R9_u£
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_PCS_R9_u£ = 14,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+45 
+ABI_PCS_RO_d©a
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_PCS_RO_d©¨ğ16,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+46 
+ABI_PCS_RW_d©a
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_PCS_RW_d©¨ğ15,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+47 
+ABI_PCS_wch¬_t
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_PCS_wch¬_ˆğ18,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+48 
+ABI_VFP_¬gs
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_VFP_¬g ğ28,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+49 
+ABI_WMMX_¬gs
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_WMMX_¬g ğ29,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+50 
+ABI_®ign8_Ãeded
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_®ign8_Ãeded = 24,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+51 
+ABI_®ign8_´e£rved
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_®ign8_´e£rved = 25,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+52 
+ABI_’um_size
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_’um_sizğ26,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+53 
+ABI_İtimiz©iÚ_gßls
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ABI_İtimiz©iÚ_gßl ğ30,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+54 
+ADC
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ 
+ADD
+, 
+SUB
+, ADC, 
+SBB
+, 
+SMUL
+,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+55 
+ADCE
+ 
+T¿nsfÜms
+/
+SÿÏr
+/ADCE.
+ıp
+ /^ 
+	`ADCE
+(è: 
+	`FunùiÚPass
+(
+ID
+è{
+$
+/;" f struct:__anon572::ADCE
+
+56 
+ADCE
+ 
+T¿nsfÜms
+/
+SÿÏr
+/ADCE.
+ıp
+ /^ ADCE : 
+public
+ 
+FunùiÚPass
+ {
+$
+/;" s‚amespace:__anon572 file:
+
+57 
+ADD
+ 
+T¬g‘
+/
+X86
+/
+X86IS–DAGToDAG
+.
+ıp
+ /^ ADD,
+$
+/;"ƒƒnum:AtomicOpc file:
+
+58 
+ADD
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ADD, 
+SUB
+, 
+ADC
+, 
+SBB
+, 
+SMUL
+,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+59 
+ADD64_MARKER
+ 
+T¬g‘
+/
+C–lSPU
+/
+SPUIS–Low”šg
+.
+h
+ /^ ADD64_MARKER, \/\/\/< 
+i64
+ 
+add™iÚ
+ 
+m¬k”$
+/;"ƒƒnum:llvm::SPUISD::NodeType
+
+60 
+ADDC
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ADDC, \/\/ 
+Add
+ 
+w™h
+ 
+ÿ¼y$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+61 
+ADDE
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ADDE, \/\/ 
+Add
+ 
+usšg
+ 
+ÿ¼y$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+62 
+ADDRESS_SPACE_CONST
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_CONST = 4,
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+63 
+ADDRESS_SPACE_CONST_NOT_GEN
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_CONST_NOT_GEN = 2, \/\/ 
+NÙ
+ 
+·¹
+ 
+of
+ 
+g’”ic
+ 
+¥aû$
+/;"ƒƒnum:llvm::AddressSpace
+
+64 
+ADDRESS_SPACE_GENERIC
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_GENERIC = 0,
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+65 
+ADDRESS_SPACE_GLOBAL
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_GLOBAL = 1,
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+66 
+ADDRESS_SPACE_LOCAL
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_LOCAL = 5,
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+67 
+ADDRESS_SPACE_PARAM
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_PARAM = 101
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+68 
+ADDRESS_SPACE_SHARED
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^ ADDRESS_SPACE_SHARED = 3,
+$
+/;"ƒƒnum:llvm::AddressSpace
+
+69 
+ADDiu
+ 
+T¬g‘
+/
+Ms
+/
+MsAÇlyzeImmedŸ‹
+.
+h
+ /^ ADDiu, 
+ORi
+, 
+SLL
+, 
+LUi
+;
+$
+/;" m class:llvm::MipsAnalyzeImmediate
+
+70 
+ADJDYNALLOC
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚIS–Low”šg
+.
+h
+ /^ ADJDYNALLOC,
+$
+/;"ƒƒnum:llvm::HexagonISD::__anon404
+
+71 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+ARMAsmPrš‹r
+.
+h
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m class:llvm::ARMAsmPrinter
+
+72 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtI¦ªdPass
+.
+ıp
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m class:__anon310::ARMConstantIslands file:
+
+73 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+ARMEx·ndP£udoIn¡s
+.
+ıp
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m class:__anon311::ARMExpandPseudo file:
+
+74 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m class:__anon307::ARMFastISel file:
+
+75 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m struct:__anon303::ARMLoadStoreOpt file:
+
+76 
+AFI
+ 
+T¬g‘
+/
+ARM
+/
+Thumb2ITBlockPass
+.
+ıp
+ /^ 
+ARMFunùiÚInfo
+ *AFI;
+$
+/;" m class:__anon306::Thumb2ITBlockPass file:
+
+77 
+AFÜmAddr
+ 
+T¬g‘
+/
+C–lSPU
+/
+SPUIS–Low”šg
+.
+h
+ /^ AFÜmAddr, \/\/\/< 
+A
+-
+fÜm
+ 
+	`add»ss
+ (
+loÿl
+ 
+¡Üe
+)
+$
+/;"ƒƒnum:llvm::SPUISD::NodeType
+
+78 
+AHEAD
+ 
+SuµÜt
+/
+»gcomp
+.
+c
+ 133;" d file:
+
+79 
+AI
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ 
+AÎoÿIn¡
+ &AI;
+$
+/;" m class:__anon557::AllocaPartitioning file:
+
+80 
+AI
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ 
+AÎoÿIn¡
+ &AI;
+$
+/;" m class:__anon558::AllocaPromoter file:
+
+81 
+AI
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ 
+AÎoÿIn¡
+ *AI;
+$
+/;" m struct:__anon521::SROA::AllocaInfo file:
+
+82 
+AI
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ 
+AÎoÿIn¡
+ *AI;
+$
+/;" m class:__anon524::AllocaPromoter file:
+
+83 
+AL
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AL \/\/ 
+	`Always
+ (
+uncÚd™iÚ®
+èAlway (uncÚd™iÚ®)
+$
+/;"ƒƒnum:llvm::ARMCC::CondCodes
+
+84 
+ALIGN_STACK
+ 
+T¬g‘
+/
+Pow”PC
+/
+PPCF¿meLow”šg
+.
+ıp
+ 37;" d file:
+
+85 
+ALL_EA_BASES
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ /^ 
+ALL_EA_BASES$
+/;"ƒƒnum:__anon354
+
+86 
+ALL_EA_BASES
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ /^ 
+ALL_EA_BASES$
+/;"ƒƒnum:__anon355
+
+87 
+ALL_EA_BASES
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ 271;" d
+
+88 
+ALL_REGS
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ /^ 
+ALL_REGS$
+/;"ƒƒnum:__anon354
+
+89 
+ALL_REGS
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ /^ 
+ALL_REGS$
+/;"ƒƒnum:__anon358
+
+90 
+ALL_REGS
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ 280;" d
+
+91 
+ALL_SIB_BASES
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ /^ 
+ALL_SIB_BASES$
+/;"ƒƒnum:__anon356
+
+92 
+ALL_SIB_BASES
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”
+.
+h
+ 276;" d
+
+93 
+ALMu‹x
+ 
+VMCÜe
+/
+A‰ribu‹s
+.
+ıp
+ /^
+MªagedStic
+<
+sys
+::
+Sm¬tMu‹x
+<
+Œue
+> > ALMu‹x;
+$
+/;" m‚amespace:llvm file:
+
+94 
+AM
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^ 
+AddrMode
+ AM;
+$
+/;" m struct:__anon514::Formula file:
+
+95 
+AM2_BASE
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–DAGToDAG
+.
+ıp
+ /^ AM2_BASE, \/\/ 
+Sim¶e
+ 
+	`AM2
+ (+-
+imm12
+)
+$
+/;"ƒƒnum:__anon302::AddrMode2Type file:
+
+96 
+AM2_SHOP
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–DAGToDAG
+.
+ıp
+ /^ AM2_SHOP \/\/ 
+Shiá”
+-
+İ
+ 
+AM2$
+/;"ƒƒnum:__anon302::AddrMode2Type file:
+
+97 
+AM3_I_B™Shiá
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AM3_I_B™Shiá = 22,
+$
+/;"ƒƒnum:llvm::ARMII::__anon288
+
+98 
+AMSubMode
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMAdd»ssšgModes
+.
+h
+ /^ 
+	eAMSubMode
+ {
+$
+/;" g‚amespace:llvm::ARM_AM
+
+99 
+AND
+ 
+T¬g‘
+/
+X86
+/
+X86IS–DAGToDAG
+.
+ıp
+ /^ AND,
+$
+/;"ƒƒnum:AtomicOpc file:
+
+100 
+AND
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ 
+INC
+, 
+DEC
+, 
+OR
+, 
+XOR
+, AND,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+101 
+ANDN
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ANDN, \/\/ ANDN - 
+B™wi£
+ 
+AND
+ 
+NOT
+ 
+w™h
+ 
+FLAGS
+ 
+»suÉs
+.
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+102 
+ANDNP
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ANDNP,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+103 
+ANDROID_JIT_AGENT_PATH
+ 
+ExecutiÚEngše
+/
+IÁ–JITEv’ts
+/
+j™´ofšg
+.
+c
+ 54;" d file:
+
+104 
+AOK_Imm
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ AOK_Imm,
+$
+/;"ƒƒnum:__anon213::AsmRewriteKind file:
+
+105 
+AOK_IÅut
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ AOK_IÅut,
+$
+/;"ƒƒnum:__anon213::AsmRewriteKind file:
+
+106 
+AOK_Ouut
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ AOK_Ouut,
+$
+/;"ƒƒnum:__anon213::AsmRewriteKind file:
+
+107 
+AOK_SizeDœeùive
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ AOK_SizeDœeùive,
+$
+/;"ƒƒnum:__anon213::AsmRewriteKind file:
+
+108 
+AOK_Sk
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ 
+AOK_Sk$
+/;"ƒƒnum:__anon213::AsmRewriteKind file:
+
+109 
+AP
+ 
+T¬g‘
+/
+NVPTX
+/
+NVPTXAsmPrš‹r
+.
+h
+ /^ NVPTXAsmPrš‹¸&AP;
+$
+/;" m class:llvm::NVPTXAsmPrinter::AggBuffer
+
+110 
+APFlßt
+ 
+AsmP¬£r
+/
+LLTok’
+.
+h
+ /^ APFlßt, \/\/ 
+APFlßtV®$
+/;"ƒƒnum:llvm::lltok::Kind
+
+111 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ APFlßˆ&
+rhs
+è: 
+	`expÚ’t2
+(0), 
+	`sign2
+(0è{
+$
+/;" f class:APFloat
+
+112 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+APIÁ
+& 
+­i
+, 
+boŞ
+ 
+isIEEE
+è: 
+	`expÚ’t2
+(0), 
+	`sign2
+(0è{
+$
+/;" f class:APFloat
+
+113 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+ætSemªtics
+ &
+ourSemªtics
+è: 
+	`expÚ’t2
+(0), 
+	`sign2
+(0è{
+$
+/;" f class:APFloat
+
+114 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+ætSemªtics
+ &
+ourSemªtics
+, 
+SŒšgRef
+ 
+‹xt
+)
+$
+/;" f class:APFloat
+
+115 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+ætSemªtics
+ &
+ourSemªtics
+, 
+š‹g”P¬t
+ 
+v®ue
+)
+$
+/;" f class:APFloat
+
+116 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+ætSemªtics
+ &
+ourSemªtics
+, 
+unš™ŸlizedTag
+ 
+g
+)
+$
+/;" f class:APFloat
+
+117 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(cÚ¡ 
+ætSemªtics
+ &
+ourSemªtics
+,
+$
+/;" f class:APFloat
+
+118 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(
+d
+è: 
+	`expÚ’t2
+(0), 
+	`sign2
+(0è{
+$
+/;" f class:APFloat
+
+119 
+APFlßt
+ 
+SuµÜt
+/APFlßt.
+ıp
+ /^APFlßt::
+	`APFlßt
+(
+f
+è: 
+	`expÚ’t2
+(0), 
+	`sign2
+(0è{
+$
+/;" f class:APFloat
+
+120 
+APFlßtV®
+ 
+AsmP¬£r
+/
+LLLex”
+.
+h
+ /^ 
+APFlßt
+ APFlßtV®;
+$
+/;" m class:llvm::LLLexer
+
+121 
+APFlßtV®
+ 
+AsmP¬£r
+/
+LLP¬£r
+.
+h
+ /^ 
+APFlßt
+ APFlßtV®;
+$
+/;" m struct:llvm::ValID
+
+122 
+API_VERSION
+ 
+ExecutiÚEngše
+/
+IÁ–JITEv’ts
+/
+™ŠÙify_cÚfig
+.
+h
+ 172;" d
+
+123 
+API_VERSION_BUILD
+ 
+ExecutiÚEngše
+/
+IÁ–JITEv’ts
+/
+™ŠÙify_cÚfig
+.
+h
+ 166;" d
+
+124 
+API_VERSION_NUM
+ 
+ExecutiÚEngše
+/
+IÁ–JITEv’ts
+/
+™ŠÙify_cÚfig
+.
+h
+ 169;" d
+
+125 
+APIÁ
+ 
+SuµÜt
+/APIÁ.
+ıp
+ /^APIÁ::
+	`APIÁ
+(
+numB™s
+, 
+A¼ayRef
+<
+ušt64_t
+> 
+bigV®
+)
+$
+/;" f class:APInt
+
+126 
+APIÁ
+ 
+SuµÜt
+/APIÁ.
+ıp
+ /^APIÁ::
+	`APIÁ
+(
+numB™s
+, 
+numWÜds
+, cÚ¡ 
+ušt64_t
+ 
+bigV®
+[])
+$
+/;" f class:APInt
+
+127 
+APIÁ
+ 
+SuµÜt
+/APIÁ.
+ıp
+ /^APIÁ::
+	`APIÁ
+(
+numb™s
+, 
+SŒšgRef
+ 
+SŒ
+, 
+ušt8_t
+ 
+¿dix
+)
+$
+/;" f class:APInt
+
+128 
+APIÁCom·»
+ 
+AÇlysis
+/
+SÿÏrEvŞutiÚ
+.
+ıp
+ /^ 
+	sAPIÁCom·»
+ {
+$
+/;" s‚amespace:__anon31 file:
+
+129 
+APSIÁ
+ 
+AsmP¬£r
+/
+LLTok’
+.
+h
+ /^ APSIÁ \/\/ 
+APSIÁ$
+/;"ƒƒnum:llvm::lltok::Kind
+
+130 
+APSIÁV®
+ 
+AsmP¬£r
+/
+LLLex”
+.
+h
+ /^ 
+APSIÁ
+ APSIÁV®;
+$
+/;" m class:llvm::LLLexer
+
+131 
+APSIÁV®
+ 
+AsmP¬£r
+/
+LLP¬£r
+.
+h
+ /^ 
+APSIÁ
+ APSIÁV®;
+$
+/;" m struct:llvm::ValID
+
+132 
+ARFILE_BSD4_SYMTAB_NAME
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 27;" d
+
+133 
+ARFILE_LLVM_SYMTAB_NAME
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 26;" d
+
+134 
+ARFILE_MAGIC
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 23;" d
+
+135 
+ARFILE_MAGIC_LEN
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 24;" d
+
+136 
+ARFILE_MEMBER_MAGIC
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 30;" d
+
+137 
+ARFILE_PAD
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 29;" d
+
+138 
+ARFILE_STRTAB_NAME
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 28;" d
+
+139 
+ARFILE_SVR4_SYMTAB_NAME
+ 
+Archive
+/
+ArchiveIÁ”Çls
+.
+h
+ 25;" d
+
+140 
+ARGEXTEND
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚIS–Low”šg
+.
+h
+ /^ ARGEXTEND,
+$
+/;"ƒƒnum:llvm::HexagonISD::__anon404
+
+141 
+ARM
+ 
+T¬g‘
+/ARM/
+ARMAsmPrš‹r
+.
+h
+ /^
+Çme¥aû
+ ARM {
+$
+/;"‚‚amespace:llvm
+
+142 
+ARM
+ 
+T¬g‘
+/ARM/
+ARMIS–Low”šg
+.
+h
+ /^ 
+Çme¥aû
+ ARM {
+$
+/;"‚‚amespace:llvm
+
+143 
+ARM
+ 
+T¬g‘
+/ARM/
+ARMR–oÿtiÚs
+.
+h
+ /^ 
+Çme¥aû
+ ARM {
+$
+/;"‚‚amespace:llvm
+
+144 
+ARM
+ 
+T¬g‘
+/ARM/
+MCT¬g‘Desc
+/
+ARMFixupKšds
+.
+h
+ /^
+Çme¥aû
+ ARM {
+$
+/;"‚‚amespace:llvm
+
+145 
+ARMASMPRINTER_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMAsmPrš‹r
+.
+h
+ 15;" d
+
+146 
+ARMAsmBack’d
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMAsmBack’d.
+ıp
+ /^ 
+	`ARMAsmBack’d
+(cÚ¡ T¬g‘ &
+T
+, cÚ¡ 
+SŒšgRef
+ 
+TT
+)
+$
+/;" f class:__anon284::ARMAsmBackend
+
+147 
+ARMAsmBack’d
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMAsmBack’d.
+ıp
+ /^şas 
+	cARMAsmBack’d
+ : 
+public
+ 
+MCAsmBack’d
+ {
+$
+/;" c‚amespace:__anon284 file:
+
+148 
+ARMAsmLex”
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/ARMAsmLex”.
+ıp
+ /^ 
+	`ARMAsmLex”
+(cÚ¡ T¬g‘ &
+T
+, cÚ¡ 
+MCRegi¡”Info
+ &
+MRI
+, cÚ¡ 
+MCAsmInfo
+ &
+MAI
+)
+$
+/;" f class:__anon258::ARMAsmLexer
+
+149 
+ARMAsmLex”
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/ARMAsmLex”.
+ıp
+ /^şas 
+	cARMAsmLex”
+ : 
+public
+ 
+ARMBa£AsmLex”
+ {
+$
+/;" c‚amespace:__anon258 file:
+
+150 
+ARMAsmP¬£r
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/ARMAsmP¬£r.
+ıp
+ /^ 
+	`ARMAsmP¬£r
+(
+MCSubrg‘Info
+ &
+_STI
+, 
+MCAsmP¬£r
+ &
+_P¬£r
+)
+$
+/;" f class:__anon259::ARMAsmParser
+
+151 
+ARMAsmP¬£r
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/ARMAsmP¬£r.
+ıp
+ /^şas 
+	cARMAsmP¬£r
+ : 
+public
+ 
+MCT¬g‘AsmP¬£r
+ {
+$
+/;" c‚amespace:__anon259 file:
+
+152 
+ARMAsmPrš‹r
+ 
+T¬g‘
+/
+ARM
+/ARMAsmPrš‹r.
+h
+ /^ 
+ex¶ic™
+ 
+	`ARMAsmPrš‹r
+(
+T¬g‘Machše
+ &
+TM
+, 
+MCSŒ—m”
+ &
+SŒ—m”
+)
+$
+/;" f class:llvm::ARMAsmPrinter
+
+153 
+ARMAsmPrš‹r
+ 
+T¬g‘
+/
+ARM
+/ARMAsmPrš‹r.
+h
+ /^şas 
+	cLLVM_LIBRARY_VISIBILITY
+ ARMAsmPrš‹¸: 
+public
+ 
+AsmPrš‹r
+ {
+$
+/;" c‚amespace:llvm
+
+154 
+ARMBASEINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ 18;" d
+
+155 
+ARMBASEINSTRUCTIONINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+h
+ 15;" d
+
+156 
+ARMBASEREGISTERINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£Regi¡”Info
+.
+h
+ 15;" d
+
+157 
+ARMBa£AsmLex”
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmLex”
+.
+ıp
+ /^ 
+	`ARMBa£AsmLex”
+(cÚ¡ T¬g‘ &
+T
+, cÚ¡ 
+MCAsmInfo
+ &
+MAI
+)
+$
+/;" f class:__anon258::ARMBaseAsmLexer
+
+158 
+ARMBa£AsmLex”
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmLex”
+.
+ıp
+ /^şas 
+	cARMBa£AsmLex”
+ : 
+public
+ 
+MCT¬g‘AsmLex”
+ {
+$
+/;" c‚amespace:__anon258 file:
+
+159 
+ARMBa£In¡rInfo
+ 
+T¬g‘
+/
+ARM
+/ARMBa£In¡rInfo.
+ıp
+ /^ARMBa£In¡rInfo::
+	`ARMBa£In¡rInfo
+(cÚ¡ 
+ARMSubrg‘
+& 
+STI
+)
+$
+/;" f class:ARMBaseInstrInfo
+
+160 
+ARMBa£In¡rInfo
+ 
+T¬g‘
+/
+ARM
+/ARMBa£In¡rInfo.
+h
+ /^şas 
+	cARMBa£In¡rInfo
+ : 
+public
+ 
+ARMG’In¡rInfo
+ {
+$
+/;" c‚amespace:llvm
+
+161 
+ARMBa£Regi¡”Info
+ 
+T¬g‘
+/
+ARM
+/ARMBa£Regi¡”Info.
+ıp
+ /^ARMBa£Regi¡”Info::
+	`ARMBa£Regi¡”Info
+(cÚ¡ 
+ARMBa£In¡rInfo
+ &
+tii
+,
+$
+/;" f class:ARMBaseRegisterInfo
+
+162 
+ARMBa£Regi¡”Info
+ 
+T¬g‘
+/
+ARM
+/ARMBa£Regi¡”Info.
+h
+ /^şas 
+	cARMBa£Regi¡”Info
+ : 
+public
+ 
+ARMG’Regi¡”Info
+ {
+$
+/;" c‚amespace:llvm
+
+163 
+ARMBa£T¬g‘Machše
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘Machše
+.
+ıp
+ /^ARMBa£T¬g‘Machše::
+	`ARMBa£T¬g‘Machše
+(cÚ¡ T¬g‘ &
+T
+, 
+SŒšgRef
+ 
+TT
+,
+$
+/;" f class:ARMBaseTargetMachine
+
+164 
+ARMBa£T¬g‘Machše
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘Machše
+.
+h
+ /^şas 
+	cARMBa£T¬g‘Machše
+ : 
+public
+ 
+LLVMT¬g‘Machše
+ {
+$
+/;" c‚amespace:llvm
+
+165 
+ARMBudA‰rs
+ 
+T¬g‘
+/
+ARM
+/ARMBudA‰rs.
+h
+ /^
+Çme¥aû
+ ARMBudA‰r {
+$
+/;"‚
+
+166 
+ARMCALLINGCONV_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMC®lšgCÚv
+.
+h
+ 16;" d
+
+167 
+ARMCC
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^
+Çme¥aû
+ ARMCC {
+$
+/;"‚‚amespace:llvm
+
+168 
+ARMCCS‹
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^ 
+	`ARMCCS‹
+(
+C®lšgCÚv
+::
+ID
+ 
+CC
+, 
+boŞ
+ 
+isV¬Arg
+, 
+MachšeFunùiÚ
+ &
+MF
+,
+$
+/;" f class:__anon296::ARMCCState
+
+169 
+ARMCCS‹
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^ cÏs 
+	cARMCCS‹
+ : 
+public
+ 
+CCS‹
+ {
+$
+/;" c‚amespace:__anon296 file:
+
+170 
+ARMCGBR
+ 
+T¬g‘
+/
+ARM
+/
+ARMIn¡rInfo
+.
+ıp
+ /^ 
+	`ARMCGBR
+(è: 
+	`MachšeFunùiÚPass
+(
+ID
+è{}
+$
+/;" f struct:__anon292::ARMCGBR
+
+171 
+ARMCGBR
+ 
+T¬g‘
+/
+ARM
+/
+ARMIn¡rInfo
+.
+ıp
+ /^ ARMCGBR : 
+public
+ 
+MachšeFunùiÚPass
+ {
+$
+/;" s‚amespace:__anon292 file:
+
+172 
+ARMCP
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^
+Çme¥aû
+ ARMCP {
+$
+/;"‚‚amespace:llvm
+
+173 
+ARMCPKšd
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^ 
+	eARMCPKšd
+ {
+$
+/;" g‚amespace:llvm::ARMCP
+
+174 
+ARMCPModif›r
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^ 
+	eARMCPModif›r
+ {
+$
+/;" g‚amespace:llvm::ARMCP
+
+175 
+ARMCodeEm™‹r
+ 
+T¬g‘
+/
+ARM
+/ARMCodeEm™‹r.
+ıp
+ /^ 
+	`ARMCodeEm™‹r
+(
+T¬g‘Machše
+ &
+tm
+, 
+JITCodeEm™‹r
+ &
+mû
+)
+$
+/;" f class:__anon297::ARMCodeEmitter
+
+176 
+ARMCodeEm™‹r
+ 
+T¬g‘
+/
+ARM
+/ARMCodeEm™‹r.
+ıp
+ /^ cÏs 
+	cARMCodeEm™‹r
+ : 
+public
+ 
+MachšeFunùiÚPass
+ {
+$
+/;" c‚amespace:__anon297 file:
+
+177 
+ARMComp©iÚC®lback
+ 
+T¬g‘
+/
+ARM
+/
+ARMJITInfo
+.
+ıp
+ /^ 
+	`ARMComp©iÚC®lback
+(è{
+$
+/;" f
+
+178 
+ARMComp©iÚC®lbackC
+ 
+T¬g‘
+/
+ARM
+/
+ARMJITInfo
+.
+ıp
+ /^"C" 
+	`ARMComp©iÚC®lbackC
+(
+šŒ_t
+ 
+StubAddr
+è{
+$
+/;" f
+
+179 
+ARMCompu‹Add»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMCompu‹Add»ss
+(cÚ¡ 
+V®ue
+ *
+Obj
+, 
+Add»ss
+ &
+Addr
+è{
+$
+/;" f class:ARMFastISel
+
+180 
+ARMCÚdCodeToSŒšg
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^
+šlše
+ cÚ¡ *
+	`ARMCÚdCodeToSŒšg
+(
+ARMCC
+::
+CÚdCodes
+ 
+CC
+è{
+$
+/;" f‚amespace:llvm
+
+181 
+ARMCÚ¡ªtI¦ªds
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtI¦ªdPass
+.
+ıp
+ /^ 
+	`ARMCÚ¡ªtI¦ªds
+(è: 
+	`MachšeFunùiÚPass
+(
+ID
+è{}
+$
+/;" f class:__anon310::ARMConstantIslands
+
+182 
+ARMCÚ¡ªtI¦ªds
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtI¦ªdPass
+.
+ıp
+ /^ cÏs 
+	cARMCÚ¡ªtI¦ªds
+ : 
+public
+ 
+MachšeFunùiÚPass
+ {
+$
+/;" c‚amespace:__anon310 file:
+
+183 
+ARMCÚ¡ªtPoŞCÚ¡ªt
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+ıp
+ /^ARMCÚ¡ªtPoŞCÚ¡ªt::
+	`ARMCÚ¡ªtPoŞCÚ¡ªt
+(
+Ty³
+ *
+Ty
+,
+$
+/;" f class:ARMConstantPoolConstant
+
+184 
+ARMCÚ¡ªtPoŞCÚ¡ªt
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+ıp
+ /^ARMCÚ¡ªtPoŞCÚ¡ªt::
+	`ARMCÚ¡ªtPoŞCÚ¡ªt
+(cÚ¡ 
+CÚ¡ªt
+ *
+C
+,
+$
+/;" f class:ARMConstantPoolConstant
+
+185 
+ARMCÚ¡ªtPoŞCÚ¡ªt
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^şas 
+	cARMCÚ¡ªtPoŞCÚ¡ªt
+ : 
+public
+ ARMCÚ¡ªtPoŞV®u{
+$
+/;" c‚amespace:llvm
+
+186 
+ARMCÚ¡ªtPoŞMBB
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+ıp
+ /^ARMCÚ¡ªtPoŞMBB::
+	`ARMCÚ¡ªtPoŞMBB
+(
+LLVMCÚ‹xt
+ &
+C
+,
+$
+/;" f class:ARMConstantPoolMBB
+
+187 
+ARMCÚ¡ªtPoŞMBB
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^şas 
+	cARMCÚ¡ªtPoŞMBB
+ : 
+public
+ ARMCÚ¡ªtPoŞV®u{
+$
+/;" c‚amespace:llvm
+
+188 
+ARMCÚ¡ªtPoŞSymbŞ
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+ıp
+ /^ARMCÚ¡ªtPoŞSymbŞ::
+	`ARMCÚ¡ªtPoŞSymbŞ
+(
+LLVMCÚ‹xt
+ &
+C
+, cÚ¡ *
+s
+,
+$
+/;" f class:ARMConstantPoolSymbol
+
+189 
+ARMCÚ¡ªtPoŞSymbŞ
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^şas 
+	cARMCÚ¡ªtPoŞSymbŞ
+ : 
+public
+ ARMCÚ¡ªtPoŞV®u{
+$
+/;" c‚amespace:llvm
+
+190 
+ARMCÚ¡ªtPoŞV®ue
+ 
+T¬g‘
+/
+ARM
+/ARMCÚ¡ªtPoŞV®ue.
+ıp
+ /^ARMCÚ¡ªtPoŞV®ue::
+	`ARMCÚ¡ªtPoŞV®ue
+(
+LLVMCÚ‹xt
+ &
+C
+, 
+id
+,
+$
+/;" f class:ARMConstantPoolValue
+
+191 
+ARMCÚ¡ªtPoŞV®ue
+ 
+T¬g‘
+/
+ARM
+/ARMCÚ¡ªtPoŞV®ue.
+ıp
+ /^ARMCÚ¡ªtPoŞV®ue::
+	`ARMCÚ¡ªtPoŞV®ue
+(
+Ty³
+ *
+Ty
+, 
+id
+,
+$
+/;" f class:ARMConstantPoolValue
+
+192 
+ARMCÚ¡ªtPoŞV®ue
+ 
+T¬g‘
+/
+ARM
+/ARMCÚ¡ªtPoŞV®ue.
+h
+ /^şas 
+	cARMCÚ¡ªtPoŞV®ue
+ : 
+public
+ 
+MachšeCÚ¡ªtPoŞV®ue
+ {
+$
+/;" c‚amespace:llvm
+
+193 
+ARMDAGToDAGIS–
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–DAGToDAG
+.
+ıp
+ /^ 
+ex¶ic™
+ 
+	`ARMDAGToDAGIS–
+(
+ARMBa£T¬g‘Machše
+ &
+tm
+,
+$
+/;" f class:__anon302::ARMDAGToDAGISel
+
+194 
+ARMDAGToDAGIS–
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–DAGToDAG
+.
+ıp
+ /^şas 
+	cARMDAGToDAGIS–
+ : 
+public
+ 
+S–eùiÚDAGIS–
+ {
+$
+/;" c‚amespace:__anon302 file:
+
+195 
+ARMDi§s£mbËr
+ 
+T¬g‘
+/
+ARM
+/
+Di§s£mbËr
+/ARMDi§s£mbËr.
+ıp
+ /^ 
+	`ARMDi§s£mbËr
+(cÚ¡ 
+MCSubrg‘Info
+ &
+STI
+è:
+$
+/;" f class:__anon291::ARMDisassembler
+
+196 
+ARMDi§s£mbËr
+ 
+T¬g‘
+/
+ARM
+/
+Di§s£mbËr
+/ARMDi§s£mbËr.
+ıp
+ /^şas 
+	cARMDi§s£mbËr
+ : 
+public
+ 
+MCDi§s£mbËr
+ {
+$
+/;" c‚amespace:__anon291 file:
+
+197 
+ARMELFMCAsmInfo
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCAsmInfo
+.
+ıp
+ /^ARMELFMCAsmInfo::
+	`ARMELFMCAsmInfo
+(è{
+$
+/;" f class:ARMELFMCAsmInfo
+
+198 
+ARMELFMCAsmInfo
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCAsmInfo
+.
+h
+ /^ cÏs 
+	cARMELFMCAsmInfo
+ : 
+public
+ 
+MCAsmInfo
+ {
+$
+/;" c‚amespace:llvm
+
+199 
+ARMELFObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMAsmBack’d
+.
+ıp
+ /^ 
+	`ARMELFObjeùWr™”
+(
+ušt8_t
+ 
+OSABI
+)
+$
+/;" f class:__anon284::ARMELFObjectWriter
+
+200 
+ARMELFObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMAsmBack’d
+.
+ıp
+ /^şas 
+	cARMELFObjeùWr™”
+ : 
+public
+ 
+MCELFObjeùT¬g‘Wr™”
+ {
+$
+/;" c‚amespace:__anon284 file:
+
+201 
+ARMELFObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMELFObjeùWr™”.
+ıp
+ /^ cÏs 
+	cARMELFObjeùWr™”
+ : 
+public
+ 
+MCELFObjeùT¬g‘Wr™”
+ {
+$
+/;" c‚amespace:__anon286 file:
+
+202 
+ARMELFObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMELFObjeùWr™”.
+ıp
+ /^ARMELFObjeùWr™”::
+	`ARMELFObjeùWr™”
+(
+ušt8_t
+ 
+OSABI
+)
+$
+/;" f class:ARMELFObjectWriter
+
+203 
+ARMELFWr™”Info
+ 
+T¬g‘
+/
+ARM
+/ARMELFWr™”Info.
+ıp
+ /^ARMELFWr™”Info::
+	`ARMELFWr™”Info
+(
+T¬g‘Machše
+ &
+TM
+)
+$
+/;" f class:ARMELFWriterInfo
+
+204 
+ARMELFWr™”Info
+ 
+T¬g‘
+/
+ARM
+/ARMELFWr™”Info.
+h
+ /^ cÏs 
+	cARMELFWr™”Info
+ : 
+public
+ 
+T¬g‘ELFWr™”Info
+ {
+$
+/;" c‚amespace:llvm
+
+205 
+ARMElfT¬g‘ObjeùFe
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘ObjeùFe
+.
+h
+ /^ 
+	`ARMElfT¬g‘ObjeùFe
+(è:
+$
+/;" f class:llvm::ARMElfTargetObjectFile
+
+206 
+ARMElfT¬g‘ObjeùFe
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘ObjeùFe
+.
+h
+ /^şas 
+	cARMElfT¬g‘ObjeùFe
+ : 
+public
+ 
+T¬g‘Low”šgObjeùFeELF
+ {
+$
+/;" c‚amespace:llvm
+
+207 
+ARMEm™Cmp
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMEm™Cmp
+(cÚ¡ 
+V®ue
+ *
+Src1V®ue
+, cÚ¡ V®u*
+Src2V®ue
+,
+$
+/;" f class:ARMFastISel
+
+208 
+ARMEm™IÁExt
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMEm™IÁExt
+(
+EVT
+ 
+SrcVT
+, 
+SrcReg
+, EVT 
+De¡VT
+,
+$
+/;" f class:ARMFastISel
+
+209 
+ARMEm™LibÿÎ
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMEm™LibÿÎ
+(cÚ¡ 
+In¡ruùiÚ
+ *
+I
+, 
+RTLIB
+::
+LibÿÎ
+ 
+C®l
+è{
+$
+/;" f class:ARMFastISel
+
+210 
+ARMEm™Lßd
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMEm™Lßd
+(
+EVT
+ 
+VT
+, &
+ResuÉReg
+, 
+Add»ss
+ &
+Addr
+,
+$
+/;" f class:ARMFastISel
+
+211 
+ARMEm™StÜe
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMEm™StÜe
+(
+EVT
+ 
+VT
+, 
+SrcReg
+, 
+Add»ss
+ &
+Addr
+,
+$
+/;" f class:ARMFastISel
+
+212 
+ARMExû±iÚ
+ 
+CodeG’
+/
+AsmPrš‹r
+/ARMExû±iÚ.
+ıp
+ /^ARMExû±iÚ::
+	`ARMExû±iÚ
+(AsmPrš‹¸*
+A
+)
+$
+/;" f class:ARMException
+
+213 
+ARMExû±iÚ
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fExû±iÚ
+.
+h
+ /^şas 
+	cARMExû±iÚ
+ : 
+public
+ Dw¬fExû±iÚ {
+$
+/;" c‚amespace:llvm
+
+214 
+ARMExeDomaš
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^
+	eARMExeDomaš
+ {
+$
+/;" g file:
+
+215 
+ARMEx·ndP£udo
+ 
+T¬g‘
+/
+ARM
+/
+ARMEx·ndP£udoIn¡s
+.
+ıp
+ /^ 
+	`ARMEx·ndP£udo
+(è: 
+	`MachšeFunùiÚPass
+(
+ID
+è{}
+$
+/;" f class:__anon311::ARMExpandPseudo
+
+216 
+ARMEx·ndP£udo
+ 
+T¬g‘
+/
+ARM
+/
+ARMEx·ndP£udoIn¡s
+.
+ıp
+ /^ cÏs 
+	cARMEx·ndP£udo
+ : 
+public
+ 
+MachšeFunùiÚPass
+ {
+$
+/;" c‚amespace:__anon311 file:
+
+217 
+ARMFa¡IS–
+ 
+T¬g‘
+/
+ARM
+/ARMFa¡IS–.
+ıp
+ /^ 
+ex¶ic™
+ 
+	`ARMFa¡IS–
+(
+FunùiÚLow”šgInfo
+ &
+funcInfo
+,
+$
+/;" f class:__anon307::ARMFastISel
+
+218 
+ARMFa¡IS–
+ 
+T¬g‘
+/
+ARM
+/ARMFa¡IS–.
+ıp
+ /^şas 
+	cARMFa¡IS–
+ : 
+public
+ 
+Fa¡IS–
+ {
+$
+/;" c‚amespace:__anon307 file:
+
+219 
+ARMF¿meLow”šg
+ 
+T¬g‘
+/
+ARM
+/ARMF¿meLow”šg.
+h
+ /^ 
+ex¶ic™
+ 
+	`ARMF¿meLow”šg
+(cÚ¡ 
+ARMSubrg‘
+ &
+¡i
+)
+$
+/;" f class:llvm::ARMFrameLowering
+
+220 
+ARMF¿meLow”šg
+ 
+T¬g‘
+/
+ARM
+/ARMF¿meLow”šg.
+h
+ /^şas 
+	cARMF¿meLow”šg
+ : 
+public
+ 
+T¬g‘F¿meLow”šg
+ {
+$
+/;" c‚amespace:llvm
+
+221 
+ARMFunùiÚInfo
+ 
+T¬g‘
+/
+ARM
+/
+ARMMachšeFunùiÚInfo
+.
+h
+ /^ 
+	`ARMFunùiÚInfo
+(è:
+$
+/;" f class:llvm::ARMFunctionInfo
+
+222 
+ARMFunùiÚInfo
+ 
+T¬g‘
+/
+ARM
+/
+ARMMachšeFunùiÚInfo
+.
+h
+ /^ 
+ex¶ic™
+ 
+	`ARMFunùiÚInfo
+(
+MachšeFunùiÚ
+ &
+MF
+è:
+$
+/;" f class:llvm::ARMFunctionInfo
+
+223 
+ARMFunùiÚInfo
+ 
+T¬g‘
+/
+ARM
+/
+ARMMachšeFunùiÚInfo
+.
+h
+ /^şas 
+	cARMFunùiÚInfo
+ : 
+public
+ 
+MachšeFunùiÚInfo
+ {
+$
+/;" c‚amespace:llvm
+
+224 
+ARMHAZARDRECOGNIZER_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMHaz¬dRecogniz”
+.
+h
+ 15;" d
+
+225 
+ARMHaz¬dRecogniz”
+ 
+T¬g‘
+/
+ARM
+/ARMHaz¬dRecogniz”.
+h
+ /^ 
+	`ARMHaz¬dRecogniz”
+(cÚ¡ 
+In¡rItš”¬yD©a
+ *
+ItšD©a
+,
+$
+/;" f class:llvm::ARMHazardRecognizer
+
+226 
+ARMHaz¬dRecogniz”
+ 
+T¬g‘
+/
+ARM
+/ARMHaz¬dRecogniz”.
+h
+ /^şas 
+	cARMHaz¬dRecogniz”
+ : 
+public
+ 
+ScÜebßrdHaz¬dRecogniz”
+ {
+$
+/;" c‚amespace:llvm
+
+227 
+ARMII
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^
+Çme¥aû
+ ARMII {
+$
+/;"‚‚amespace:llvm
+
+228 
+ARMINSTPRINTER_H
+ 
+T¬g‘
+/
+ARM
+/
+In¡Prš‹r
+/
+ARMIn¡Prš‹r
+.
+h
+ 15;" d
+
+229 
+ARMINSTRUCTIONINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMIn¡rInfo
+.
+h
+ 15;" d
+
+230 
+ARMISD
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ 
+Çme¥aû
+ ARMISD {
+$
+/;"‚‚amespace:llvm
+
+231 
+ARMISELLOWERING_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ 16;" d
+
+232 
+ARMIn¡Prš‹r
+ 
+T¬g‘
+/
+ARM
+/
+In¡Prš‹r
+/ARMIn¡Prš‹r.
+ıp
+ /^ARMIn¡Prš‹r::
+	`ARMIn¡Prš‹r
+(cÚ¡ 
+MCAsmInfo
+ &
+MAI
+,
+$
+/;" f class:ARMInstPrinter
+
+233 
+ARMIn¡Prš‹r
+ 
+T¬g‘
+/
+ARM
+/
+In¡Prš‹r
+/ARMIn¡Prš‹r.
+h
+ /^şas 
+	cARMIn¡Prš‹r
+ : 
+public
+ 
+MCIn¡Prš‹r
+ {
+$
+/;" c‚amespace:llvm
+
+234 
+ARMIn¡rInfo
+ 
+T¬g‘
+/
+ARM
+/ARMIn¡rInfo.
+ıp
+ /^ARMIn¡rInfo::
+	`ARMIn¡rInfo
+(cÚ¡ 
+ARMSubrg‘
+ &
+STI
+)
+$
+/;" f class:ARMInstrInfo
+
+235 
+ARMIn¡rInfo
+ 
+T¬g‘
+/
+ARM
+/ARMIn¡rInfo.
+h
+ /^şas 
+	cARMIn¡rInfo
+ : 
+public
+ 
+ARMBa£In¡rInfo
+ {
+$
+/;" c‚amespace:llvm
+
+236 
+ARMIsMemCpySm®l
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMIsMemCpySm®l
+(
+ušt64_t
+ 
+L’
+è{
+$
+/;" f class:ARMFastISel
+
+237 
+ARMJITINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMJITInfo
+.
+h
+ 15;" d
+
+238 
+ARMJITInfo
+ 
+T¬g‘
+/
+ARM
+/ARMJITInfo.
+h
+ /^ 
+ex¶ic™
+ 
+	`ARMJITInfo
+(è: 
+	`IsPIC
+(
+çl£
+è{ 
+u£GOT
+ = f®£; }
+$
+/;" f class:llvm::ARMJITInfo
+
+239 
+ARMJITInfo
+ 
+T¬g‘
+/
+ARM
+/ARMJITInfo.
+h
+ /^ cÏs 
+	cARMJITInfo
+ : 
+public
+ 
+T¬g‘JITInfo
+ {
+$
+/;" c‚amespace:llvm
+
+240 
+ARMLßdStÜeO±
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ 
+	`ARMLßdStÜeO±
+(è: 
+	`MachšeFunùiÚPass
+(
+ID
+è{}
+$
+/;" f struct:__anon303::ARMLoadStoreOpt
+
+241 
+ARMLßdStÜeO±
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ ARMLßdStÜeO± : 
+public
+ 
+MachšeFunùiÚPass
+ {
+$
+/;" s‚amespace:__anon303 file:
+
+242 
+ARMLow”PICELF
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMLow”PICELF
+(cÚ¡ 
+Glob®V®ue
+ *
+GV
+,
+$
+/;" f class:ARMFastISel
+
+243 
+ARMMACHINEFUNCTIONINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMMachšeFunùiÚInfo
+.
+h
+ 15;" d
+
+244 
+ARMMCAsmInfoD¬wš
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCAsmInfo
+.
+ıp
+ /^ARMMCAsmInfoD¬wš::
+	`ARMMCAsmInfoD¬wš
+(è{
+$
+/;" f class:ARMMCAsmInfoDarwin
+
+245 
+ARMMCAsmInfoD¬wš
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCAsmInfo
+.
+h
+ /^ cÏs 
+	cARMMCAsmInfoD¬wš
+ : 
+public
+ 
+MCAsmInfoD¬wš
+ {
+$
+/;" c‚amespace:llvm
+
+246 
+ARMMCCodeEm™‹r
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMCCodeEm™‹r.
+ıp
+ /^ 
+	`ARMMCCodeEm™‹r
+(cÚ¡ 
+MCIn¡rInfo
+ &
+mcii
+, cÚ¡ 
+MCSubrg‘Info
+ &
+¡i
+,
+$
+/;" f class:__anon283::ARMMCCodeEmitter
+
+247 
+ARMMCCodeEm™‹r
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMCCodeEm™‹r.
+ıp
+ /^şas 
+	cARMMCCodeEm™‹r
+ : 
+public
+ 
+MCCodeEm™‹r
+ {
+$
+/;" c‚amespace:__anon283 file:
+
+248 
+ARMMCEXPR_H
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCEx´
+.
+h
+ 11;" d
+
+249 
+ARMMCEx´
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMCEx´.
+h
+ /^ 
+ex¶ic™
+ 
+	`ARMMCEx´
+(
+V¬ŸÁKšd
+ 
+_Kšd
+, cÚ¡ 
+MCEx´
+ *
+_Ex´
+)
+$
+/;" f class:llvm::ARMMCExpr
+
+250 
+ARMMCEx´
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMCEx´.
+h
+ /^şas 
+	cARMMCEx´
+ : 
+public
+ 
+MCT¬g‘Ex´
+ {
+$
+/;" c‚amespace:llvm
+
+251 
+ARMMCIn¡rAÇlysis
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCT¬g‘Desc
+.
+ıp
+ /^ 
+	`ARMMCIn¡rAÇlysis
+(cÚ¡ 
+MCIn¡rInfo
+ *
+Info
+è: 
+	`MCIn¡rAÇlysis
+(Infoè{}
+$
+/;" f class:__anon282::ARMMCInstrAnalysis
+
+252 
+ARMMCIn¡rAÇlysis
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCT¬g‘Desc
+.
+ıp
+ /^şas 
+	cARMMCIn¡rAÇlysis
+ : 
+public
+ 
+MCIn¡rAÇlysis
+ {
+$
+/;" c‚amespace:__anon282 file:
+
+253 
+ARMMCTARGETDESC_H
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCT¬g‘Desc
+.
+h
+ 15;" d
+
+254 
+ARMMachObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMachObjeùWr™”.
+ıp
+ /^ 
+	`ARMMachObjeùWr™”
+(
+boŞ
+ 
+Is64B™
+, 
+ušt32_t
+ 
+CPUTy³
+,
+$
+/;" f class:__anon289::ARMMachObjectWriter
+
+255 
+ARMMachObjeùWr™”
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/ARMMachObjeùWr™”.
+ıp
+ /^şas 
+	cARMMachObjeùWr™”
+ : 
+public
+ 
+MCMachObjeùT¬g‘Wr™”
+ {
+$
+/;" c‚amespace:__anon289 file:
+
+256 
+ARMM©chResuÉTy
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^ 
+	eARMM©chResuÉTy
+ {
+$
+/;" g class:__anon259::ARMAsmParser file:
+
+257 
+ARMM©”ŸlizeFP
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMM©”ŸlizeFP
+(cÚ¡ 
+CÚ¡ªtFP
+ *
+CFP
+, 
+EVT
+ 
+VT
+è{
+$
+/;" f class:ARMFastISel
+
+258 
+ARMM©”ŸlizeGV
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMM©”ŸlizeGV
+(cÚ¡ 
+Glob®V®ue
+ *
+GV
+, 
+EVT
+ 
+VT
+è{
+$
+/;" f class:ARMFastISel
+
+259 
+ARMM©”ŸlizeIÁ
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMM©”ŸlizeIÁ
+(cÚ¡ 
+CÚ¡ªt
+ *
+C
+, 
+EVT
+ 
+VT
+è{
+$
+/;" f class:ARMFastISel
+
+260 
+ARMMoveToFPReg
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMMoveToFPReg
+(
+EVT
+ 
+VT
+, 
+SrcReg
+è{
+$
+/;" f class:ARMFastISel
+
+261 
+ARMMoveToIÁReg
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMMoveToIÁReg
+(
+EVT
+ 
+VT
+, 
+SrcReg
+è{
+$
+/;" f class:ARMFastISel
+
+262 
+ARMO³¿nd
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^ 
+	`ARMO³¿nd
+(
+KšdTy
+ 
+K
+è: 
+	`MCP¬£dAsmO³¿nd
+(), 
+	`Kšd
+(Kè{}
+$
+/;" f class:__anon261::ARMOperand file:
+
+263 
+ARMO³¿nd
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^ 
+	`ARMO³¿nd
+(cÚ¡ ARMO³¿nd &
+o
+è: 
+	`MCP¬£dAsmO³¿nd
+(è{
+$
+/;" f class:__anon261::ARMOperand
+
+264 
+ARMO³¿nd
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^şas 
+	cARMO³¿nd
+ : 
+public
+ 
+MCP¬£dAsmO³¿nd
+ {
+$
+/;" c‚amespace:__anon261 file:
+
+265 
+ARMPCLab–Index
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ARMPCLab–Index;
+$
+/;" m class:llvm::ARMTargetLowering
+
+266 
+ARMPassCÚfig
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘Machše
+.
+ıp
+ /^ 
+	`ARMPassCÚfig
+(
+ARMBa£T¬g‘Machše
+ *
+TM
+, 
+PassMªag”Ba£
+ &
+PM
+)
+$
+/;" f class:__anon293::ARMPassConfig
+
+267 
+ARMPassCÚfig
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘Machše
+.
+ıp
+ /^şas 
+	cARMPassCÚfig
+ : 
+public
+ 
+T¬g‘PassCÚfig
+ {
+$
+/;" c‚amespace:__anon293 file:
+
+268 
+ARMP»AÎocLßdStÜeO±
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ 
+	`ARMP»AÎocLßdStÜeO±
+(è: 
+	`MachšeFunùiÚPass
+(
+ID
+è{}
+$
+/;" f struct:__anon304::ARMPreAllocLoadStoreOpt
+
+269 
+ARMP»AÎocLßdStÜeO±
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ ARMP»AÎocLßdStÜeO± : 
+public
+ 
+MachšeFunùiÚPass
+{
+$
+/;" s‚amespace:__anon304 file:
+
+270 
+ARMProcFamy
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ /^ 
+ARMProcFamyEnum
+ ARMProcFamy;
+$
+/;" m class:llvm::ARMSubtarget
+
+271 
+ARMProcFamyEnum
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ /^ 
+	eARMProcFamyEnum
+ {
+$
+/;" g class:llvm::ARMSubtarget
+
+272 
+ARMREGISTERINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMRegi¡”Info
+.
+h
+ 15;" d
+
+273 
+ARMRELOCATIONS_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMR–oÿtiÚs
+.
+h
+ 15;" d
+
+274 
+ARMRI
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£Regi¡”Info
+.
+h
+ /^
+Çme¥aû
+ ARMRI {
+$
+/;"‚‚amespace:llvm
+
+275 
+ARMRegi¡”Info
+ 
+T¬g‘
+/
+ARM
+/ARMRegi¡”Info.
+ıp
+ /^ARMRegi¡”Info::
+	`ARMRegi¡”Info
+(cÚ¡ 
+ARMBa£In¡rInfo
+ &
+tii
+,
+$
+/;" f class:ARMRegisterInfo
+
+276 
+ARMRegi¡”Info
+ 
+T¬g‘
+/
+ARM
+/ARMRegi¡”Info.
+h
+ /^ARMRegi¡”InfØ: 
+public
+ 
+ARMBa£Regi¡”Info
+ {
+$
+/;" s‚amespace:llvm
+
+277 
+ARMSELECTIONDAGINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMS–eùiÚDAGInfo
+.
+h
+ 15;" d
+
+278 
+ARMSUBTARGET_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ 15;" d
+
+279 
+ARMS–eùC®lOp
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMS–eùC®lOp
+(
+boŞ
+ 
+U£Reg
+è{
+$
+/;" f class:ARMFastISel
+
+280 
+ARMS–eùiÚDAGInfo
+ 
+T¬g‘
+/
+ARM
+/ARMS–eùiÚDAGInfo.
+ıp
+ /^ARMS–eùiÚDAGInfo::
+	`ARMS–eùiÚDAGInfo
+(cÚ¡ 
+T¬g‘Machše
+ &
+TM
+)
+$
+/;" f class:ARMSelectionDAGInfo
+
+281 
+ARMS–eùiÚDAGInfo
+ 
+T¬g‘
+/
+ARM
+/ARMS–eùiÚDAGInfo.
+h
+ /^şas 
+	cARMS–eùiÚDAGInfo
+ : 
+public
+ 
+T¬g‘S–eùiÚDAGInfo
+ {
+$
+/;" c‚amespace:llvm
+
+282 
+ARMSim¶ifyAdd»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`ARMSim¶ifyAdd»ss
+(
+Add»ss
+ &
+Addr
+, 
+EVT
+ 
+VT
+, 
+boŞ
+ 
+u£AM3
+è{
+$
+/;" f class:ARMFastISel
+
+283 
+ARMSubrg‘
+ 
+T¬g‘
+/
+ARM
+/ARMSubrg‘.
+ıp
+ /^ARMSubrg‘::
+	`ARMSubrg‘
+(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+TT
+, cÚ¡ std::¡ršg &
+CPU
+,
+$
+/;" f class:ARMSubtarget
+
+284 
+ARMSubrg‘
+ 
+T¬g‘
+/
+ARM
+/ARMSubrg‘.
+h
+ /^şas 
+	cARMSubrg‘
+ : 
+public
+ 
+ARMG’Subrg‘Info
+ {
+$
+/;" c‚amespace:llvm
+
+285 
+ARMTARGETMACHINE_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMT¬g‘Machše
+.
+h
+ 15;" d
+
+286 
+ARMT¬g‘Low”šg
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^ARMT¬g‘Low”šg::
+	`ARMT¬g‘Low”šg
+(
+T¬g‘Machše
+ &
+TM
+)
+$
+/;" f class:ARMTargetLowering
+
+287 
+ARMT¬g‘Low”šg
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ cÏs 
+	cARMT¬g‘Low”šg
+ : 
+public
+ 
+T¬g‘Low”šg
+ {
+$
+/;" c‚amespace:llvm
+
+288 
+ARMT¬g‘Machše
+ 
+T¬g‘
+/
+ARM
+/ARMT¬g‘Machše.
+ıp
+ /^ARMT¬g‘Machše::
+	`ARMT¬g‘Machše
+(cÚ¡ T¬g‘ &
+T
+, 
+SŒšgRef
+ 
+TT
+,
+$
+/;" f class:ARMTargetMachine
+
+289 
+ARMT¬g‘Machše
+ 
+T¬g‘
+/
+ARM
+/ARMT¬g‘Machše.
+h
+ /^şas 
+	cARMT¬g‘Machše
+ : 
+public
+ 
+ARMBa£T¬g‘Machše
+ {
+$
+/;" c‚amespace:llvm
+
+290 
+ARMTryEm™Sm®lMemCpy
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^
+boŞ
+ ARMFa¡IS–::
+	`ARMTryEm™Sm®lMemCpy
+(
+Add»ss
+ 
+De¡
+, Add»s 
+Src
+,
+$
+/;" f class:ARMFastISel
+
+291 
+ARM_ABI_AAPCS
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ /^ ARM_ABI_AAPCS \/\/ ARM 
+EABI$
+/;"ƒƒnum:llvm::ARMSubtarget::__anon299
+
+292 
+ARM_ABI_APCS
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ /^ ARM_ABI_APCS,
+$
+/;"ƒƒnum:llvm::ARMSubtarget::__anon299
+
+293 
+ARM_AM
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^ 
+Çme¥aû
+ ARM_AM {
+$
+/;"‚‚amespace:llvm file:
+
+294 
+ARM_AM
+ 
+T¬g‘
+/
+ARM
+/
+ARMS–eùiÚDAGInfo
+.
+h
+ /^
+Çme¥aû
+ ARM_AM {
+$
+/;"‚‚amespace:llvm
+
+295 
+ARM_AM
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMAdd»ssšgModes
+.
+h
+ /^
+Çme¥aû
+ ARM_AM {
+$
+/;"‚‚amespace:llvm
+
+296 
+ARM_ELF_WRITER_INFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMELFWr™”Info
+.
+h
+ 15;" d
+
+297 
+ARM_FRAMEINFO_H
+ 
+T¬g‘
+/
+ARM
+/
+ARMF¿meLow”šg
+.
+h
+ 15;" d
+
+298 
+ARM_ISA_u£
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ ARM_ISA_u£ = 8,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+299 
+ARM_MB
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^
+Çme¥aû
+ ARM_MB {
+$
+/;"‚‚amespace:llvm
+
+300 
+ARM_MC
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCT¬g‘Desc
+.
+h
+ /^
+Çme¥aû
+ ARM_MC {
+$
+/;"‚‚amespace:llvm
+
+301 
+ARM_MLxEÁry
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^
+	sARM_MLxEÁry
+ {
+$
+/;" s file:
+
+302 
+ARM_MLxTabË
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^cÚ¡ 
+ARM_MLxEÁry
+ ARM_MLxTabË[] = {
+$
+/;" v file:
+
+303 
+ARM_PROC
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^
+Çme¥aû
+ ARM_PROC {
+$
+/;"‚‚amespace:llvm
+
+304 
+ARªgeSeùiÚ
+ 
+DebugInfo
+/
+DWARFCÚ‹xt
+.
+h
+ /^ 
+SŒšgRef
+ ARªgeSeùiÚ;
+$
+/;" m class:llvm::DWARFContextInMemory
+
+305 
+ASMPREFIX
+ 
+T¬g‘
+/
+ARM
+/
+ARMJITInfo
+.
+ıp
+ 43;" d file:
+
+306 
+ASMPREFIX
+ 
+T¬g‘
+/
+Ms
+/
+MsJITInfo
+.
+ıp
+ 88;" d file:
+
+307 
+ASMPREFIX
+ 
+T¬g‘
+/
+X86
+/
+X86JITInfo
+.
+ıp
+ 58;" d file:
+
+308 
+ASPoš‹rTy³s
+ 
+VMCÜe
+/
+LLVMCÚ‹xtIm¶
+.
+h
+ /^ 
+D’£M­
+<
+¡d
+::
+·œ
+<
+Ty³
+*, >, 
+Poš‹rTy³
+*> ASPoš‹rTy³s;
+$
+/;" m class:llvm::LLVMContextImpl
+
+309 
+ASSERTMESSAGE
+ 
+AÇlysis
+/
+ProfeV”if›rPass
+.
+ıp
+ 195;" d file:
+
+310 
+ASSERT_SORTED
+ 
+T¬g‘
+/
+X86
+/
+X86FlßtšgPošt
+.
+ıp
+ 603;" d file:
+
+311 
+ASSERT_SORTED
+ 
+T¬g‘
+/
+X86
+/
+X86FlßtšgPošt
+.
+ıp
+ 605;" d file:
+
+312 
+ASSIGN
+ 
+SuµÜt
+/
+»gexec
+.
+c
+ 111;" d file:
+
+313 
+ASSIGN
+ 
+SuµÜt
+/
+»gexec
+.
+c
+ 64;" d file:
+
+314 
+ASSIGN
+ 
+SuµÜt
+/
+»gexec
+.
+c
+ 90;" d file:
+
+315 
+AST
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LICM
+.
+ıp
+ /^ 
+AlŸsS‘T¿ck”
+ &AST;
+$
+/;" m class:__anon569::LoopPromoter file:
+
+316 
+AST
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+AlŸsS‘T¿ck”
+ *AST;
+$
+/;" m struct:__anon469::PromoteMem2Reg file:
+
+317 
+ASTC®lbackVH
+ 
+AÇlysis
+/
+AlŸsS‘T¿ck”
+.
+ıp
+ /^AlŸsS‘T¿ck”::ASTC®lbackVH::
+	`ASTC®lbackVH
+(
+V®ue
+ *
+V
+, AlŸsS‘T¿ck” *
+a¡
+)
+$
+/;" f class:AliasSetTracker::ASTCallbackVH
+
+318 
+ASTERN
+ 
+SuµÜt
+/
+»gcomp
+.
+c
+ 134;" d file:
+
+319 
+ATFe
+ 
+MC
+/
+WšCOFFObjeùWr™”
+.
+ıp
+ /^ ATFe,
+$
+/;"ƒƒnum:__anon222::AuxiliaryType file:
+
+320 
+ATFunùiÚDefš™iÚ
+ 
+MC
+/
+WšCOFFObjeùWr™”
+.
+ıp
+ /^ ATFunùiÚDefš™iÚ,
+$
+/;"ƒƒnum:__anon222::AuxiliaryType file:
+
+321 
+ATOMADD64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMADD64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+322 
+ATOMADD64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMADD64_DAG = 
+ISD
+::
+FIRST_TARGET_MEMORY_OPCODE
+,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+323 
+ATOMAND64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMAND64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+324 
+ATOMAND64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMAND64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+325 
+ATOMCMPXCHG64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ 
+ATOMCMPXCHG64_DAG$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+326 
+ATOMMAX64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMMAX64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+327 
+ATOMMIN64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMMIN64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+328 
+ATOMNAND64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMNAND64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+329 
+ATOMNAND64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMNAND64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+330 
+ATOMOR64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMOR64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+331 
+ATOMOR64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMOR64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+332 
+ATOMSUB64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMSUB64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+333 
+ATOMSUB64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMSUB64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+334 
+ATOMSWAP64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMSWAP64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+335 
+ATOMSWAP64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMSWAP64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+336 
+ATOMUMAX64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMUMAX64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+337 
+ATOMUMIN64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMUMIN64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+338 
+ATOMXOR64_DAG
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+h
+ /^ ATOMXOR64_DAG,
+$
+/;"ƒƒnum:llvm::ARMISD::NodeType
+
+339 
+ATOMXOR64_DAG
+ 
+T¬g‘
+/
+X86
+/
+X86IS–Low”šg
+.
+h
+ /^ ATOMXOR64_DAG,
+$
+/;"ƒƒnum:llvm::X86ISD::NodeType
+
+340 
+ATSeùiÚDefš™iÚ
+ 
+MC
+/
+WšCOFFObjeùWr™”
+.
+ıp
+ /^ 
+ATSeùiÚDefš™iÚ$
+/;"ƒƒnum:__anon222::AuxiliaryType file:
+
+341 
+ATT
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86MCAsmInfo
+.
+ıp
+ /^ ATT = 0, 
+IÁ–
+ = 1
+$
+/;"ƒƒnum:AsmWriterFlavorTy file:
+
+342 
+ATTRIBUTE_BITS
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”CommÚ
+.
+h
+ /^ 
+ATTRIBUTE_BITS$
+/;"ƒƒnum:attributeBits
+
+343 
+ATTRIBUTE_BITS
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”CommÚ
+.
+h
+ 50;" d
+
+344 
+ATTR_max
+ 
+T¬g‘
+/
+X86
+/
+Di§s£mbËr
+/
+X86Di§s£mbËrDecod”CommÚ
+.
+h
+ /^ 
+ATTR_max$
+/;"ƒƒnum:attributeBits
+
+345 
+ATW—kEx‹º®
+ 
+MC
+/
+WšCOFFObjeùWr™”
+.
+ıp
+ /^ ATW—kEx‹º®,
+$
+/;"ƒƒnum:__anon222::AuxiliaryType file:
+
+346 
+ATbfAndefSymbŞ
+ 
+MC
+/
+WšCOFFObjeùWr™”
+.
+ıp
+ /^ ATbfAndefSymbŞ,
+$
+/;"ƒƒnum:__anon222::AuxiliaryType file:
+
+347 
+AVX
+ 
+T¬g‘
+/
+X86
+/
+X86Subrg‘
+.
+h
+ /^ 
+NoMMXSSE
+, 
+MMX
+, 
+SSE1
+, 
+SSE2
+, 
+SSE3
+, 
+SSSE3
+, 
+SSE41
+, 
+SSE42
+, AVX, 
+AVX2$
+/;"ƒƒnum:llvm::X86Subtarget::X86SSEEnum
+
+348 
+AVX2
+ 
+T¬g‘
+/
+X86
+/
+X86Subrg‘
+.
+h
+ /^ 
+NoMMXSSE
+, 
+MMX
+, 
+SSE1
+, 
+SSE2
+, 
+SSE3
+, 
+SSSE3
+, 
+SSE41
+, 
+SSE42
+, 
+AVX
+, 
+AVX2$
+/;"ƒƒnum:llvm::X86Subtarget::X86SSEEnum
+
+349 
+Abb»v
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+DIE
+.
+h
+ /^ 
+DIEAbb»v
+ Abb»v;
+$
+/;" m class:llvm::DIE
+
+350 
+Abb»v
+ 
+DebugInfo
+/
+DWARFCÚ‹xt
+.
+h
+ /^ 
+OwnšgPŒ
+<
+DWARFDebugAbb»v
+> Abb»v;
+$
+/;" m class:llvm::DWARFContext
+
+351 
+Abb»vCŞlM­
+ 
+DebugInfo
+/
+DWARFDebugAbb»v
+.
+h
+ /^ 
+DWARFAbb»vŸtiÚDeş¬©iÚCŞlM­
+ Abb»vCŞlM­;
+$
+/;" m class:llvm::DWARFDebugAbbrev
+
+352 
+Abb»vDeş
+ 
+DebugInfo
+/
+DWARFDebugInfoEÁry
+.
+h
+ /^ cÚ¡ 
+DWARFAbb»vŸtiÚDeş¬©iÚ
+ *Abb»vDeş;
+$
+/;" m class:llvm::DWARFDebugInfoEntryMinimal
+
+353 
+Abb»vSeùiÚ
+ 
+DebugInfo
+/
+DWARFCÚ‹xt
+.
+h
+ /^ 
+SŒšgRef
+ Abb»vSeùiÚ;
+$
+/;" m class:llvm::DWARFContextInMemory
+
+354 
+Abb»vŸtiÚs
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fDebug
+.
+h
+ /^ 
+¡d
+::
+veùÜ
+<
+DIEAbb»v
+ *> Abb»vŸtiÚs;
+$
+/;" m class:llvm::DwarfDebug
+
+355 
+Abb»vŸtiÚsS‘
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fDebug
+.
+h
+ /^ 
+FŞdšgS‘
+<
+DIEAbb»v
+> Abb»vŸtiÚsS‘;
+$
+/;" m class:llvm::DwarfDebug
+
+356 
+Abb»vs
+ 
+DebugInfo
+/
+DWARFCompeUn™
+.
+h
+ /^ cÚ¡ 
+DWARFAbb»vŸtiÚDeş¬©iÚS‘
+ *Abb»vs;
+$
+/;" m class:llvm::DWARFCompileUnit
+
+357 
+AbÜtFn
+ 
+T¿nsfÜms
+/
+Uts
+/
+Low”Invoke
+.
+ıp
+ /^ 
+CÚ¡ªt
+ *AbÜtFn;
+$
+/;" m class:__anon474::LowerInvoke file:
+
+358 
+Abs
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+Sim¶ifyLibC®ls
+.
+ıp
+ /^ 
+FFSO±
+ 
+FFS
+; 
+AbsO±
+ Abs; 
+IsDig™O±
+ 
+IsDig™
+; 
+IsAsciiO±
+ 
+IsAscii
+;
+$
+/;" m class:__anon546::SimplifyLibCalls file:
+
+359 
+AbsO±
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+Sim¶ifyLibC®ls
+.
+ıp
+ /^AbsO± : 
+public
+ 
+LibC®lO±imiz©iÚ
+ {
+$
+/;" s‚amespace:__anon545 file:
+
+360 
+AbsV¬
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fDebug
+.
+h
+ /^ 
+DbgV¬ŸbË
+ *AbsV¬; \/\/ 
+CÜ»¥Údšg
+ 
+Ab¡¿ù
+ 
+v¬ŸbË
+, 
+ªy
+.
+$
+/;" m class:llvm::DbgVariable
+
+361 
+AbsŞu‹P£udoSeùiÚ
+ 
+MC
+/
+MCSymbŞ
+.
+ıp
+ /^cÚ¡ 
+MCSeùiÚ
+ *MCSymbŞ::AbsŞu‹P£udoSeùiÚ =
+$
+/;" m class:MCSymbol file:
+
+362 
+Ab¡¿ùSPD›s
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fDebug
+.
+h
+ /^ 
+D’£M­
+<cÚ¡ 
+MDNode
+ *, 
+DIE
+ *> Ab¡¿ùSPD›s;
+$
+/;" m class:llvm::DwarfDebug
+
+363 
+Ab¡¿ùV¬ŸbËs
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fDebug
+.
+h
+ /^ 
+D’£M­
+<cÚ¡ 
+MDNode
+ *, 
+DbgV¬ŸbË
+ *> Ab¡¿ùV¬ŸbËs;
+$
+/;" m class:llvm::DwarfDebug
+
+364 
+AcûlNames
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fCompeUn™
+.
+h
+ /^ 
+SŒšgM­
+<
+¡d
+::
+veùÜ
+<
+DIE
+*> > AcûlNames;
+$
+/;" m class:llvm::CompileUnit
+
+365 
+AcûlName¥aû
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fCompeUn™
+.
+h
+ /^ 
+SŒšgM­
+<
+¡d
+::
+veùÜ
+<
+DIE
+*> > AcûlName¥aû;
+$
+/;" m class:llvm::CompileUnit
+
+366 
+AcûlObjC
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fCompeUn™
+.
+h
+ /^ 
+SŒšgM­
+<
+¡d
+::
+veùÜ
+<
+DIE
+*> > AcûlObjC;
+$
+/;" m class:llvm::CompileUnit
+
+367 
+AcûlTy³s
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fCompeUn™
+.
+h
+ /^ 
+SŒšgM­
+<
+¡d
+::
+veùÜ
+<¡d::
+·œ
+<
+DIE
+*, > > > AcûlTy³s;
+$
+/;" m class:llvm::CompileUnit
+
+368 
+AcûssMode
+ 
+Objeù
+/
+Archive
+.
+ıp
+ /^ AcûssMode[8];
+$
+/;" m struct:__anon228::ArchiveMemberHeader file:
+
+369 
+AcûssTy
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^ 
+Ty³
+ *AcûssTy;
+$
+/;" m class:__anon517::LSRUse file:
+
+370 
+Acûssib™ySŒšg
+ 
+SuµÜt
+/
+Dw¬f
+.
+ıp
+ /^cÚ¡ *
+Îvm
+::
+dw¬f
+::
+	`Acûssib™ySŒšg
+(
+Acûss
+è{
+$
+/;" f class:llvm::dwarf
+
+371 
+AcûssšgFunùiÚ
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®O±
+.
+ıp
+ /^ cÚ¡ 
+FunùiÚ
+ *AcûssšgFunùiÚ;
+$
+/;" m struct:__anon590::GlobalStatus file:
+
+372 
+AùiÚ
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fExû±iÚ
+.
+h
+ /^ AùiÚ;
+$
+/;" m struct:llvm::DwarfException::CallSiteEntry
+
+373 
+AùiÚ
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITDw¬fEm™‹r
+.
+ıp
+ /^ AùiÚ;
+$
+/;" m struct:__anon183::CallSiteEntry file:
+
+374 
+AùiÚEÁry
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fExû±iÚ
+.
+h
+ /^ 
+	sAùiÚEÁry
+ {
+$
+/;" s class:llvm::DwarfException
+
+375 
+AùiÚEÁry
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITDw¬fEm™‹r
+.
+ıp
+ /^
+	sAùiÚEÁry
+ {
+$
+/;" s‚amespace:__anon183 file:
+
+376 
+AùiveBlocks
+ 
+CodeG’
+/
+RegAÎocG»edy
+.
+ıp
+ /^ 
+Sm®lVeùÜ
+<, 8> AùiveBlocks;
+$
+/;" m struct:__anon158::RAGreedy::GlobalSplitCandidate file:
+
+377 
+AùiveMaüos
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ 
+¡d
+::
+veùÜ
+<
+MaüoIn¡ªtŸtiÚ
+*> AùiveMaüos;
+$
+/;" m class:__anon211::AsmParser file:
+
+378 
+AùiveNodes
+ 
+CodeG’
+/
+SplPÏûm’t
+.
+h
+ /^ 
+B™VeùÜ
+ *AùiveNodes;
+$
+/;" m class:llvm::SpillPlacement
+
+379 
+AùiveTim”s
+ 
+SuµÜt
+/
+Tim”
+.
+ıp
+ /^
+MªagedStic
+<
+¡d
+::
+veùÜ
+<Tim”*> > AùiveTim”s;
+$
+/;" v file:
+
+380 
+AdSize
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AdSizğ1 << 7,
+$
+/;"ƒƒnum:llvm::X86II::__anon350
+
+381 
+Add
+ 
+CodeG’
+/
+MachšePassRegi¡ry
+.
+ıp
+ /^MachšePassRegi¡ry::
+	`Add
+(
+MachšePassRegi¡ryNode
+ *
+Node
+è{
+$
+/;" f class:MachinePassRegistry
+
+382 
+Add
+ 
+ExecutiÚEngše
+/
+JIT
+/JIT.
+ıp
+ /^ 
+	`Add
+(JIT *
+j™
+è{
+$
+/;" f class:__anon188::JitPool
+
+383 
+Add
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeWÜkli¡
+.
+h
+ /^ 
+	`Add
+(
+In¡ruùiÚ
+ *
+I
+è{
+$
+/;" f class:llvm::InstCombineWorklist
+
+384 
+AddA¿ngeDesütÜs
+ 
+DebugInfo
+/
+DWARFDebugA¿nges
+.
+ıp
+ /^ 
+	`AddA¿ngeDesütÜs
+(DWARFDebugA¿nges::
+RªgeCŞl
+ &
+¿nges
+)
+$
+/;" f class:__anon173::AddArangeDescriptors
+
+385 
+AddA¿ngeDesütÜs
+ 
+DebugInfo
+/
+DWARFDebugA¿nges
+.
+ıp
+ /^ cÏs 
+	cAddA¿ngeDesütÜs
+ {
+$
+/;" c‚amespace:__anon173 file:
+
+386 
+AddArgum’tT¿ckedFunùiÚ
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SCCP
+.
+ıp
+ /^ 
+	`AddArgum’tT¿ckedFunùiÚ
+(
+FunùiÚ
+ *
+F
+è{
+$
+/;" f class:__anon531::SCCPSolver
+
+387 
+AddA‰ribu‹
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+DIE
+.
+h
+ /^ 
+	`AddA‰ribu‹
+(
+ušt16_t
+ 
+A‰ribu‹
+, ušt16_ˆ
+FÜm
+è{
+$
+/;" f class:llvm::DIEAbbrev
+
+388 
+AddAvaabËV®ue
+ 
+CodeG’
+/
+MachšeSSAUpd©”
+.
+ıp
+ /^MachšeSSAUpd©”::
+	`AddAvaabËV®ue
+(
+MachšeBasicBlock
+ *
+BB
+, 
+V
+è{
+$
+/;" f class:MachineSSAUpdater
+
+389 
+AddAvaabËV®ue
+ 
+T¿nsfÜms
+/
+Uts
+/
+SSAUpd©”
+.
+ıp
+ /^SSAUpd©”::
+	`AddAvaabËV®ue
+(
+BasicBlock
+ *
+BB
+, 
+V®ue
+ *
+V
+è{
+$
+/;" f class:SSAUpdater
+
+390 
+AddBÏnkLše
+ 
+MC
+/
+MCAsmSŒ—m”
+.
+ıp
+ /^ 
+vœtu®
+ 
+	`AddBÏnkLše
+(è{
+$
+/;" f class:__anon214::MCAsmStreamer
+
+391 
+AddBlockAndP»dsToS‘
+ 
+T¿nsfÜms
+/
+Uts
+/
+LoİSim¶ify
+.
+ıp
+ /^
+	`AddBlockAndP»dsToS‘
+(
+BasicBlock
+ *
+IÅutBB
+, BasicBlock *
+StİBlock
+,
+$
+/;" f file:
+
+392 
+AddC®lS™e
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITEm™‹r
+.
+ıp
+ /^ 
+	`AddC®lS™e
+(cÚ¡ 
+Mu‹xGu¬d
+ &
+locked
+, *
+C®lS™e
+, 
+FunùiÚ
+ *
+F
+è{
+$
+/;" f class:__anon182::JITResolverState
+
+393 
+AddC©chInfo
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+FunùiÚLow”šgInfo
+.
+ıp
+ /^
+Îvm
+::
+	`AddC©chInfo
+(cÚ¡ 
+C®lIn¡
+ &
+I
+, 
+MachšeModuËInfo
+ *
+MMI
+,
+$
+/;" f class:llvm
+
+394 
+AddCombšeTo64b™MLAL
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^
+SDV®ue
+ 
+	`AddCombšeTo64b™MLAL
+(
+SDNode
+ *
+AddcNode
+,
+$
+/;" f file:
+
+395 
+AddCombšeToVPADDL
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^
+SDV®ue
+ 
+	`AddCombšeToVPADDL
+(
+SDNode
+ *
+N
+, SDV®u
+N0
+, SDV®u
+N1
+,
+$
+/;" f file:
+
+396 
+AddComm’t
+ 
+MC
+/
+MCAsmSŒ—m”
+.
+ıp
+ /^MCAsmSŒ—m”::
+	`AddComm’t
+(cÚ¡ 
+Twše
+ &
+T
+è{
+$
+/;" f class:MCAsmStreamer
+
+397 
+AddCommÚSymbŞ
+ 
+MC
+/
+WšCOFFSŒ—m”
+.
+ıp
+ /^WšCOFFSŒ—m”::
+	`AddCommÚSymbŞ
+(
+MCSymbŞ
+ *
+SymbŞ
+, 
+ušt64_t
+ 
+Size
+,
+$
+/;" f class:WinCOFFStreamer
+
+398 
+AddCouÁs
+ 
+AÇlysis
+/
+ProfeD©aLßd”
+.
+ıp
+ /^
+	`AddCouÁs
+(
+A
+, 
+B
+è{
+$
+/;" f file:
+
+399 
+AddCouÁs
+ 
+AÇlysis
+/
+ProfeInfoLßd”
+.
+ıp
+ /^
+	`AddCouÁs
+(
+A
+, 
+B
+è{
+$
+/;" f file:
+
+400 
+AddCu¼’tAdd»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMCÚ¡ªtPoŞV®ue
+.
+h
+ /^ 
+boŞ
+ AddCu¼’tAdd»ss;
+$
+/;" m class:llvm::ARMConstantPoolValue
+
+401 
+AddDReg
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^
+MachšeIn¡rBud”
+ &
+	`AddDReg
+(MachšeIn¡rBud” &
+MIB
+,
+$
+/;" f file:
+
+402 
+AddDbgV®ue
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^S–eùiÚDAG::
+	`AddDbgV®ue
+(
+SDDbgV®ue
+ *
+DB
+, 
+SDNode
+ *
+SD
+, 
+boŞ
+ 
+isP¬am‘”
+è{
+$
+/;" f class:SelectionDAG
+
+403 
+AddDeçuÉCC
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+h
+ /^cÚ¡ 
+MachšeIn¡rBud”
+ &
+	`AddDeçuÉCC
+(cÚ¡ MachšeIn¡rBud” &
+MIB
+è{
+$
+/;" f‚amespace:llvm
+
+404 
+AddDeçuÉP»d
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+h
+ /^cÚ¡ 
+MachšeIn¡rBud”
+ &
+	`AddDeçuÉP»d
+(cÚ¡ MachšeIn¡rBud” &
+MIB
+è{
+$
+/;" f‚amespace:llvm
+
+405 
+AddDeçuÉT1CC
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+h
+ /^cÚ¡ 
+MachšeIn¡rBud”
+ &
+	`AddDeçuÉT1CC
+(cÚ¡ MachšeIn¡rBud” &
+MIB
+,
+$
+/;" f‚amespace:llvm
+
+406 
+AddDœeùiveHªdËr
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ 
+vœtu®
+ 
+	`AddDœeùiveHªdËr
+(
+MCAsmP¬£rEx‹nsiÚ
+ *
+Objeù
+,
+$
+/;" f class:__anon211::AsmParser
+
+407 
+AddDœeùiveHªdËr
+ 
+MC
+/
+MCP¬£r
+/
+AsmP¬£r
+.
+ıp
+ /^ 
+	`AddDœeùiveHªdËr
+(
+SŒšgRef
+ 
+Dœeùive
+è{
+$
+/;" f class:__anon211::GenericAsmParser file:
+
+408 
+AddDœeùiveHªdËr
+ 
+MC
+/
+MCP¬£r
+/
+COFFAsmP¬£r
+.
+ıp
+ /^ 
+	`AddDœeùiveHªdËr
+(
+SŒšgRef
+ 
+Dœeùive
+è{
+$
+/;" f class:__anon210::COFFAsmParser file:
+
+409 
+AddDœeùiveHªdËr
+ 
+MC
+/
+MCP¬£r
+/
+D¬wšAsmP¬£r
+.
+ıp
+ /^ 
+	`AddDœeùiveHªdËr
+(
+SŒšgRef
+ 
+Dœeùive
+è{
+$
+/;" f class:__anon208::DarwinAsmParser file:
+
+410 
+AddDœeùiveHªdËr
+ 
+MC
+/
+MCP¬£r
+/
+ELFAsmP¬£r
+.
+ıp
+ /^ 
+	`AddDœeùiveHªdËr
+(
+SŒšgRef
+ 
+Dœeùive
+è{
+$
+/;" f class:__anon209::ELFAsmParser file:
+
+411 
+AddEncodšgComm’t
+ 
+MC
+/
+MCAsmSŒ—m”
+.
+ıp
+ /^MCAsmSŒ—m”::
+	`AddEncodšgComm’t
+(cÚ¡ 
+MCIn¡
+ &
+In¡
+è{
+$
+/;" f class:MCAsmStreamer
+
+412 
+AddExŒaV”siÚPrš‹r
+ 
+SuµÜt
+/
+CommªdLše
+.
+ıp
+ /^
+ş
+::
+	`AddExŒaV”siÚPrš‹r
+((*
+func
+)()è{
+$
+/;" f class:cl
+
+413 
+AddFa¡C®lStdC®lSuffix
+ 
+T¬g‘
+/
+MªgËr
+.
+ıp
+ /^
+	`AddFa¡C®lStdC®lSuffix
+(
+Sm®lVeùÜIm¶
+<> &
+OutName
+,
+$
+/;" f file:
+
+414 
+AddF—tu»
+ 
+MC
+/
+Subrg‘F—tu»
+.
+ıp
+ /^
+Subrg‘F—tu»s
+::
+	`AddF—tu»
+(cÚ¡ 
+SŒšgRef
+ 
+SŒšg
+,
+$
+/;" f class:SubtargetFeatures
+
+415 
+AddFœ¡A‰ribu‹
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+DIE
+.
+h
+ /^ 
+	`AddFœ¡A‰ribu‹
+(
+ušt16_t
+ 
+A‰ribu‹
+, ušt16_ˆ
+FÜm
+è{
+$
+/;" f class:llvm::DIEAbbrev
+
+416 
+AddGlue
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGSDNodes
+.
+ıp
+ /^
+boŞ
+ 
+	`AddGlue
+(
+SDNode
+ *
+N
+, 
+SDV®ue
+ 
+Glue
+, boŞ AddGlue, S–eùiÚDAG *
+DAG
+è{
+$
+/;" f file:
+
+417 
+AddInşudeFe
+ 
+SuµÜt
+/
+SourûMgr
+.
+ıp
+ /^SourûMgr::
+	`AddInşudeFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+F’ame
+,
+$
+/;" f class:SourceMgr
+
+418 
+AddIn™ŸlGroup
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeWÜkli¡
+.
+h
+ /^ 
+	`AddIn™ŸlGroup
+(
+In¡ruùiÚ
+ *cÚ¡ *
+Li¡
+, 
+NumEÁr›s
+è{
+$
+/;" f class:llvm::InstCombineWorklist
+
+419 
+AddIÆšeAsmO³¿nds
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+S–eùiÚDAGBud”
+.
+ıp
+ /^
+RegsFÜV®ue
+::
+	`AddIÆšeAsmO³¿nds
+(
+Code
+, 
+boŞ
+ 
+HasM©chšg
+,
+$
+/;" f class:RegsForValue
+
+420 
+AddIn¡r
+ 
+T¬g‘
+/
+Ms
+/
+MsAÇlyzeImmedŸ‹
+.
+ıp
+ /^MsAÇlyzeImmedŸ‹::
+	`AddIn¡r
+(
+In¡SeqLs
+ &
+SeqLs
+, cÚ¡ 
+In¡
+ &
+I
+è{
+$
+/;" f class:MipsAnalyzeImmediate
+
+421 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+422 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+423 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(sigÃd 
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+424 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+425 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+426 
+AddIÁeg”
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddIÁeg”
+(
+I
+è{
+$
+/;" f class:FoldingSetNodeID
+
+427 
+AddLªdšgPadInfo
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+FunùiÚLow”šgInfo
+.
+ıp
+ /^
+Îvm
+::
+	`AddLªdšgPadInfo
+(cÚ¡ 
+LªdšgPadIn¡
+ &
+I
+, 
+MachšeModuËInfo
+ &
+MMI
+,
+$
+/;" f class:llvm
+
+428 
+AddLeg®izedO³¿nd
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+Leg®izeVeùÜOps
+.
+ıp
+ /^ 
+	`AddLeg®izedO³¿nd
+(
+SDV®ue
+ 
+From
+, SDV®u
+To
+è{
+$
+/;" f class:__anon72::VectorLegalizer file:
+
+429 
+AddLiveIn
+ 
+T¬g‘
+/
+Ms
+/
+MsIS–Low”šg
+.
+ıp
+ /^
+	`AddLiveIn
+(
+MachšeFunùiÚ
+ &
+MF
+, 
+PReg
+, cÚ¡ 
+T¬g‘Regi¡”CÏss
+ *
+RC
+)
+$
+/;" f file:
+
+430 
+AddLßdStÜeO³¿nds
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`AddLßdStÜeO³¿nds
+(
+EVT
+ 
+VT
+, 
+Add»ss
+ &
+Addr
+,
+$
+/;" f class:ARMFastISel
+
+431 
+AddModif›dNodeToCSEM­s
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^S–eùiÚDAG::
+	`AddModif›dNodeToCSEM­s
+(
+SDNode
+ *
+N
+è{
+$
+/;" f class:SelectionDAG
+
+432 
+AddName
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fAcûlTabË
+.
+ıp
+ /^Dw¬fAcûlTabË::
+	`AddName
+(
+SŒšgRef
+ 
+Name
+, 
+DIE
+* 
+d›
+, 
+FÏgs
+è{
+$
+/;" f class:DwarfAccelTable
+
+433 
+AddNoAlŸsA‰rs
+ 
+T¿nsfÜms
+/
+IPO
+/
+FunùiÚA‰rs
+.
+ıp
+ /^
+boŞ
+ FunùiÚA‰rs::
+	`AddNoAlŸsA‰rs
+(cÚ¡ 
+C®lG¿phSCC
+ &
+SCC
+è{
+$
+/;" f class:FunctionAttrs
+
+434 
+AddNoC­tu»A‰rs
+ 
+T¿nsfÜms
+/
+IPO
+/
+FunùiÚA‰rs
+.
+ıp
+ /^
+boŞ
+ FunùiÚA‰rs::
+	`AddNoC­tu»A‰rs
+(cÚ¡ 
+C®lG¿phSCC
+ &
+SCC
+è{
+$
+/;" f class:FunctionAttrs
+
+435 
+AddNoT1CC
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+h
+ /^cÚ¡ 
+MachšeIn¡rBud”
+ &
+	`AddNoT1CC
+(cÚ¡ MachšeIn¡rBud” &
+MIB
+è{
+$
+/;" f‚amespace:llvm
+
+436 
+AddNodeID
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddNodeID
+(cÚ¡ FŞdšgS‘NodeID &
+ID
+è{
+$
+/;" f class:FoldingSetNodeID
+
+437 
+AddNodeIDCu¡om
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDCu¡om
+(
+FŞdšgS‘NodeID
+ &
+ID
+, cÚ¡ 
+SDNode
+ *
+N
+è{
+$
+/;" f file:
+
+438 
+AddNodeIDNode
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDNode
+(
+FŞdšgS‘NodeID
+ &
+ID
+, cÚ¡ 
+SDNode
+ *
+N
+è{
+$
+/;" f file:
+
+439 
+AddNodeIDNode
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDNode
+(
+FŞdšgS‘NodeID
+ &
+ID
+,
+$
+/;" f file:
+
+440 
+AddNodeIDOpcode
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDOpcode
+(
+FŞdšgS‘NodeID
+ &
+ID
+, 
+OpC
+è{
+$
+/;" f file:
+
+441 
+AddNodeIDO³¿nds
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDO³¿nds
+(
+FŞdšgS‘NodeID
+ &
+ID
+,
+$
+/;" f file:
+
+442 
+AddNodeIDV®ueTy³s
+ 
+CodeG’
+/
+S–eùiÚDAG
+/S–eùiÚDAG.
+ıp
+ /^
+	`AddNodeIDV®ueTy³s
+(
+FŞdšgS‘NodeID
+ &
+ID
+, 
+SDVTLi¡
+ 
+VTLi¡
+è{
+$
+/;" f file:
+
+443 
+AddOÃ
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeAddSub
+.
+ıp
+ /^
+CÚ¡ªt
+ *
+	`AddOÃ
+(CÚ¡ªˆ*
+C
+è{
+$
+/;" f file:
+
+444 
+AddOÃ
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeAndOrXÜ
+.
+ıp
+ /^
+CÚ¡ªt
+ *
+	`AddOÃ
+(CÚ¡ªˆ*
+C
+è{
+$
+/;" f file:
+
+445 
+AddOÃ
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeCom·»s
+.
+ıp
+ /^
+CÚ¡ªt
+ *
+	`AddOÃ
+(CÚ¡ªˆ*
+C
+è{
+$
+/;" f file:
+
+446 
+AddO³¿nd
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+In¡rEm™‹r
+.
+ıp
+ /^In¡rEm™‹r::
+	`AddO³¿nd
+(
+MachšeIn¡r
+ *
+MI
+, 
+SDV®ue
+ 
+Op
+,
+$
+/;" f class:InstrEmitter
+
+447 
+AddO±
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+Sim¶ifyLibC®ls
+.
+ıp
+ /^Sim¶ifyLibC®ls::
+	`AddO±
+(
+LibFunc
+::
+Func
+ 
+F
+, 
+LibC®lO±imiz©iÚ
+* 
+O±
+è{
+$
+/;" f class:SimplifyLibCalls
+
+448 
+AddO±
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+Sim¶ifyLibC®ls
+.
+ıp
+ /^Sim¶ifyLibC®ls::
+	`AddO±
+(
+LibFunc
+::
+Func
+ 
+F1
+, LibFunc::Funø
+F2
+,
+$
+/;" f class:SimplifyLibCalls
+
+449 
+AddO±iÚ®Defs
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ARMFa¡IS–::
+	`AddO±iÚ®Defs
+(cÚ¡ 
+MachšeIn¡rBud”
+ &
+MIB
+è{
+$
+/;" f class:ARMFastISel
+
+450 
+AddPHINodeEÁr›sFÜM­³dBlock
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+JumpTh»adšg
+.
+ıp
+ /^
+	`AddPHINodeEÁr›sFÜM­³dBlock
+(
+BasicBlock
+ *
+PHIBB
+,
+$
+/;" f file:
+
+451 
+AddPHIO³¿nd
+ 
+CodeG’
+/
+MachšeSSAUpd©”
+.
+ıp
+ /^ 
+	`AddPHIO³¿nd
+(
+MachšeIn¡r
+ *
+PHI
+, 
+V®
+,
+$
+/;" f class:llvm::SSAUpdaterTraits
+
+452 
+AddPHIO³¿nd
+ 
+T¿nsfÜms
+/
+Uts
+/
+SSAUpd©”
+.
+ıp
+ /^ 
+	`AddPHIO³¿nd
+(
+PHINode
+ *
+PHI
+, 
+V®ue
+ *
+V®
+, 
+BasicBlock
+ *
+P»d
+è{
+$
+/;" f class:llvm::SSAUpdaterTraits
+
+453 
+AddPoš‹r
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddPoš‹r
+(cÚ¡ *
+PŒ
+è{
+$
+/;" f class:FoldingSetNodeID
+
+454 
+AddP»d
+ 
+CodeG’
+/
+ScheduËDAG
+.
+ıp
+ /^
+ScheduËDAGTİŞogiÿlSÜt
+::
+	`AddP»d
+(
+SUn™
+ *
+Y
+, SUn™ *
+X
+è{
+$
+/;" f class:ScheduleDAGTopologicalSort
+
+455 
+AddP»d
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGFa¡
+.
+ıp
+ /^ 
+	`AddP»d
+(
+SUn™
+ *
+SU
+, cÚ¡ 
+SD•
+ &
+D
+è{
+$
+/;" f class:__anon86::ScheduleDAGFast
+
+456 
+AddP»d
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGRRLi¡
+.
+ıp
+ /^ 
+	`AddP»d
+(
+SUn™
+ *
+SU
+, cÚ¡ 
+SD•
+ &
+D
+è{
+$
+/;" f class:__anon76::ScheduleDAGRRList
+
+457 
+AddP»deûssÜToBlock
+ 
+T¿nsfÜms
+/
+Uts
+/
+Sim¶ifyCFG
+.
+ıp
+ /^
+	`AddP»deûssÜToBlock
+(
+BasicBlock
+ *
+Succ
+, BasicBlock *
+NewP»d
+,
+$
+/;" f file:
+
+458 
+AddPrÙÙy³s
+ 
+CodeG’
+/
+IÁršsicLow”šg
+.
+ıp
+ /^IÁršsicLow”šg::
+	`AddPrÙÙy³s
+(
+ModuË
+ &
+M
+è{
+$
+/;" f class:IntrinsicLowering
+
+459 
+AddP£udoTwoAddrD•s
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGRRLi¡
+.
+ıp
+ /^
+RegReduùiÚPQBa£
+::
+	`AddP£udoTwoAddrD•s
+(è{
+$
+/;" f class:RegReductionPQBase
+
+460 
+AddR—chabËCodeToWÜkli¡
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡ruùiÚCombššg
+.
+ıp
+ /^
+boŞ
+ 
+	`AddR—chabËCodeToWÜkli¡
+(
+BasicBlock
+ *
+BB
+,
+$
+/;" f file:
+
+461 
+AddR—dA‰rs
+ 
+T¿nsfÜms
+/
+IPO
+/
+FunùiÚA‰rs
+.
+ıp
+ /^
+boŞ
+ FunùiÚA‰rs::
+	`AddR—dA‰rs
+(cÚ¡ 
+C®lG¿phSCC
+ &
+SCC
+è{
+$
+/;" f class:FunctionAttrs
+
+462 
+AddRecCo¡
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^ AddRecCo¡;
+$
+/;" m class:__anon515::Cost file:
+
+463 
+AddReduùiÚV¬
+ 
+T¿nsfÜms
+/
+VeùÜize
+/
+LoİVeùÜize
+.
+ıp
+ /^
+boŞ
+ 
+LoİVeùÜiz©iÚLeg®™y
+::
+	`AddReduùiÚV¬
+(
+PHINode
+ *
+Phi
+,
+$
+/;" f class:__anon605::LoopVectorizationLegality
+
+464 
+AddRef
+ 
+VMCÜe
+/
+A‰ribu‹s
+.
+ıp
+ /^ 
+	`AddRef
+(è{
+$
+/;" f class:llvm::AttributeListImpl
+
+465 
+AddRegFrm
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddRegFrm = 2,
+$
+/;"ƒƒnum:llvm::X86II::__anon350
+
+466 
+AddRegO³¿ndsToU£Li¡s
+ 
+CodeG’
+/
+MachšeIn¡r
+.
+ıp
+ /^MachšeIn¡r::
+	`AddRegO³¿ndsToU£Li¡s
+(
+MachšeRegi¡”Info
+ &
+MRI
+è{
+$
+/;" f class:MachineInstr
+
+467 
+AddRegi¡”O³¿nd
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+In¡rEm™‹r
+.
+ıp
+ /^In¡rEm™‹r::
+	`AddRegi¡”O³¿nd
+(
+MachšeIn¡r
+ *
+MI
+, 
+SDV®ue
+ 
+Op
+,
+$
+/;" f class:InstrEmitter
+
+468 
+AddSSAUpd©eEÁry
+ 
+CodeG’
+/
+TaDu¶iÿtiÚ
+.
+ıp
+ /^
+TaDu¶iÿ‹Pass
+::
+	`AddSSAUpd©eEÁry
+(
+OrigReg
+, 
+NewReg
+,
+$
+/;" f class:TailDuplicatePass
+
+469 
+AddSchedEdges
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGSDNodes
+.
+ıp
+ /^ScheduËDAGSDNodes::
+	`AddSchedEdges
+(è{
+$
+/;" f class:ScheduleDAGSDNodes
+
+470 
+AddSŒšg
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^
+FŞdšgS‘NodeID
+::
+	`AddSŒšg
+(
+SŒšgRef
+ 
+SŒšg
+è{
+$
+/;" f class:FoldingSetNodeID
+
+471 
+AddSubCÏss
+ 
+TabËG’
+/
+TGP¬£r
+.
+ıp
+ /^
+boŞ
+ TGP¬£r::
+	`AddSubCÏss
+(
+RecÜd
+ *
+CurRec
+, 
+SubCÏssReã»nû
+ &
+SubCÏss
+è{
+$
+/;" f class:TGParser
+
+472 
+AddSubFÏgsOpcodeM­
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^cÚ¡ 
+AddSubFÏgsOpcodePaœ
+ AddSubFÏgsOpcodeM­[] = {
+$
+/;" v file:
+
+473 
+AddSubFÏgsOpcodePaœ
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^
+	sAddSubFÏgsOpcodePaœ
+ {
+$
+/;" s file:
+
+474 
+AddSubMuÉiCÏss
+ 
+TabËG’
+/
+TGP¬£r
+.
+ıp
+ /^
+boŞ
+ TGP¬£r::
+	`AddSubMuÉiCÏss
+(
+MuÉiCÏss
+ *
+CurMC
+,
+$
+/;" f class:TGParser
+
+475 
+AddSubOpc
+ 
+T¬g‘
+/
+ARM
+/
+ARMBa£In¡rInfo
+.
+ıp
+ /^ 
+ušt16_t
+ AddSubOpc; \/\/ 
+Ex·nded
+ 
+add
+ \/ 
+sub
+ 
+İcode$
+/;" m struct:ARM_MLxEntry file:
+
+476 
+AddSymbŞ
+ 
+SuµÜt
+/
+DyÇmicLib¿ry
+.
+ıp
+ /^
+Îvm
+::
+sys
+::DyÇmicLib¿ry::
+	`AddSymbŞ
+(
+SŒšgRef
+ 
+symbŞName
+,
+$
+/;" f class:llvm::sys::DynamicLibrary
+
+477 
+AddTabËEÁry
+ 
+T¬g‘
+/
+X86
+/
+X86In¡rInfo
+.
+ıp
+ /^X86In¡rInfo::
+	`AddTabËEÁry
+(
+RegOp2MemOpTabËTy³
+ &
+R2MTabË
+,
+$
+/;" f class:X86InstrInfo
+
+478 
+AddThumb1SB™
+ 
+T¬g‘
+/
+ARM
+/
+Di§s£mbËr
+/
+ARMDi§s£mbËr
+.
+ıp
+ /^
+	`AddThumb1SB™
+(
+MCIn¡
+ &
+MI
+, 
+boŞ
+ 
+InITBlock
+è{
+$
+/;" f file:
+
+479 
+AddThumbP»diÿ‹
+ 
+T¬g‘
+/
+ARM
+/
+Di§s£mbËr
+/
+ARMDi§s£mbËr
+.
+ıp
+ /^
+ThumbDi§s£mbËr
+::
+	`AddThumbP»diÿ‹
+(
+MCIn¡
+ &
+MI
+ècÚ¡ {
+$
+/;" f class:ThumbDisassembler
+
+480 
+AddToExi¡šgU£Li¡
+ 
+VMCÜe
+/
+V®ue
+.
+ıp
+ /^
+V®ueHªdËBa£
+::
+	`AddToExi¡šgU£Li¡
+(V®ueHªdËBa£ **
+Li¡
+è{
+$
+/;" f class:ValueHandleBase
+
+481 
+AddToExi¡šgU£Li¡Aá”
+ 
+VMCÜe
+/
+V®ue
+.
+ıp
+ /^
+V®ueHªdËBa£
+::
+	`AddToExi¡šgU£Li¡Aá”
+(V®ueHªdËBa£ *
+Li¡
+è{
+$
+/;" f class:ValueHandleBase
+
+482 
+AddToF»eLi¡
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITMemÜyMªag”
+.
+ıp
+ /^ 
+	`AddToF»eLi¡
+(
+F»eRªgeH—d”
+ *
+F»eLi¡
+è{
+$
+/;" f struct:__anon189::FreeRangeHeader
+
+483 
+AddToLiveIns
+ 
+CodeG’
+/
+MachšeLICM
+.
+ıp
+ /^MachšeLICM::
+	`AddToLiveIns
+(
+Reg
+è{
+$
+/;" f class:MachineLICM
+
+484 
+AddToU£Li¡
+ 
+VMCÜe
+/
+V®ue
+.
+ıp
+ /^
+V®ueHªdËBa£
+::
+	`AddToU£Li¡
+(è{
+$
+/;" f class:ValueHandleBase
+
+485 
+AddToWÜkLi¡
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+DAGCombš”
+.
+ıp
+ /^ 
+	`AddToWÜkLi¡
+(
+SDNode
+ *
+N
+è{
+$
+/;" f class:__anon68::DAGCombiner
+
+486 
+AddToWÜkli¡
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+DAGCombš”
+.
+ıp
+ /^
+T¬g‘Low”šg
+::
+DAGCombš”Info
+::
+	`AddToWÜkli¡
+(
+SDNode
+ *
+N
+è{
+$
+/;" f class:TargetLowering::DAGCombinerInfo
+
+487 
+AddT¿ckedFunùiÚ
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SCCP
+.
+ıp
+ /^ 
+	`AddT¿ckedFunùiÚ
+(
+FunùiÚ
+ *
+F
+è{
+$
+/;" f class:__anon531::SCCPSolver
+
+488 
+AddU£r
+ 
+AÇlysis
+/
+IVU£rs
+.
+ıp
+ /^
+IVSŒideU£
+ &IVU£rs::
+	`AddU£r
+(
+In¡ruùiÚ
+ *
+U£r
+, 
+V®ue
+ *
+O³¿nd
+è{
+$
+/;" f class:IVUsers
+
+489 
+AddU£rsIfIÁ”e¡šg
+ 
+AÇlysis
+/
+IVU£rs
+.
+ıp
+ /^
+boŞ
+ IVU£rs::
+	`AddU£rsIfIÁ”e¡šg
+(
+In¡ruùiÚ
+ *
+I
+è{
+$
+/;" f class:IVUsers
+
+490 
+AddU£rsIm¶
+ 
+AÇlysis
+/
+IVU£rs
+.
+ıp
+ /^
+boŞ
+ IVU£rs::
+	`AddU£rsIm¶
+(
+In¡ruùiÚ
+ *
+I
+,
+$
+/;" f class:IVUsers
+
+491 
+AddU£rsToWÜkLi¡
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+DAGCombš”
+.
+ıp
+ /^ 
+	`AddU£rsToWÜkLi¡
+(
+SDNode
+ *
+N
+è{
+$
+/;" f class:__anon68::DAGCombiner file:
+
+492 
+AddU£rsToWÜkLi¡
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeWÜkli¡
+.
+h
+ /^ 
+	`AddU£rsToWÜkLi¡
+(
+In¡ruùiÚ
+ &
+I
+è{
+$
+/;" f class:llvm::InstCombineWorklist
+
+493 
+AddV®ue
+ 
+TabËG’
+/
+TGP¬£r
+.
+ıp
+ /^
+boŞ
+ TGP¬£r::
+	`AddV®ue
+(
+RecÜd
+ *
+CurRec
+, 
+SMLoc
+ 
+Loc
+, cÚ¡ 
+RecÜdV®
+ &
+RV
+è{
+$
+/;" f class:TGParser
+
+494 
+AddV®ue
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeWÜkli¡
+.
+h
+ /^ 
+	`AddV®ue
+(
+V®ue
+ *
+V
+è{
+$
+/;" f class:llvm::InstCombineWorklist
+
+495 
+AddV®ueSymbŞs
+ 
+MC
+/
+MCObjeùSŒ—m”
+.
+ıp
+ /^cÚ¡ 
+MCEx´
+ *MCObjeùSŒ—m”::
+	`AddV®ueSymbŞs
+(cÚ¡ MCEx´ *
+V®ue
+è{
+$
+/;" f class:MCObjectStreamer
+
+496 
+AddV®ueSymbŞs
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCEx´
+.
+ıp
+ /^ARMMCEx´::
+	`AddV®ueSymbŞs
+(
+MCAs£mbËr
+ *
+Asm
+ècÚ¡ {
+$
+/;" f class:ARMMCExpr
+
+497 
+AddV®ueSymbŞs_
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMMCEx´
+.
+ıp
+ /^
+	`AddV®ueSymbŞs_
+(cÚ¡ 
+MCEx´
+ *
+V®ue
+, 
+MCAs£mbËr
+ *
+Asm
+è{
+$
+/;" f file:
+
+498 
+AddW™hOv”æow
+ 
+T¿nsfÜms
+/
+In¡Combše
+/
+In¡CombšeCom·»s
+.
+ıp
+ /^
+boŞ
+ 
+	`AddW™hOv”æow
+(
+CÚ¡ªt
+ *&
+ResuÉ
+, CÚ¡ªˆ*
+In1
+,
+$
+/;" f file:
+
+499 
+Add’d
+ 
+ExecutiÚEngše
+/
+RuÁimeDyld
+/
+RuÁimeDyldIm¶
+.
+h
+ /^ 
+šŒ_t
+ Add’d;
+$
+/;" m class:llvm::RelocationValueRef
+
+500 
+Add’d
+ 
+ExecutiÚEngše
+/
+RuÁimeDyld
+/
+RuÁimeDyldIm¶
+.
+h
+ /^ 
+šŒ_t
+ Add’d;
+$
+/;" m class:llvm::RelocationEntry
+
+501 
+Add™iÚ®Info
+ 
+ExecutiÚEngše
+/
+RuÁimeDyld
+/
+RuÁimeDyldIm¶
+.
+h
+ /^ 
+št64_t
+ Add™iÚ®Info;
+$
+/;" m class:llvm::ObjRelocationInfo
+
+502 
+AddrBa£Reg
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrBa£Reg = 0,
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+503 
+AddrDi¥
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrDi¥ = 3,
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+504 
+AddrIndexReg
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrIndexReg = 2,
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+505 
+AddrLab–SymEÁry
+ 
+CodeG’
+/
+MachšeModuËInfo
+.
+ıp
+ /^ 
+	sAddrLab–SymEÁry
+ {
+$
+/;" s class:llvm::MMIAddrLabelMap file:
+
+506 
+AddrLab–SymbŞs
+ 
+CodeG’
+/
+MachšeModuËInfo
+.
+ıp
+ /^ 
+D’£M­
+<
+As£¹šgVH
+<
+BasicBlock
+>, 
+AddrLab–SymEÁry
+> AddrLab–SymbŞs;
+$
+/;" m class:llvm::MMIAddrLabelMap file:
+
+507 
+AddrMode
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ 
+	eAddrMode
+ {
+$
+/;" g‚amespace:llvm::ARMII
+
+508 
+AddrMode1
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode1 = 1,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+509 
+AddrMode2
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode2 = 2,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+510 
+AddrMode2Ty³
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–DAGToDAG
+.
+ıp
+ /^
+	eAddrMode2Ty³
+ {
+$
+/;" g‚amespace:__anon302 file:
+
+511 
+AddrMode3
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode3 = 3,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+512 
+AddrMode4
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode4 = 4,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+513 
+AddrMode5
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode5 = 5,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+514 
+AddrMode6
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode6 = 6,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+515 
+AddrModeMask
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeMask = 0x1f, \/\/ 
+The
+ 
+AddrMode
+ 
+’ums
+ 
+¬e
+ 
+deş¬ed
+ 
+š
+ ARMBa£Info.
+h$
+/;"ƒƒnum:llvm::ARMII::__anon288
+
+516 
+AddrModeNÚe
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeNÚğ0,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+517 
+AddrModeT1_1
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT1_1 = 7,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+518 
+AddrModeT1_2
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT1_2 = 8,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+519 
+AddrModeT1_4
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT1_4 = 9,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+520 
+AddrModeT1_s
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT1_ ğ10, \/\/ 
+i8
+ * 4 
+pc
+ 
+ªd
+ 
+¥
+ 
+»Ïtive
+ 
+d©a$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+521 
+AddrModeT2_i12
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT2_i12 = 11,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+522 
+AddrModeT2_i8
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT2_i8 = 12,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+523 
+AddrModeT2_i8s4
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT2_i8s4 = 15, \/\/ 
+i8
+ * 4
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+524 
+AddrModeT2_pc
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT2_pøğ14, \/\/ +\/- 
+i12
+ 
+pc
+ 
+»Ïtive
+ 
+d©a$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+525 
+AddrModeT2_so
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrModeT2_sØğ13,
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+526 
+AddrModeToSŒšg
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ 
+šlše
+ cÚ¡ *
+	`AddrModeToSŒšg
+(
+AddrMode
+ 
+addrmode
+è{
+$
+/;" f‚amespace:llvm::ARMII
+
+527 
+AddrMode_i12
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMBa£Info
+.
+h
+ /^ AddrMode_i12 = 16
+$
+/;"ƒƒnum:llvm::ARMII::AddrMode
+
+528 
+AddrNumO³¿nds
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrNumO³¿nd ğ5
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+529 
+AddrOpc
+ 
+T¬g‘
+/
+ARM
+/
+MCT¬g‘Desc
+/
+ARMAdd»ssšgModes
+.
+h
+ /^ 
+	eAddrOpc
+ {
+$
+/;" g‚amespace:llvm::ARM_AM
+
+530 
+AddrSÿËAmt
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrSÿËAmˆğ1,
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+531 
+AddrSegm’tReg
+ 
+T¬g‘
+/
+X86
+/
+MCT¬g‘Desc
+/
+X86Ba£Info
+.
+h
+ /^ AddrSegm’tReg = 4,
+$
+/;"ƒƒnum:llvm::X86::__anon349
+
+532 
+AddrSize
+ 
+DebugInfo
+/
+DWARFCompeUn™
+.
+h
+ /^ 
+ušt8_t
+ AddrSize;
+$
+/;" m class:llvm::DWARFCompileUnit
+
+533 
+AddrSize
+ 
+DebugInfo
+/
+DWARFDebugA¿ngeS‘
+.
+h
+ /^ 
+ušt8_t
+ AddrSize;
+$
+/;" m struct:llvm::DWARFDebugArangeSet::Header
+
+534 
+Add»ss
+ 
+DebugInfo
+/
+DWARFDebugA¿ngeS‘
+.
+ıp
+ /^ cÚ¡ 
+ušt64_t
+ Add»ss;
+$
+/;" m class:__anon171::DescriptorContainsAddress file:
+
+535 
+Add»ss
+ 
+DebugInfo
+/
+DWARFDebugA¿ngeS‘
+.
+h
+ /^ 
+ušt64_t
+ Add»ss;
+$
+/;" m struct:llvm::DWARFDebugArangeSet::Descriptor
+
+536 
+Add»ss
+ 
+DebugInfo
+/
+DWARFDebugLše
+.
+h
+ /^ 
+ušt64_t
+ Add»ss;
+$
+/;" m struct:llvm::DWARFDebugLine::Row
+
+537 
+Add»ss
+ 
+ExecutiÚEngše
+/
+RuÁimeDyld
+/
+RuÁimeDyldIm¶
+.
+h
+ /^ 
+ušt8_t
+ *Add»ss;
+$
+/;" m class:llvm::SectionEntry
+
+538 
+Add»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ 
+	`Add»ss
+()
+$
+/;" f struct:__anon307::Address
+
+539 
+Add»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ 
+	sAdd»ss
+ {
+$
+/;" s‚amespace:__anon307 file:
+
+540 
+Add»ss
+ 
+T¬g‘
+/
+ARM
+/
+ARMFa¡IS–
+.
+ıp
+ /^ } 
+	tAdd»ss
+;
+$
+/;"‚amespace:__anon307yperef:struct:__anon307::Address file:
+
+541 
+Add»ss
+ 
+T¬g‘
+/
+Ms
+/
+MsLÚgB¿nch
+.
+ıp
+ /^ 
+ušt64_t
+ 
+Size
+, Add»ss;
+$
+/;" m struct:__anon437::MBBInfo file:
+
+542 
+Add»ss
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^ Add»ss, \/\/\/< 
+An
+ 
+add»ss
+ 
+u£
+; 
+fŞdšg
+ 
+accÜdšg
+ 
+to
+ 
+T¬g‘Low”šg$
+/;"ƒƒnum:__anon517::LSRUse::KindType file:
+
+543 
+Add»ssIsTak’
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SCCP
+.
+ıp
+ /^
+boŞ
+ 
+	`Add»ssIsTak’
+(cÚ¡ 
+Glob®V®ue
+ *
+GV
+è{
+$
+/;" f file:
+
+544 
+Add»ssSª™iz”
+ 
+T¿nsfÜms
+/
+In¡rum’tiÚ
+/Add»ssSª™iz”.
+ıp
+ /^Add»ssSª™iz”::
+	`Add»ssSª™iz”
+(è: 
+	`FunùiÚPass
+(
+ID
+è{ }
+$
+/;" f class:AddressSanitizer
+
+545 
+Add»ssSª™iz”
+ 
+T¿nsfÜms
+/
+In¡rum’tiÚ
+/Add»ssSª™iz”.
+ıp
+ /^Add»ssSª™iz” : 
+public
+ 
+FunùiÚPass
+ {
+$
+/;" s‚amespace:__anon491 file:
+
+546 
+Add»ssSize
+ 
+DebugInfo
+/
+DWARFDebugRªgeLi¡
+.
+h
+ /^ 
+ušt8_t
+ Add»ssSize;
+$
+/;" m class:llvm::DWARFDebugRangeList
+
+547 
+Add»ssS·û
+ 
+T¬g‘
+/
+NVPTX
+/
+MCT¬g‘Desc
+/
+NVPTXBa£Info
+.
+h
+ /^
+	eAdd»ssS·û
+ {
+$
+/;" g‚amespace:llvm
+
+548 
+Add»ssS·û
+ 
+T¬g‘
+/
+NVPTX
+/NVPTX.
+h
+ /^
+	eAdd»ssS·û
+{
+$
+/;" g‚amespace:llvm::NVPTX::PTXLdStInstCode
+
+549 
+Adju¡In£¹Pos™iÚFÜEx·nd
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^
+LSRIn¡ªû
+::
+	`Adju¡In£¹Pos™iÚFÜEx·nd
+(
+BasicBlock
+::
+™”©Ü
+ 
+Lowe¡IP
+,
+$
+/;" f class:LSRInstance
+
+550 
+Adju¡In¡rPo¡In¡rS–eùiÚ
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+S–eùiÚDAGIS–
+.
+ıp
+ /^
+T¬g‘Low”šg
+::
+	`Adju¡In¡rPo¡In¡rS–eùiÚ
+(
+MachšeIn¡r
+ *
+MI
+,
+$
+/;" f class:TargetLowering
+
+551 
+Adju¡In¡rPo¡In¡rS–eùiÚ
+ 
+T¬g‘
+/
+ARM
+/
+ARMIS–Low”šg
+.
+ıp
+ /^
+ARMT¬g‘Low”šg
+::
+	`Adju¡In¡rPo¡In¡rS–eùiÚ
+(
+MachšeIn¡r
+ *
+MI
+,
+$
+/;" f class:ARMTargetLowering
+
+552 
+Adju¡PriÜ™yOfUnscheduËdP»ds
+ 
+CodeG’
+/
+L©’cyPriÜ™yQueue
+.
+ıp
+ /^L©’cyPriÜ™yQueue::
+	`Adju¡PriÜ™yOfUnscheduËdP»ds
+(
+SUn™
+ *
+SU
+è{
+$
+/;" f class:LatencyPriorityQueue
+
+553 
+Adju¡SckOff£t
+ 
+CodeG’
+/
+LoÿlSckSlÙAÎoÿtiÚ
+.
+ıp
+ /^
+LoÿlSckSlÙPass
+::
+	`Adju¡SckOff£t
+(
+MachšeF¿meInfo
+ *
+MFI
+,
+$
+/;" f class:LocalStackSlotPass
+
+554 
+Adju¡SckOff£t
+ 
+CodeG’
+/
+PrŞogEpogIn£¹”
+.
+ıp
+ /^
+	`Adju¡SckOff£t
+(
+MachšeF¿meInfo
+ *
+MFI
+, 
+F¿meIdx
+,
+$
+/;" f file:
+
+555 
+Adju¡ToP»cisiÚ
+ 
+SuµÜt
+/
+APFlßt
+.
+ıp
+ /^ 
+	`Adju¡ToP»cisiÚ
+(
+APIÁ
+ &
+signifiÿnd
+,
+$
+/;" f‚amespace:__anon235
+
+556 
+Adju¡ToP»cisiÚ
+ 
+SuµÜt
+/
+APFlßt
+.
+ıp
+ /^ 
+	`Adju¡ToP»cisiÚ
+(
+Sm®lVeùÜIm¶
+<> &
+bufãr
+,
+$
+/;" f‚amespace:__anon235
+
+557 
+Advªû
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGSDNodes
+.
+ıp
+ /^ScheduËDAGSDNodes::
+RegDefI‹r
+::
+	`Advªû
+(è{
+$
+/;" f class:ScheduleDAGSDNodes::RegDefIter
+
+558 
+AdvªûCyşe
+ 
+CodeG’
+/
+ScÜebßrdHaz¬dRecogniz”
+.
+ıp
+ /^ScÜebßrdHaz¬dRecogniz”::
+	`AdvªûCyşe
+(è{
+$
+/;" f class:ScoreboardHazardRecognizer
+
+559 
+AdvªûCyşe
+ 
+T¬g‘
+/
+ARM
+/
+ARMHaz¬dRecogniz”
+.
+ıp
+ /^ARMHaz¬dRecogniz”::
+	`AdvªûCyşe
+(è{
+$
+/;" f class:ARMHazardRecognizer
+
+560 
+AdvªûCyşe
+ 
+T¬g‘
+/
+C–lSPU
+/
+SPUHaz¬dRecogniz”s
+.
+ıp
+ /^
+SPUHaz¬dRecogniz”
+::
+	`AdvªûCyşe
+()
+$
+/;" f class:SPUHazardRecognizer
+
+561 
+AdvªûCyşe
+ 
+T¬g‘
+/
+Pow”PC
+/
+PPCHaz¬dRecogniz”s
+.
+ıp
+ /^
+PPCHaz¬dRecogniz”970
+::
+	`AdvªûCyşe
+(è{
+$
+/;" f class:PPCHazardRecognizer970
+
+562 
+AdvªûCyşe
+ 
+T¬g‘
+/
+Pow”PC
+/
+PPCHaz¬dRecogniz”s
+.
+ıp
+ /^
+PPCScÜebßrdHaz¬dRecogniz”
+::
+	`AdvªûCyşe
+(è{
+$
+/;" f class:PPCScoreboardHazardRecognizer
+
+563 
+AdvªûPa¡SÎs
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGRRLi¡
+.
+ıp
+ /^ScheduËDAGRRLi¡::
+	`AdvªûPa¡SÎs
+(
+SUn™
+ *
+SU
+è{
+$
+/;" f class:ScheduleDAGRRList
+
+564 
+AdvªûRS
+ 
+T¬g‘
+/
+ARM
+/
+ARMLßdStÜeO±imiz”
+.
+ıp
+ /^
+ARMLßdStÜeO±
+::
+	`AdvªûRS
+(
+MachšeBasicBlock
+ &
+MBB
+, 
+MemOpQueue
+ &
+MemOps
+è{
+$
+/;" f class:ARMLoadStoreOpt
+
+565 
+AdvªûToCyşe
+ 
+CodeG’
+/
+S–eùiÚDAG
+/
+ScheduËDAGRRLi¡
+.
+ıp
+ /^ScheduËDAGRRLi¡::
+	`AdvªûToCyşe
+(
+NextCyşe
+è{
+$
+/;" f class:ScheduleDAGRRList
+
+566 
+Advªûd_SIMD_¬ch
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ Advªûd_SIMD_¬ch = 12,
+$
+/;"ƒƒnum:ARMBuildAttrs::AttrType
+
+567 
+AggBufãr
+ 
+T¬g‘
+/
+NVPTX
+/
+NVPTXAsmPrš‹r
+.
+h
+ /^ 
+	`AggBufãr
+(
+_size
+, 
+¿w_o¡»am
+ &
+_O
+, NVPTXAsmPrš‹¸&
+_AP
+)
+$
+/;" f class:llvm::NVPTXAsmPrinter::AggBuffer
+
+568 
+AggBufãr
+ 
+T¬g‘
+/
+NVPTX
+/
+NVPTXAsmPrš‹r
+.
+h
+ /^ cÏs 
+	cAggBufãr
+ {
+$
+/;" c class:llvm::NVPTXAsmPrinter
+
+569 
+AggLßdStÜeRewr™”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ 
+	`AggLßdStÜeRewr™”
+(cÚ¡ 
+D©aLayout
+ &
+TD
+è: 
+	`TD
+(TDè{}
+$
+/;" f class:__anon562::AggLoadStoreRewriter
+
+570 
+AggLßdStÜeRewr™”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^
+şass
+ AggLßdStÜeRewr™” : 
+public
+ 
+In¡Vis™Ü
+<AggLßdStÜeRewr™”, 
+boŞ
+> {
+$
+/;" c‚amespace:__anon562 file:
+
+571 
+Agg»ssiveAÁiD•B»ak”
+ 
+CodeG’
+/Agg»ssiveAÁiD•B»ak”.
+ıp
+ /^
+	`Agg»ssiveAÁiD•B»ak”
+(
+MachšeFunùiÚ
+& 
+MFi
+,
+$
+/;" f class:AggressiveAntiDepBreaker
+
+572 
+Agg»ssiveAÁiD•B»ak”
+ 
+CodeG’
+/Agg»ssiveAÁiD•B»ak”.
+h
+ /^ cÏs 
+	cAgg»ssiveAÁiD•B»ak”
+ : 
+public
+ 
+AÁiD•B»ak”
+ {
+$
+/;" c‚amespace:llvm
+
+573 
+Agg»ssiveAÁiD•S‹
+ 
+CodeG’
+/
+Agg»ssiveAÁiD•B»ak”
+.
+ıp
+ /^Agg»ssiveAÁiD•S‹::
+	`Agg»ssiveAÁiD•S‹
+(cÚ¡ 
+T¬g‘Regs
+,
+$
+/;" f class:AggressiveAntiDepState
+
+574 
+Agg»ssiveAÁiD•S‹
+ 
+CodeG’
+/
+Agg»ssiveAÁiD•B»ak”
+.
+h
+ /^ cÏs 
+	cAgg»ssiveAÁiD•S‹
+ {
+$
+/;" c‚amespace:llvm
+
+575 
+AlŸsAÇlysisCouÁ”
+ 
+AÇlysis
+/AlŸsAÇlysisCouÁ”.
+ıp
+ /^ 
+	`AlŸsAÇlysisCouÁ”
+(è: 
+	`ModuËPass
+(
+ID
+è{
+$
+/;" f class:__anon43::AliasAnalysisCounter
+
+576 
+AlŸsAÇlysisCouÁ”
+ 
+AÇlysis
+/AlŸsAÇlysisCouÁ”.
+ıp
+ /^ 
+şass
+ AlŸsAÇlysisCouÁ” : 
+public
+ 
+ModuËPass
+,…ubliø
+AlŸsAÇlysis
+ {
+$
+/;" c‚amespace:__anon43 file:
+
+577 
+AlŸsCache
+ 
+AÇlysis
+/
+BasicAlŸsAÇlysis
+.
+ıp
+ /^ 
+AlŸsCacheTy
+ AlŸsCache;
+$
+/;" m struct:__anon15::BasicAliasAnalysis file:
+
+578 
+AlŸsCacheTy
+ 
+AÇlysis
+/
+BasicAlŸsAÇlysis
+.
+ıp
+ /^ 
+Sm®lD’£M­
+<
+	tLocPaœ
+, 
+	tAlŸsResuÉ
+, 8> 
+	tAlŸsCacheTy
+;
+$
+/;" struct:__anon15::BasicAliasAnalysis file:
+
+579 
+AlŸsDebugg”
+ 
+AÇlysis
+/AlŸsDebugg”.
+ıp
+ /^ 
+	`AlŸsDebugg”
+(è: 
+	`ModuËPass
+(
+ID
+è{
+$
+/;" f class:__anon44::AliasDebugger
+
+580 
+AlŸsDebugg”
+ 
+AÇlysis
+/AlŸsDebugg”.
+ıp
+ /^ 
+şass
+ AlŸsDebugg” : 
+public
+ 
+ModuËPass
+,…ubliø
+AlŸsAÇlysis
+ {
+$
+/;" c‚amespace:__anon44 file:
+
+581 
+AlŸsIn™s
+ 
+B™code
+/
+R—d”
+/
+B™codeR—d”
+.
+h
+ /^ 
+¡d
+::
+veùÜ
+<¡d::
+·œ
+<
+Glob®AlŸs
+*, > > AlŸsIn™s;
+$
+/;" m class:llvm::BitcodeReader
+
+582 
+AlŸsM­
+ 
+CodeG’
+/
+ExecutiÚD•sFix
+.
+ıp
+ /^ 
+¡d
+::
+veùÜ
+<> AlŸsM­;
+$
+/;" m class:__anon120::ExeDepsFix file:
+
+583 
+AlŸsS‘Prš‹r
+ 
+AÇlysis
+/
+AlŸsS‘T¿ck”
+.
+ıp
+ /^ 
+	`AlŸsS‘Prš‹r
+(è: 
+	`FunùiÚPass
+(
+ID
+è{
+$
+/;" f class:__anon35::AliasSetPrinter
+
+584 
+AlŸsS‘Prš‹r
+ 
+AÇlysis
+/
+AlŸsS‘T¿ck”
+.
+ıp
+ /^ cÏs 
+	cAlŸsS‘Prš‹r
+ : 
+public
+ 
+FunùiÚPass
+ {
+$
+/;" c‚amespace:__anon35 file:
+
+585 
+AlŸ£dSymbŞ
+ 
+MC
+/
+MCSymbŞ
+.
+ıp
+ /^cÚ¡ MCSymbŞ &MCSymbŞ::
+	`AlŸ£dSymbŞ
+(ècÚ¡ {
+$
+/;" f class:MCSymbol
+
+586 
+AlŸ£s
+ 
+AÇlysis
+/
+Ty³Ba£dAlŸsAÇlysis
+.
+ıp
+ /^Ty³Ba£dAlŸsAÇlysis::
+	`AlŸ£s
+(cÚ¡ 
+MDNode
+ *
+A
+,
+$
+/;" f class:TypeBasedAliasAnalysis
+
+587 
+Align
+ 
+T¬g‘
+/
+MSP430
+/
+MSP430IS–DAGToDAG
+.
+ıp
+ /^ Align; \/\/ 
+CP
+ 
+®ignm’t
+.
+$
+/;" m struct:__anon392::MSP430ISelAddressMode file:
+
+588 
+Align
+ 
+T¬g‘
+/
+X86
+/
+X86IS–DAGToDAG
+.
+ıp
+ /^ Align; \/\/ 
+CP
+ 
+®ignm’t
+.
+$
+/;" m struct:__anon371::X86ISelAddressMode file:
+
+589 
+AlignLoİ
+ 
+CodeG’
+/
+CodePÏûm’tO±
+.
+ıp
+ /^
+boŞ
+ CodePÏûm’tO±::
+	`AlignLoİ
+(
+MachšeFunùiÚ
+ &
+MF
+, 
+MachšeLoİ
+ *
+L
+,
+$
+/;" f class:CodePlacementOpt
+
+590 
+AlignLoİs
+ 
+CodeG’
+/
+CodePÏûm’tO±
+.
+ıp
+ /^
+boŞ
+ CodePÏûm’tO±::
+	`AlignLoİs
+(
+MachšeFunùiÚ
+ &
+MF
+è{
+$
+/;" f class:CodePlacementOpt
+
+591 
+AlignPŒ
+ 
+SuµÜt
+/
+AÎoÿtÜ
+.
+ıp
+ /^*
+BumpPŒAÎoÿtÜ
+::
+	`AlignPŒ
+(*
+PŒ
+, 
+size_t
+ 
+Alignm’t
+è{
+$
+/;" f class:llvm::BumpPtrAllocator
+
+592 
+Alignm’t
+ 
+CodeG’
+/
+AsmPrš‹r
+/AsmPrš‹r.
+ıp
+ /^ Alignm’t;
+$
+/;" m struct:__anon65::SectionCPs file:
+
+593 
+Alignm’t
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^ Alignm’t; \/\/ 0 = 
+no
+ 
+®ignm’t
+ 
+¥ecif›d$
+/;" m struct:__anon261::ARMOperand::__anon262::__anon275 file:
+
+594 
+Alignm’t
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LICM
+.
+ıp
+ /^ Alignm’t;
+$
+/;" m class:__anon569::LoopPromoter file:
+
+595 
+Alignm’t
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+MemCpyO±imiz”
+.
+ıp
+ /^ Alignm’t;
+$
+/;" m struct:__anon573::MemsetRange file:
+
+596 
+AliveGlob®s
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®DCE
+.
+ıp
+ /^ 
+Sm®lPŒS‘
+<
+Glob®V®ue
+*, 32> AliveGlob®s;
+$
+/;" m struct:__anon588::GlobalDCE file:
+
+597 
+AÎButMaš
+ 
+T¿nsfÜms
+/
+IPO
+/
+IÁ”Çlize
+.
+ıp
+ /^ 
+boŞ
+ AÎButMaš;
+$
+/;" m class:__anon593::InternalizePass file:
+
+598 
+AÎC®ËrsPassInV®idPoš‹rFÜArgum’t
+ 
+T¿nsfÜms
+/
+IPO
+/
+Argum’tPromÙiÚ
+.
+ıp
+ /^
+boŞ
+ 
+	`AÎC®ËrsPassInV®idPoš‹rFÜArgum’t
+(
+Argum’t
+ *
+Arg
+è{
+$
+/;" f file:
+
+599 
+AÎCŞÜs
+ 
+CodeG’
+/
+SckSlÙCŞÜšg
+.
+ıp
+ /^ 
+B™VeùÜ
+ AÎCŞÜs;
+$
+/;" m class:__anon94::StackSlotColoring file:
+
+600 
+AÎDefsA»R–ßds
+ 
+CodeG’
+/
+IÆšeSpËr
+.
+ıp
+ /^ 
+boŞ
+ AÎDefsA»R–ßds;
+$
+/;" m struct:__anon155::InlineSpiller::SibValueInfo file:
+
+601 
+AÎFixupsOutsideLoİ
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+LoİSŒ’gthReduû
+.
+ıp
+ /^ 
+boŞ
+ AÎFixupsOutsideLoİ;
+$
+/;" m class:__anon517::LSRUse file:
+
+602 
+AÎGlob®LßdU£sSim¶eEnoughFÜH—pSRA
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®O±
+.
+ıp
+ /^
+boŞ
+ 
+	`AÎGlob®LßdU£sSim¶eEnoughFÜH—pSRA
+(cÚ¡ 
+Glob®V¬ŸbË
+ *
+GV
+,
+$
+/;" f file:
+
+603 
+AÎJ™s
+ 
+ExecutiÚEngše
+/
+JIT
+/JIT.
+ıp
+ /^
+MªagedStic
+<
+J™PoŞ
+> AÎJ™s;
+$
+/;" m‚amespace:__anon188 file:
+
+604 
+AÎLªes
+ 
+T¬g‘
+/
+ARM
+/
+AsmP¬£r
+/
+ARMAsmP¬£r
+.
+ıp
+ /^
+	eVeùÜLªeTy
+ { 
+NoLªes
+, AÎLªes, 
+IndexedLªe
+ };
+$
+/;"ƒƒnum:__anon259::VectorLaneTy file:
+
+605 
+AÎU£sDomš©edByBlock
+ 
+CodeG’
+/
+MachšeSšk
+.
+ıp
+ /^
+MachšeSškšg
+::
+	`AÎU£sDomš©edByBlock
+(
+Reg
+,
+$
+/;" f class:MachineSinking
+
+606 
+AÎU£sDomš©edByBlock
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+Sšk
+.
+ıp
+ /^
+boŞ
+ 
+Sškšg
+::
+	`AÎU£sDomš©edByBlock
+(
+In¡ruùiÚ
+ *
+In¡
+,
+$
+/;" f class:Sinking
+
+607 
+AÎU£sOfLßdedV®ueWlT¿pIfNuÎ
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®O±
+.
+ıp
+ /^
+boŞ
+ 
+	`AÎU£sOfLßdedV®ueWlT¿pIfNuÎ
+(cÚ¡ 
+Glob®V¬ŸbË
+ *
+GV
+è{
+$
+/;" f file:
+
+608 
+AÎU£sOfV®ueWlT¿pIfNuÎ
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®O±
+.
+ıp
+ /^
+boŞ
+ 
+	`AÎU£sOfV®ueWlT¿pIfNuÎ
+(cÚ¡ 
+V®ue
+ *
+V
+,
+$
+/;" f file:
+
+609 
+AÎoc
+ 
+CodeG’
+/
+LiveRªgeC®c
+.
+h
+ /^ 
+VNInfo
+::
+AÎoÿtÜ
+ *AÎoc;
+$
+/;" m class:llvm::LiveRangeCalc
+
+610 
+AÎoc
+ 
+SuµÜt
+/
+YAMLP¬£r
+.
+ıp
+ /^ 
+BumpPŒAÎoÿtÜ
+ AÎoc;
+$
+/;" m struct:llvm::ilist_node_traits file:
+
+611 
+AÎocFnsTy
+ 
+AÇlysis
+/
+MemÜyButšs
+.
+ıp
+ /^
+	sAÎocFnsTy
+ {
+$
+/;" s file:
+
+612 
+AÎocLike
+ 
+AÇlysis
+/
+MemÜyButšs
+.
+ıp
+ /^ AÎocLikğ
+M®locLike
+ | 
+C®locLike
+ | 
+SŒDupLike
+,
+$
+/;"ƒƒnum:AllocType file:
+
+613 
+AÎocSize
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ cÚ¡ 
+ušt64_t
+ AÎocSize;
+$
+/;" m class:AllocaPartitioning::BuilderBase file:
+
+614 
+AÎocTy
+ 
+AÇlysis
+/
+MemÜyButšs
+.
+ıp
+ /^ 
+AÎocTy³
+ AÎocTy;
+$
+/;" m struct:AllocFnsTy file:
+
+615 
+AÎocTy³
+ 
+AÇlysis
+/
+MemÜyButšs
+.
+ıp
+ /^
+	eAÎocTy³
+ {
+$
+/;" g file:
+
+616 
+AÎoÿAdju¡In¡s
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚMachšeFunùiÚInfo
+.
+h
+ /^ 
+¡d
+::
+veùÜ
+<
+MachšeIn¡r
+*> AÎoÿAdju¡In¡s;
+$
+/;" m class:llvm::HexagonMachineFunctionInfo
+
+617 
+AÎoÿC­tu»T¿ck”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+TaRecursiÚElimš©iÚ
+.
+ıp
+ /^ 
+	`AÎoÿC­tu»T¿ck”
+(è: 
+	`C­tu»d
+(
+çl£
+è{}
+$
+/;" f struct:AllocaCaptureTracker
+
+618 
+AÎoÿC­tu»T¿ck”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+TaRecursiÚElimš©iÚ
+.
+ıp
+ /^AÎoÿC­tu»T¿ck” : 
+public
+ 
+C­tu»T¿ck”
+ {
+$
+/;" s file:
+
+619 
+AÎoÿDbgDeş¬es
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+Sm®lVeùÜ
+<
+DbgDeş¬eIn¡
+*, 8> AÎoÿDbgDeş¬es;
+$
+/;" m struct:__anon469::PromoteMem2Reg file:
+
+620 
+AÎoÿHŞd”
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^ 
+	`AÎoÿHŞd”
+(è: 
+	`RefCÁ
+(0è{}
+$
+/;" f class:llvm::AllocaHolder
+
+621 
+AÎoÿHŞd”
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^şas 
+	cAÎoÿHŞd”
+ {
+$
+/;" c‚amespace:llvm
+
+622 
+AÎoÿHŞd”HªdË
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^ 
+	`AÎoÿHŞd”HªdË
+(è: 
+	`H
+(
+Ãw
+ 
+	`AÎoÿHŞd”
+()è{ 
+H
+->
+RefCÁ
+++; }
+$
+/;" f class:llvm::AllocaHolderHandle
+
+623 
+AÎoÿHŞd”HªdË
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^ 
+	`AÎoÿHŞd”HªdË
+(cÚ¡ AÎoÿHŞd”HªdË &
+AH
+è: 
+	`H
+(AH.
+H
+è{ H->
+RefCÁ
+++; }
+$
+/;" f class:llvm::AllocaHolderHandle
+
+624 
+AÎoÿHŞd”HªdË
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^şas 
+	cAÎoÿHŞd”HªdË
+ {
+$
+/;" c‚amespace:llvm
+
+625 
+AÎoÿInfo
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ 
+ex¶ic™
+ 
+	`AÎoÿInfo
+(
+AÎoÿIn¡
+ *
+ai
+)
+$
+/;" f struct:__anon521::SROA::AllocaInfo
+
+626 
+AÎoÿInfo
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ 
+	sAÎoÿInfo
+ {
+$
+/;" s struct:__anon521::SROA file:
+
+627 
+AÎoÿInfo
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+	sAÎoÿInfo
+ {
+$
+/;" s‚amespace:__anon469 file:
+
+628 
+AÎoÿIn¡
+ 
+VMCÜe
+/
+In¡ruùiÚs
+.
+ıp
+ /^AÎoÿIn¡::
+	`AÎoÿIn¡
+(
+Ty³
+ *
+Ty
+, 
+V®ue
+ *
+A¼aySize
+, 
+Align
+,
+$
+/;" f class:AllocaInst
+
+629 
+AÎoÿIn¡
+ 
+VMCÜe
+/
+In¡ruùiÚs
+.
+ıp
+ /^AÎoÿIn¡::
+	`AÎoÿIn¡
+(
+Ty³
+ *
+Ty
+, 
+V®ue
+ *
+A¼aySize
+,
+$
+/;" f class:AllocaInst
+
+630 
+AÎoÿIn¡
+ 
+VMCÜe
+/
+In¡ruùiÚs
+.
+ıp
+ /^AÎoÿIn¡::
+	`AÎoÿIn¡
+(
+Ty³
+ *
+Ty
+, cÚ¡ 
+Twše
+ &
+Name
+,
+$
+/;" f class:AllocaInst
+
+631 
+AÎoÿLookup
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+D’£M­
+<
+AÎoÿIn¡
+*, > AÎoÿLookup;
+$
+/;" m struct:__anon469::PromoteMem2Reg file:
+
+632 
+AÎoÿP¬t™iÚRewr™”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ 
+	`AÎoÿP¬t™iÚRewr™”
+(cÚ¡ 
+D©aLayout
+ &
+TD
+, 
+AÎoÿP¬t™iÚšg
+ &
+P
+,
+$
+/;" f class:__anon561::AllocaPartitionRewriter
+
+633 
+AÎoÿP¬t™iÚRewr™”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^
+şass
+ AÎoÿP¬t™iÚRewr™” : 
+public
+ 
+In¡Vis™Ü
+<AÎoÿP¬t™iÚRewr™”,
+$
+/;" c‚amespace:__anon561 file:
+
+634 
+AÎoÿP¬t™iÚšg
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^AÎoÿP¬t™iÚšg::
+	`AÎoÿP¬t™iÚšg
+(cÚ¡ 
+D©aLayout
+ &
+TD
+, 
+AÎoÿIn¡
+ &
+AI
+)
+$
+/;" f class:AllocaPartitioning
+
+635 
+AÎoÿP¬t™iÚšg
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^şas 
+	cAÎoÿP¬t™iÚšg
+ {
+$
+/;" c‚amespace:__anon557 file:
+
+636 
+AÎoÿPoš‹rV®
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+V®ue
+ *AÎoÿPoš‹rV®;
+$
+/;" m struct:__anon469::AllocaInfo file:
+
+637 
+AÎoÿPromÙ”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^ 
+	`AÎoÿPromÙ”
+(cÚ¡ 
+Sm®lVeùÜIm¶
+<
+In¡ruùiÚ
+*> &
+In¡s
+, 
+SSAUpd©”
+ &
+S
+,
+$
+/;" f class:__anon558::AllocaPromoter
+
+638 
+AÎoÿPromÙ”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SROA
+.
+ıp
+ /^şas 
+	cAÎoÿPromÙ”
+ : 
+public
+ 
+LßdAndStÜePromÙ”
+ {
+$
+/;" c‚amespace:__anon558 file:
+
+639 
+AÎoÿPromÙ”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ 
+	`AÎoÿPromÙ”
+(cÚ¡ 
+Sm®lVeùÜIm¶
+<
+In¡ruùiÚ
+*> &
+In¡s
+, 
+SSAUpd©”
+ &
+S
+,
+$
+/;" f class:__anon524::AllocaPromoter
+
+640 
+AÎoÿPromÙ”
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^şas 
+	cAÎoÿPromÙ”
+ : 
+public
+ 
+LßdAndStÜePromÙ”
+ {
+$
+/;" c‚amespace:__anon524 file:
+
+641 
+AÎoÿSize
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+SÿÏrR•lAgg»g©es
+.
+ıp
+ /^ AÎoÿSize;
+$
+/;" m class:__anon522::ConvertToScalarInfo file:
+
+642 
+AÎoÿTmps
+ 
+T¿nsfÜms
+/
+IPO
+/
+Glob®O±
+.
+ıp
+ /^ 
+Sm®lVeùÜ
+<
+Glob®V¬ŸbË
+*, 32> AÎoÿTmps;
+$
+/;" m class:__anon591::Evaluator file:
+
+643 
+AÎoÿs
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^ 
+AÎoÿHŞd”HªdË
+ AÎoÿs; \/\/ 
+T¿ck
+ 
+memÜy
+ 
+®loÿ‹d
+ 
+by
+ 
+®loÿ$
+/;" m struct:llvm::ExecutionContext
+
+644 
+AÎoÿs
+ 
+T¿nsfÜms
+/
+Uts
+/
+PromÙeMemÜyToRegi¡”
+.
+ıp
+ /^ 
+¡d
+::
+veùÜ
+<
+AÎoÿIn¡
+*> AÎoÿs;
+$
+/;" m struct:__anon469::PromoteMem2Reg file:
+
+645 
+AÎoÿbËS‘
+ 
+CodeG’
+/
+Cr™iÿlAÁiD•B»ak”
+.
+h
+ /^ cÚ¡ 
+B™VeùÜ
+ AÎoÿbËS‘;
+$
+/;" m class:llvm::CriticalAntiDepBreaker
+
+646 
+AÎoÿ‹
+ 
+CodeG’
+/
+ScheduËDAG
+.
+ıp
+ /^
+ScheduËDAGTİŞogiÿlSÜt
+::
+	`AÎoÿ‹
+(
+n
+, 
+šdex
+è{
+$
+/;" f class:ScheduleDAGTopologicalSort
+
+647 
+AÎoÿ‹
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITMemÜyMªag”
+.
+ıp
+ /^
+MemSÏb
+ *
+JITSÏbAÎoÿtÜ
+::
+	`AÎoÿ‹
+(
+size_t
+ 
+Size
+è{
+$
+/;" f class:JITSlabAllocator
+
+648 
+AÎoÿ‹
+ 
+SuµÜt
+/
+AÎoÿtÜ
+.
+ıp
+ /^
+MemSÏb
+ *
+M®locSÏbAÎoÿtÜ
+::
+	`AÎoÿ‹
+(
+size_t
+ 
+Size
+è{
+$
+/;" f class:llvm::MallocSlabAllocator
+
+649 
+AÎoÿ‹
+ 
+SuµÜt
+/
+AÎoÿtÜ
+.
+ıp
+ /^*
+BumpPŒAÎoÿtÜ
+::
+	`AÎoÿ‹
+(
+size_t
+ 
+Size
+, size_ˆ
+Alignm’t
+è{
+$
+/;" f class:llvm::BumpPtrAllocator
+
+650 
+AÎoÿ‹BasicBlock
+ 
+CodeG’
+/
+RegAÎocFa¡
+.
+ıp
+ /^
+RAFa¡
+::
+	`AÎoÿ‹BasicBlock
+(è{
+$
+/;" f class:RAFast
+
+651 
+AÎoÿ‹Block
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITMemÜyMªag”
+.
+ıp
+ /^
+F»eRªgeH—d”
+ *F»eRªgeH—d”::
+	`AÎoÿ‹Block
+(è{
+$
+/;" f class:FreeRangeHeader
+
+652 
+AÎoÿ‹Buck‘s
+ 
+SuµÜt
+/
+FŞdšgS‘
+.
+ıp
+ /^**
+	`AÎoÿ‹Buck‘s
+(
+NumBuck‘s
+è{
+$
+/;" f file:
+
+653 
+AÎoÿ‹GOT
+ 
+ExecutiÚEngše
+/
+JIT
+/
+JITMemÜyMªag”
+.
+ıp
+ /^
+DeçuÉJITMemÜyMªag”
+::
+	`AÎoÿ‹GOT
+(è{
+$
+/;" f class:DefaultJITMemoryManager
+
+654 
+AÎoÿ‹GVsW™hCode
+ 
+ExecutiÚEngše
+/
+JIT
+/JIT.
+h
+ /^ 
+boŞ
+ AÎoÿ‹GVsW™hCode;
+$
+/;" m class:llvm::JIT
+
+655 
+AÎoÿ‹Reg
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚC®lšgCÚvLow”
+.
+h
+ /^ 
+	`AÎoÿ‹Reg
+(cÚ¡ *
+Regs
+, cÚ¡ *
+ShadowRegs
+,
+$
+/;" f class:llvm::Hexagon_CCState
+
+656 
+AÎoÿ‹Reg
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚC®lšgCÚvLow”
+.
+h
+ /^ 
+	`AÎoÿ‹Reg
+(cÚ¡ *
+Regs
+, 
+NumRegs
+è{
+$
+/;" f class:llvm::Hexagon_CCState
+
+657 
+AÎoÿ‹Reg
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚC®lšgCÚvLow”
+.
+h
+ /^ 
+	`AÎoÿ‹Reg
+(
+Reg
+è{
+$
+/;" f class:llvm::Hexagon_CCState
+
+658 
+AÎoÿ‹Reg
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚC®lšgCÚvLow”
+.
+h
+ /^ 
+	`AÎoÿ‹Reg
+(
+Reg
+, 
+ShadowReg
+è{
+$
+/;" f class:llvm::Hexagon_CCState
+
+659 
+AÎoÿ‹Sck
+ 
+T¬g‘
+/
+HexagÚ
+/
+HexagÚC®lšgCÚvLow”
+.
+h
+ /^ 
+	`AÎoÿ‹Sck
+(
+Size
+, 
+Align
+è{
+$
+/;" f class:llvm::Hexagon_CCState
+
+660 
+AÎoÿ‹dSize
+ 
+AÇlysis
+/
+IÆšeCo¡
+.
+ıp
+ /^ 
+ušt64_t
+ AÎoÿ‹dSize;
+$
+/;" m class:__anon28::CallAnalyzer file:
+
+661 
+AÎoÿtiÚFnD©a
+ 
+AÇlysis
+/
+MemÜyButšs
+.
+ıp
+ /^cÚ¡ 
+AÎocFnsTy
+ AÎoÿtiÚFnD©a[] = {
+$
+/;" v file:
+
+662 
+AÎoÿtiÚOrd”
+ 
+CodeG’
+/AÎoÿtiÚOrd”.
+ıp
+ /^AÎoÿtiÚOrd”::
+	`AÎoÿtiÚOrd”
+(
+VœtReg
+,
+$
+/;" f class:AllocationOrder
+
+663 
+AÎoÿtiÚOrd”
+ 
+CodeG’
+/AÎoÿtiÚOrd”.
+h
+ /^şas 
+	cAÎoÿtiÚOrd”
+ {
+$
+/;" c‚amespace:llvm
+
+664 
+AÎoÿtiÚs
+ 
+ExecutiÚEngše
+/
+IÁ”´‘”
+/IÁ”´‘”.
+h
+ /^ 
+¡d
+::
+veùÜ
+<*> AÎoÿtiÚs;
+$
+/;" m class:llvm::AllocaHolder
+
+665 
+AÎoÿtÜ
+ 
+CodeG’
+/
+AsmPrš‹r
+/
+Dw¬fAcûlTabË
+.
+h
+ /^ 
+BumpPŒAÎoÿtÜ
+ AÎoÿtÜ;
+$
+/;" m class:llvm::DwarfAccelTable
+
+666 
+AÎoÿtÜ
+ 
+CodeG’
+/
+ExecutiÚD•sFix
+.
+ıp
+ /^ 
+S³cificBumpPŒAÎoÿtÜ
+<
+DomašV®ue
+> AÎoÿtÜ;
+$
+/;" m class:__anon120::ExeDepsFix file:
+
+667 
+AÎoÿtÜ
+ 
+CodeG’
+/
+LiveIÁ”v®UniÚ
+.
+h
+ /^ 
+LiveSegm’ts
+::
+	tAÎoÿtÜ
+ AÎoÿtÜ;
+$
+/;" class:llvm::LiveIntervalUnion
+
+668 
+AÎoÿtÜ
+ 
+CodeG’
+/
+S¶™K™
+.
+h
+ /^ 
+RegAssignM­
+::AÎoÿtÜ AÎoÿtÜ;
+$
+/;" m class:llvm::SplitEditor
+
+669 
+AÎoÿtÜ
+ 
+CodeG’
+/
+SŒÚgPHIElimš©iÚ
+.
+ıp
+ /^ 
+BumpPŒAÎoÿtÜ
+ AÎoÿtÜ;
+$
+/;" m class:__anon154::StrongPHIElimination file:
+
+670 
+AÎoÿtÜTy
+ 
+CodeG’
+/
+MachšeCSE
+.
+ıp
+ /^ 
+ScİedHashTabËV®
+<
+MachšeIn¡r
+*, > > AÎoÿtÜTy;
+$
+/;" class:__anon161::MachineCSE file:
+
+671 
+AÎoÿtÜTy
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+E¬lyCSE
+.
+ıp
+ /^ 
+ScİedHashTabËV®
+<
+Sim¶eV®ue
+, 
+V®ue
+*> > AÎoÿtÜTy;
+$
+/;" class:__anon566::EarlyCSE file:
+
+672 
+AÎocsFÜIndœeùGlob®s
+ 
+AÇlysis
+/
+IPA
+/
+Glob®sModRef
+.
+ıp
+ /^ 
+¡d
+::
+m­
+<cÚ¡ 
+V®ue
+*, cÚ¡ 
+Glob®V®ue
+*> AÎocsFÜIndœeùGlob®s;
+$
+/;" m class:__anon1::GlobalsModRef file:
+
+673 
+AÎowFPv2
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowFPv2 = 2, \/\/ 
+v2
+ 
+FP
+ 
+ISA
+ 
+	`³rm™‹d
+ (
+im¶›s
+ 
+u£
+ 
+of
+ 
+the
+ 
+v1
+ FP ISA)
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+674 
+AÎowFPv3A
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowFPv3A = 3, \/\/ 
+v3
+ 
+FP
+ 
+ISA
+ 
+	`³rm™‹d
+ (
+im¶›s
+ 
+u£
+ 
+of
+ 
+the
+ 
+v2
+ FP ISA)
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+675 
+AÎowFPv3B
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowFPv3B = 4, \/\/ 
+v3
+ 
+FP
+ 
+ISA
+ 
+³rm™‹d
+, 
+but
+ 
+Úly
+ 
+D0
+-
+D15
+, 
+S0
+-
+S31
+ 
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+676 
+AÎowFPv4A
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowFPv4A = 5, \/\/ 
+v4
+ 
+FP
+ 
+ISA
+ 
+	`³rm™‹d
+ (
+im¶›s
+ 
+u£
+ 
+of
+ 
+v3
+ FP ISAè
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+677 
+AÎowFPv4B
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowFPv4B = 6, \/\/ 
+v4
+ 
+FP
+ 
+ISA
+ 
+was
+ 
+³rm™‹d
+, 
+but
+ 
+Úly
+ 
+D0
+-
+D15
+, 
+S0
+-
+S31$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+678 
+AÎowIEE754
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowIEE754 = 3 \/\/ 
+this
+ 
+code
+ 
+to
+ 
+u£
+ 
+®l
+ 
+the
+ 
+IEEE
+ 754-
+defšed
+ 
+FP
+ 
+’codšgs$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+679 
+AÎowRTABI
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowRTABI = 2, \/\/ 
+numb”s
+, 
+šfš™›s
+, 
+ªd
+ 
+Úe
+ 
+qu›t
+ 
+	`NaN
+ (
+£e
+ [
+RTABI
+])
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+680 
+AÎowThumb32
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowThumb32 = 2, \/\/ 32-
+b™
+ 
+	`Thumb
+ (
+im¶›s
+ 16-b™ 
+š¡ruùiÚs
+)
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+681 
+AÎowWMMXv1
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowWMMXv1 = 2, \/\/ 
+The
+ 
+u£r
+ 
+³rm™‹d
+ 
+this
+ 
+’t™y
+ 
+to
+ 
+u£
+ 
+WMMX
+ 
+v2$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+682 
+AÎowed
+ 
+T¬g‘
+/
+ARM
+/
+ARMBudA‰rs
+.
+h
+ /^ AÎowed = 1,
+$
+/;"ƒƒnum:ARMBuildAttrs::__anon294
+
+683 
+AÎowedEx™
+ 
+T¿nsfÜms
+/
+VeùÜize
+/
+LoİVeùÜize
+.
+ıp
+ /^ 
+Sm®lPŒS‘
+<
+V®ue
+*, 4> AÎowedEx™;
+$
+/;" m class:__anon605::LoopVectorizationLegality file:
+
+684 
+AÎowedS‘
+ 
+CodeG’
+/
+RegAÎocPBQP
+.
+ıp
+ /^ 
+¡d
+::
+	tveùÜ
+<> 
+	tAÎowedS‘
+;
+$
+/;" class:__anon135::RegAllocPBQP file:
+
+685 
+AÎowedS‘M­
+ 
+CodeG’
+/
+RegAÎocPBQP
+.
+ıp
+ /^ 
+¡d
+::
+	tveùÜ
+<
+	tAÎowedS‘
+> 
+	tAÎowedS‘M­
+;
+$
+/;" class:__anon135::RegAllocPBQP file:
+
+686 
+AÎowsUÇligÃdMem
+ 
+T¬g‘
+/
+ARM
+/
+ARMSubrg‘
+.
+h
+ /^ 
+boŞ
+ AÎowsUÇligÃdMem;
+$
+/;" m class:llvm::ARMSubtarget
+
+687 
+Almo¡D—dIV
+ 
+T¿nsfÜms
+/
+SÿÏr
+/
+IndV¬Sim¶ify
+.
+ıp
+ /^
+boŞ
+ 
+	`Almo¡D—dIV
+(
+PHINode
+ *
+Phi
+, 
+BasicBlock
+ *
+L©chBlock
+, 
+V®ue
+ *
+CÚd
+è{
+$
+/;" f file:
+
+688 
+AlwaysIÆše
+ 
+AÇlysis
+/
+IÆšeCo¡
+.
+ıp
+ /^ cÚ¡ 
+boŞ
+ AlwaysIÆše;
+$
+/;" m class:__anon28::CallAnalyzer file:
+
+689 
+AlwaysIÆš”
+ 
+T¿nsfÜms
+/
+IPO
+/
+IÆšeAlways
+.
+ıp
+ /^ 
+	`AlwaysIÆš”
+(è: 
+	`IÆš”
+(
+ID
+, -2000000000, \
+
+	@
+1
+.
+1
+/usr/include
+19
+171
+Analysis
+Archive
+AsmParser
+Bitcode
+CMakeLists.txt
+CodeGen
+DebugInfo
+ExecutionEngine
+LLVMBuild.txt
+Linker
+MC
+Makefile
+Object
+Support
+TableGen
+Target
+Transforms
+VMCore
+tags

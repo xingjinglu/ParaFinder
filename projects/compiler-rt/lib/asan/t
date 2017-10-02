@@ -1,0 +1,13 @@
+./asan_rtl.cc:  ParseFlag(str, &f->malloc_context_size, "malloc_context_size");
+./asan_rtl.cc:  CHECK((uptr)f->malloc_context_size <= kStackTraceMax);
+./asan_rtl.cc:  f->malloc_context_size = kDeafultMallocContextSize;
+./asan_rtl.cc:    Printf("malloc_context_size=%zu\n", (uptr)flags()->malloc_context_size);
+./asan_stack.h:  GET_STACK_TRACE_HERE(flags()->malloc_context_size)
+./asan_stack.h:  GET_STACK_TRACE_HERE(flags()->malloc_context_size)
+./tags:ASAN_OnSIGSEGV	asan_posix.cc	/^static void     ASAN_OnSIGSEGV(int, siginfo_t *siginfo, void *context) {$/;"	f	namespace:__asan
+./tags:GetPcSpBp	asan_linux.cc	/^void GetPcSpBp(void *context, uptr *pc, uptr *sp, uptr *bp) {$/;"	f	namespace:__asan
+./tags:GetPcSpBp	asan_mac.cc	/^void GetPcSpBp(void *context, uptr *pc, uptr *sp, uptr *bp) {$/;"	f	namespace:__asan
+./tags:alloc_asan_context	asan_mac.cc	/^asan_block_context_t *alloc_asan_context(void *ctxt, dispatch_function_t func,$/;"	f
+./tags:asan_block_context_t	asan_mac.cc	/^} asan_block_context_t;$/;"	t	namespace:__asan	typeref:struct:__asan::__anon2	file:
+./tags:free_common	asan_malloc_mac.cc	/^void ALWAYS_INLINE free_common(void *context, void *ptr) {$/;"	f	namespace:__anon4
+./tags:malloc_context_size	asan_flags.h	/^  int  malloc_context_size;$/;"	m	struct:__asan::Flags
