@@ -1,0 +1,1 @@
+svn ci -m"resolve the getName function when extract var name and pos @20140226" ./LDDLightShadow.cpp ./LDDLightShadow.h CMakeLists.txt ../../../runtime/libddaprofile/LDDLightShadowRT.cpp ../../../runtime/libddaprofile/LDDLightShadowRT.h ../../../runtime/libddaprofile/CMakeLists.txt 

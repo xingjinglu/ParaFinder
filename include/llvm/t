@@ -1,0 +1,27 @@
+./CallGraphSCCPass.h:  /// getAnalysisUsage - For this class, we declare that we require and preserve
+./CallGraphSCCPass.h:  virtual void getAnalysisUsage(AnalysisUsage &Info) const;
+./PassAnalysisSupport.h:// AnalysisUsage - Represent the analysis usage information of a pass.  This
+./PassAnalysisSupport.h:// Pass infrastructure through the getAnalysisUsage virtual function.
+./PassAnalysisSupport.h:class AnalysisUsage {
+./PassAnalysisSupport.h:  AnalysisUsage() : PreservesAll(false) {}
+./PassAnalysisSupport.h:  AnalysisUsage &addRequiredID(const void *ID);
+./PassAnalysisSupport.h:  AnalysisUsage &addRequiredID(char &ID);
+./PassAnalysisSupport.h:  AnalysisUsage &addRequired() {
+./PassAnalysisSupport.h:  AnalysisUsage &addRequiredTransitiveID(char &ID);
+./PassAnalysisSupport.h:  AnalysisUsage &addRequiredTransitive() {
+./PassAnalysisSupport.h:  AnalysisUsage &addPreservedID(const void *ID) {
+./PassAnalysisSupport.h:  AnalysisUsage &addPreservedID(char &ID) {
+./PassAnalysisSupport.h:  AnalysisUsage &addPreserved() {
+./PassAnalysisSupport.h:  AnalysisUsage &addPreserved(StringRef Arg);
+./PassAnalysisSupport.h:  /// This function annotates the AnalysisUsage info object to say that analyses
+./PassAnalysisSupport.h:/// getAnalysisUsage function.
+./PassAnalysisSupport.h:/// getAnalysisUsage function.
+./Pass.h:class AnalysisUsage;
+./Pass.h:  /// getAnalysisUsage - This function should be overriden by passes that need
+./Pass.h:  virtual void getAnalysisUsage(AnalysisUsage &) const;
+./Pass.h:  /// getAnalysisUsage function.
+./PassManagers.h:  AnalysisUsage *findAnalysisUsage(Pass *P);
+./PassManagers.h:  DenseMap<Pass *, AnalysisUsage *> AnUsageMap;
+./PassManagers.h:  void dumpAnalysisUsage(StringRef Msg, const Pass *P,
+./PassManagers.h:                         const AnalysisUsage::VectorType &Set) const;
+./PassManagers.h:  void getAnalysisUsage(AnalysisUsage &Info) const {
