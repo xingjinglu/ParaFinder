@@ -1,0 +1,882 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDRMASK	./LDDCompleteShadowRT.cpp	17;"	d	file:
+ANTIN	./LDDCompleteShadowRT.cpp	41;"	d	file:
+ANTIN	./LDDHashRT.cpp	34;"	d	file:
+ARGS	./Makefile	/^ARGS=0 input.txt output.txt$/;"	m
+AccAddrOfIter	./LDDParallelAnalysis.cpp	/^bool AccAddrOfIter[PROCNUM][STREAMITEMNUM]; \/\/ label New accessed ShdAddr of cur iter.$/;"	v
+AccAddrOfIter	./LDDParallelAnalysis.cpp	/^bool AccAddrOfIter[STREAMITEMNUM]; \/\/ label New accessed ShdAddr of cur iter.$/;"	v
+AccNum	./LDDParallelAnalysis.cpp	/^int AccNum = 1; \/\/ ith of ShdAddr;$/;"	v
+AccNum	./LDDParallelAnalysis.cpp	/^int AccNum; \/\/ Private for each PROC.$/;"	v
+AccShdAddrSet	./LDDParallelAnalysis.cpp	/^long AccShdAddrSet[STREAMITEMNUM];$/;"	v
+AccShdAddrStream	./LDDParallelAnalysis.cpp	/^long ***AccShdAddrStream; \/\/ PROCID\/STREAMNUM\/STREAMITEMNUM$/;"	v
+AccShdAddrStream	./LDDParallelAnalysis.cpp	/^long AccShdAddrStream[STREAMITEMNUM]; \/\/[][1,2,..]$/;"	v
+AccShdAddrStream	./LDDParallelAnalysis.cpp	/^long AccShdAddrStream[STREAMNUM][STREAMITEMNUM]; \/\/[][1,2,..]$/;"	v
+AccShdLoopIter	./LDDParallelAnalysis.cpp	/^int **AccShdLoopIter; \/\/ PROCID\/STREAMNUM$/;"	v
+AccShdLoopIter	./LDDParallelAnalysis.cpp	/^int AccShdLoopIter[STREAMNUM];\/\/ Keep LoopIter number.  $/;"	v
+AccShdNum	./LDDParallelAnalysis.cpp	/^int **AccShdNum; \/\/ PROCID\/STREAMNUM$/;"	v
+AccShdNum	./LDDParallelAnalysis.cpp	/^int AccShdNum[STREAMNUM]; \/\/ Length. 0, 1,2, ...$/;"	v
+Addr	./LDDHashRT.h	/^  void* Addr;$/;"	m	struct:__RWTraceInfo
+Addr	./LDDParallelAnalysis.h	/^  int *Addr;$/;"	m	struct:__AddrStreamItem
+Addr	./LDDProfilingRuntime.h	/^  void* Addr;$/;"	m	struct:__RWTraceInfo
+AddrInnerOffsetMASK	./LDDCompleteShadowRT.cpp	18;"	d	file:
+AddrLen	./LDDHashRT.h	/^  unsigned AddrLen;$/;"	m	struct:__RWAddrID
+AddrLen	./LDDParallelAnalysis.h	/^  short int AddrLen; \/\/ <= 8. CancelPipeline = 0 ||  RWFlag = 6.$/;"	m	struct:__AddrStreamItem
+AddrLen	./LDDProfilingRuntime.h	/^  unsigned AddrLen;$/;"	m	struct:__RWAddrID
+AddrNum	./LDDParallelAnalysis.cpp	/^long AddrNum = 0;$/;"	v
+AddrPC	./LDDParallelAnalysis.cpp	/^std::map< long, std::set<long> > AddrPC;$/;"	v
+AddrPos	./LDDCompleteShadowRT.h	/^  std::string AddrPos; $/;"	m	struct:__PrecedingRWAddrID
+AddrPos	./LDDCompleteShadowRT.h	/^  std::string AddrPos; $/;"	m	struct:__PresentRWAddrID
+AddrPos	./LDDDAShadowRT.h	/^  std::string AddrPos; $/;"	m	struct:__PrecedingRWAddrID
+AddrPos	./LDDDAShadowRT.h	/^  std::string AddrPos; $/;"	m	struct:__PresentRWAddrID
+AddrPos	./LDDHashRT.h	/^  std::string AddrPos; $/;"	m	struct:__RWAddrID
+AddrPos	./LDDProfilingRuntime.h	/^  std::string AddrPos; $/;"	m	struct:__RWAddrID
+AddrRflag	./LDDCompleteShadowRT.h	/^   int AddrRflag;$/;"	m	struct:__RWTraceInfo
+AddrSet	./LDDParallelAnalysis.cpp	/^std::set<long> AddrSet;$/;"	v
+AddrStream	./LDDParallelAnalysis.h	/^}AddrStream;$/;"	t	typeref:struct:__AddrStream
+AddrStreamItem	./LDDParallelAnalysis.h	/^}AddrStreamItem;$/;"	t	typeref:struct:__AddrStreamItem
+AddrWflag	./LDDCompleteShadowRT.h	/^   int AddrWflag;$/;"	m	struct:__RWTraceInfo
+AntiDep	./LDDCompleteShadowRT.h	/^  std::map<Dep, std::set<signed int> > AntiDep;$/;"	m	struct:__LCDepInfo
+AntiDep	./LDDCompleteShadowRT.h	/^  std::set<Dep> AntiDep;$/;"	m	struct:__LIDepInfo
+AntiDep	./LDDDAShadowRT.h	/^  std::map<Dep, std::set<signed int> > AntiDep;$/;"	m	struct:__LCDepInfo
+AntiDep	./LDDDAShadowRT.h	/^  std::set<Dep> AntiDep;$/;"	m	struct:__LIDepInfo
+AntiDep	./LDDHashRT.h	/^  std::map<Dep, std::set<int> > AntiDep;$/;"	m	struct:__LCDepInfo
+AntiDep	./LDDHashRT.h	/^  std::set<Dep> AntiDep;$/;"	m	struct:__LIDepInfo
+AntiDep	./LDDLightShadowRT.h	/^    LSDep *AntiDep;$/;"	m	struct:__LSDepInfo
+AntiDep	./LDDLightShadowRT.h	/^    LSLCDep *AntiDep;$/;"	m	struct:__LSLCDepInfo
+AntiDep	./LDDLightShadowRT.h	/^    LSLIDep *AntiDep;$/;"	m	struct:__LSLIDepInfo
+AntiDep	./LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > AntiDep;$/;"	m	struct:__LCDepInfo
+AntiDep	./LDDProfilingRuntime.h	/^  std::set<Dep> AntiDep;$/;"	m	struct:__LIDepInfo
+AppAddrToShadow	./LDDCompleteShadowRT.h	57;"	d
+AppAddrToShadow	./LDDLightShadowRT.h	66;"	d
+BLACK	./RedBlackTree.h	6;"	d
+CSLSPresentBuf	./LDDParallelAnalysis.cpp	/^tbb::critical_section CSLSPresentBuf; $/;"	v
+CSLSStreamItemBuf	./LDDParallelAnalysis.cpp	/^tbb::critical_section CSLSStreamItemBuf; $/;"	v
+CXX	./Makefile	/^CXX=clang++$/;"	m
+CXX	./Makefile	/^CXX=icc$/;"	m
+CancelPipeline	./LDDParallelAnalysis.cpp	/^    bool CancelPipeline;$/;"	m	class:LICDep	file:
+CancelPipeline	./LDDParallelAnalysis.cpp	/^  bool CancelPipeline;$/;"	m	class:RWTrace	file:
+CancelWaitTime	./LDDParallelAnalysis.cpp	/^volatile float CancelWaitTime = 0.0, JoinWaitTime = 0.0;$/;"	v
+Color	./RedBlackTree.h	/^  char Color; \/\/ red = 1; black = 2.$/;"	m	struct:__RBTreeNode
+CurArrayNum	./LDDLightShadowRT.h	/^    int CurArrayNum; \/\/ The current index of the array.$/;"	m	struct:__Trace
+CurArrayNum	./LDDLightShadowRT.h	/^    int CurArrayNum[STREAMNUM]; \/\/ The current index of the array.$/;"	m	struct:__Trace
+CurArrayNum	./LDDLightShadowRT.h	/^  int **CurArrayNum; \/\/ PROCID\/STREAMNUM$/;"	m	struct:__Trace
+CurLoopID	./LDDLightShadowRT.cpp	/^int CurLoopID = 1; \/\/$/;"	v
+CurLoopIter	./LDDParallelAnalysis.cpp	/^unsigned int CurLoopIter; \/\/Not thread safe.$/;"	v
+CurPresNum	./LDDParallelAnalysis.cpp	/^    unsigned int CurPresNum;$/;"	m	class:LICDep	file:
+CurProc	./LDDParallelAnalysis.cpp	/^    int CurProc;$/;"	m	struct:LIDAFilter::ParLIDA	file:
+CurProc	./LDDParallelAnalysis.cpp	/^int CurProc;$/;"	v
+DDAProfilingFlag	./LDDHashRT.cpp	/^int DDAProfilingFlag = 0; $/;"	v
+DEBUG_TYPE	./LDDHashRT.cpp	1;"	d	file:
+Dep	./LDDCompleteShadowRT.h	/^}Dep;$/;"	t	typeref:struct:Dependence
+Dep	./LDDDAShadowRT.h	/^}Dep;$/;"	t	typeref:struct:Dependence
+Dep	./LDDHashRT.h	/^}Dep;$/;"	t	typeref:struct:Dependence
+Dep	./LDDProfilingRuntime.h	/^}Dep;$/;"	t	typeref:struct:Dependence
+DepDist	./LDDDAShadowRT.h	/^std::set<unsigned> DepDist;  \/\/ Dependence distance.$/;"	v
+DepDist	./LDDHashRT.h	/^std::set<unsigned> DepDist;  \/\/ Dependence distance.$/;"	v
+DepDist	./LDDLightShadowRT.h	/^    LSDepDist *DepDist;$/;"	m	struct:__LSLCDep
+DepDist	./LDDProfilingRuntime.h	/^std::set<unsigned> DepDist;  \/\/ Dependence distance.$/;"	v
+DepDistVal	./LDDLightShadowRT.h	/^    int DepDistVal;$/;"	m	struct:__LSDepDist
+DepInfo	./LDDCompleteShadowRT.h	/^}DepInfo;$/;"	t	typeref:struct:__DepInfo
+DepInfo	./LDDDAShadowRT.h	/^}DepInfo;$/;"	t	typeref:struct:__DepInfo
+DepInfo	./LDDHashRT.h	/^}DepInfo;$/;"	t	typeref:struct:__DepInfo
+DepInfo	./LDDProfilingRuntime.h	/^}DepInfo;$/;"	t	typeref:struct:__DepInfo
+DepPair	./LDDParallelAnalysis.h	/^}DepPair;$/;"	t	typeref:struct:__DepPair
+DepRangeNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+Dependence	./LDDCompleteShadowRT.h	/^typedef struct Dependence{$/;"	s
+Dependence	./LDDDAShadowRT.h	/^typedef struct Dependence{$/;"	s
+Dependence	./LDDHashRT.h	/^typedef struct Dependence{$/;"	s
+Dependence	./LDDProfilingRuntime.h	/^typedef struct Dependence{$/;"	s
+Deps	./LDDLightShadowRT.h	/^  }Deps;$/;"	t	typeref:struct:__Deps
+Dist	./LDDLightShadowRT.h	/^    int Dist[2]; \/\/ dist[0]: if no-LID 1, else 0, dist[1]:mini-LCD dist.$/;"	m	struct:__LSDep
+DoRBClear	./RedBlackTree.cpp	/^void DoRBClear(RBTree *RBT, RBTreeNode *Root)$/;"	f
+End	./LDDParallelAnalysis.h	/^  unsigned int End; \/\/ the buf past the last ele;$/;"	m	struct:__AddrStream
+EndLoopIter	./LDDParallelAnalysis.cpp	/^    int EndLoopIter;$/;"	m	class:LCDAFilter	file:
+FinishedLoopIter	./LDDParallelAnalysis.cpp	/^    int FinishedLoopIter; \/\/ the NumTh of finished loop iter.$/;"	m	class:LCDAFilter	file:
+FirstItem	./LDDLightShadowRT.h	/^    LSAddrShadowStrmItem *FirstItem;   \/\/ Read Position Number.$/;"	m	struct:__LSAddrShadowStream
+Flag	./LDDLightShadowRT.h	/^    int Flag; \/\/ access or not ?$/;"	m	struct:__Trace
+FreeList	./RedBlackTree.h	/^  RBTreeNode *FreeList;  \/\/ Free node, linked with filed of  ->Left.$/;"	m	struct:__RBTree
+FreeListLen	./RedBlackTree.cpp	/^int FreeListLen, RWMallocTime;$/;"	v
+FreeRBTNode	./RedBlackTree.cpp	/^RBTreeNode *FreeRBTNode; \/\/ Left == next$/;"	v
+FuncName	./LDDCompleteShadowRT.h	/^  std::string FuncName; \/\/ The Function that contains the loop.$/;"	m	struct:__DepInfo
+FuncName	./LDDDAShadowRT.h	/^  std::string FuncName; \/\/ The Function that contains the loop.$/;"	m	struct:__DepInfo
+FuncName	./LDDHashRT.h	/^  std::string FuncName; \/\/ The Function that contains the loop.$/;"	m	struct:__DepInfo
+FuncName	./LDDProfilingRuntime.h	/^  std::string FuncName; \/\/ The Function that contains the loop.$/;"	m	struct:__DepInfo
+GET_DURATION_RDTSC	./LDDShadowCommonRT.cpp	490;"	d	file:
+GET_DURATION_RDTSC	./rdtscc.h	21;"	d
+GLAccShdAddrStream	./LDDParallelAnalysis.cpp	/^long *GLAccShdAddrStream;$/;"	v
+GLAccShdLoopIter	./LDDParallelAnalysis.cpp	/^int *GLAccShdLoopIter;$/;"	v
+GLAccShdNum	./LDDParallelAnalysis.cpp	/^int *GLAccShdNum;$/;"	v
+GLPPStreamIsFull	./LDDParallelAnalysis.cpp	/^atomic_t *GLPPStreamIsFull;$/;"	v
+GLStreams	./LDDParallelAnalysis.cpp	/^AddrStream *GLStreams;$/;"	v
+GPTime	./LDDParallelAnalysis.cpp	/^volatile float GPTime = 0.0;$/;"	v
+GRCond	./LDDParallelAnalysis.cpp	/^pthread_cond_t GRCond[STREAMNUM];$/;"	v
+GRMutex	./LDDParallelAnalysis.cpp	/^pthread_mutex_t GRMutex[STREAMNUM];$/;"	v
+GTime	./LDDParallelAnalysis.cpp	/^volatile float GTime = 0.0,  ReadTime = 0.0, LIDATime = 0.0,  LCDATime = 0.0,  OutputTime = 0.0;$/;"	v
+GenerateAddrStream	./LDDParallelAnalysis.h	/^int GenerateAddrStream(int *Ptr, short int AddrLen, unsigned  int LoopIter, short int Flag, void *PC )$/;"	f
+GenerateAddrStream	./LDDParallelAnalysis.h	/^int GenerateAddrStream(int *Ptr, short int AddrLen, unsigned  int LoopIter, short int Flag, void *pc )$/;"	f
+GlobalBeg	./LDDLightShadowRT.h	/^  static const uptr GlobalBeg = 0x6cf000000000; $/;"	v
+GlobalEnd	./LDDLightShadowRT.h	/^  static const uptr GlobalEnd = 0x6cf000400000; \/\/ 4M for .text and .data segments.$/;"	v
+GlobalMax	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+GlobalMin	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+GlobalReadMask	./LDDLightShadowRT.h	/^    unsigned char GlobalReadMask;  \/\/ Opt me?$/;"	m	struct:__LSPrecedRWTrace
+GlobalReadMask	./LDDLightShadowRT.h	/^    unsigned char GlobalReadMask;  \/\/ Opt me?$/;"	m	struct:__LSPresentRWTrace
+GlobalWriteMask	./LDDLightShadowRT.h	/^    unsigned char GlobalWriteMask;$/;"	m	struct:__LSPrecedRWTrace
+GlobalWriteMask	./LDDLightShadowRT.h	/^    unsigned char GlobalWriteMask;$/;"	m	struct:__LSPresentRWTrace
+HLCADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > HLCADep;$/;"	m	class:LCDAFilter	file:
+HLCODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > HLCODep;$/;"	m	class:LCDAFilter	file:
+HLCTDep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > HLCTDep;$/;"	m	class:LCDAFilter	file:
+HLIADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > HLIADep;$/;"	m	class:LIDAFilter	file:
+HLIADep	./LDDParallelAnalysis.cpp	/^  std::map<long,std::set<long> > HLIADep;$/;"	m	class:ReadLIDAFilter	file:
+HLIODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > HLIODep;$/;"	m	class:LIDAFilter	file:
+HLIODep	./LDDParallelAnalysis.cpp	/^  std::map<long,std::set<long> > HLIODep;$/;"	m	class:ReadLIDAFilter	file:
+HLITDep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > HLITDep;$/;"	m	class:LIDAFilter	file:
+HLITDep	./LDDParallelAnalysis.cpp	/^  std::map<long,std::set<long> > HLITDep;$/;"	m	class:ReadLIDAFilter	file:
+H_CY_RDSTC	./rdtscc.h	2;"	d
+HashRWTrace	./LDDHashRT.cpp	/^std::map<int, RWTraceInfo*> HashRWTrace;$/;"	v
+HeapBeg	./LDDLightShadowRT.h	/^  static const uptr HeapBeg = 0x6cf000400000;  \/\/ $/;"	v
+HeapEnd	./LDDLightShadowRT.h	/^  static const uptr HeapEnd = 0x6fff00000000;$/;"	v
+HeapMax	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+HeapMin	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+IndexToDepInfo	./LDDHashRT.h	/^  unsigned IndexToDepInfo;$/;"	m	struct:__RWTraceInfo
+IndexToDepInfo	./LDDProfilingRuntime.h	/^  unsigned IndexToDepInfo;$/;"	m	struct:__RWTraceInfo
+Items	./LDDParallelAnalysis.h	/^  AddrStreamItem Items[STREAMITEMNUM];  $/;"	m	struct:__AddrStream
+IterGlobalMax	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+IterGlobalMin	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+IterHeapMax	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+IterHeapMin	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+IterStackMax	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+IterStackMin	./LDDParallelAnalysis.cpp	/^  long IterStackMin, IterStackMax, IterHeapMax, IterHeapMin, IterGlobalMin, IterGlobalMax;$/;"	m	class:RWTrace	file:
+JoinWaitTime	./LDDParallelAnalysis.cpp	/^volatile float CancelWaitTime = 0.0, JoinWaitTime = 0.0;$/;"	v
+KAddrTime	./LDDParallelAnalysis.cpp	/^volatile float  KCacheTime = 0.0, KRBTime = 0.0, KAddrTime = 0.0;$/;"	v
+KCacheTime	./LDDParallelAnalysis.cpp	/^volatile float  KCacheTime = 0.0, KRBTime = 0.0, KAddrTime = 0.0;$/;"	v
+KERNELTime	./LDDParallelAnalysis.cpp	/^volatile float KERNELTime = 0.0;$/;"	v
+KRBTime	./LDDParallelAnalysis.cpp	/^volatile float  KCacheTime = 0.0, KRBTime = 0.0, KAddrTime = 0.0;$/;"	v
+LAccShdAddr	./LDDParallelAnalysis.cpp	/^__thread long *LAccShdAddr;$/;"	v
+LCADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > LCADep;$/;"	m	class:LICDep	file:
+LCDAAddrInterval	./LDDParallelAnalysis.cpp	/^    interval_set<long> LCDAAddrInterval;$/;"	m	class:LICDep	file:
+LCDACTime	./LDDParallelAnalysis.cpp	/^volatile float LIDAPTime = 0.0, LIDACTime = 0.0,  LCDAPTime = 0.0, LCDACTime = 0.0;$/;"	v
+LCDAFilter	./LDDParallelAnalysis.cpp	/^LCDAFilter::LCDAFilter() : $/;"	f	class:LCDAFilter
+LCDAFilter	./LDDParallelAnalysis.cpp	/^class LCDAFilter: public tbb::filter {$/;"	c	file:
+LCDAGlobalMax	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDAGlobalMin	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDAHeapMax	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDAHeapMin	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDAPTime	./LDDParallelAnalysis.cpp	/^volatile float LIDAPTime = 0.0, LIDACTime = 0.0,  LCDAPTime = 0.0, LCDACTime = 0.0;$/;"	v
+LCDAReady	./LDDParallelAnalysis.cpp	/^int LCDAReady;$/;"	v
+LCDAStackMax	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDAStackMin	./LDDParallelAnalysis.cpp	/^    long LCDAStackMin, LCDAStackMax, LCDAHeapMax, LCDAHeapMin, LCDAGlobalMin, LCDAGlobalMax;$/;"	m	class:LICDep	file:
+LCDATime	./LDDParallelAnalysis.cpp	/^volatile float GTime = 0.0,  ReadTime = 0.0, LIDATime = 0.0,  LCDATime = 0.0,  OutputTime = 0.0;$/;"	v
+LCDDep	./LDDHashRT.h	/^  LCDepInfo LCDDep;$/;"	m	struct:__DepInfo
+LCDDep	./LDDProfilingRuntime.h	/^  LCDepInfo LCDDep;$/;"	m	struct:__DepInfo
+LCDDist	./LDDParallelAnalysis.h	/^  int LCDDist;$/;"	m	struct:__SrcPCDist
+LCDep	./LDDLightShadowRT.h	/^    LSLCDepInfo *LCDep;$/;"	m	struct:__Deps
+LCDep	./LDDLightShadowRT.h	/^    LSLCDepInfo *LCDep;$/;"	m	struct:__Trace
+LCDepDistMallocTime	./LDDLightShadowRT.cpp	/^long LCDepInfoMallocTime, LCDepMallocTime, LCDepDistMallocTime,  LIDepMallocTime, LIDepInfoMallocTime;$/;"	v
+LCDepInfo	./LDDCompleteShadowRT.h	/^}LCDepInfo;$/;"	t	typeref:struct:__LCDepInfo
+LCDepInfo	./LDDDAShadowRT.h	/^}LCDepInfo;$/;"	t	typeref:struct:__LCDepInfo
+LCDepInfo	./LDDHashRT.h	/^}LCDepInfo;$/;"	t	typeref:struct:__LCDepInfo
+LCDepInfo	./LDDProfilingRuntime.h	/^}LCDepInfo;$/;"	t	typeref:struct:__LCDepInfo
+LCDepInfoMallocTime	./LDDLightShadowRT.cpp	/^long LCDepInfoMallocTime, LCDepMallocTime, LCDepDistMallocTime,  LIDepMallocTime, LIDepInfoMallocTime;$/;"	v
+LCDepMallocTime	./LDDLightShadowRT.cpp	/^long LCDepInfoMallocTime, LCDepMallocTime, LCDepDistMallocTime,  LIDepMallocTime, LIDepInfoMallocTime;$/;"	v
+LCDepNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+LCODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > LCODep;$/;"	m	class:LICDep	file:
+LCTDep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<SrcPCDist> > LCTDep;$/;"	m	class:LICDep	file:
+LCurNum	./LDDParallelAnalysis.cpp	/^__thread int LCurNum;$/;"	v
+LDDCSProfLoopID	./LDDCompleteShadowRT.cpp	/^int LDDCSProfLoopID = 0; \/\/ Labeled entering the profiling scope and current ProfilingLoopID$/;"	v
+LDDCSProfLoopIter	./LDDCompleteShadowRT.cpp	/^int LDDCSProfLoopIter = 0;\/\/=0$/;"	v
+LDDCSResult	./LDDCompleteShadowRT.cpp	/^LDDepInfo LDDCSResult;$/;"	v
+LDDGlobalMax	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDGlobalMin	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDHeapMax	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDHeapMin	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDLSResultMax	./LDDLightShadowRT.cpp	/^long LDDLSResultMax, LDDLSResultMin;$/;"	v
+LDDLSResultMin	./LDDLightShadowRT.cpp	/^long LDDLSResultMax, LDDLSResultMin;$/;"	v
+LDDLSResultTrace	./LDDLightShadowRT.cpp	/^std::set<long> LDDLSResultTrace; \/\/ The pointer to Trace, not the shadow addr.$/;"	v
+LDDPACancelPipeline	./LDDParallelAnalysis.cpp	/^  void LDDPACancelPipeline()$/;"	f
+LDDPADriver	./LDDParallelAnalysis.cpp	/^  int LDDPADriver(int *Ptr, long AddrLen, long LoopIter)$/;"	f
+LDDPASetUpPiepline	./LDDParallelAnalysis.cpp	/^  int LDDPASetUpPiepline( ) $/;"	f
+LDDProfCurIter	./LDDLightShadowRT.cpp	/^ int LDDProfCurIter = 0;$/;"	v
+LDDProfLoopID	./LDDLightShadowRT.cpp	/^ int LDDProfLoopID = 0; $/;"	v
+LDDProfLoopIter	./LDDLightShadowRT.cpp	/^ int LDDProfLoopIter = 0; \/\/ The iteration of loop.$/;"	v
+LDDRBTree	./RedBlackTree.cpp	/^RBTree *LDDRBTree;$/;"	v
+LDDRWTrace	./LDDLightShadowRT.cpp	/^RBTree *LDDRWTrace;$/;"	v
+LDDStackMax	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDStackMin	./LDDLightShadowRT.cpp	/^long LDDStackMax, LDDStackMin, LDDHeapMax, LDDHeapMin, LDDGlobalMax, LDDGlobalMin;$/;"	v
+LDDep	./LDDCompleteShadowRT.h	/^  LCDepInfo LDDep; \/\/ The LIDepInfo's distance = -1;$/;"	m	struct:__DepInfo
+LDDep	./LDDDAShadowRT.h	/^  LCDepInfo LDDep; \/\/ The LIDepInfo's distance = -1;$/;"	m	struct:__DepInfo
+LDDepInfo	./LDDCompleteShadowRT.h	/^typedef std::map<int, DepInfo> LDDepInfo;$/;"	t
+LDDepInfo	./LDDDAShadowRT.h	/^typedef std::map<int, DepInfo> LDDepInfo;$/;"	t
+LDDepInfo	./LDDHashRT.h	/^typedef std::map<int, DepInfo> LDDepInfo;$/;"	t
+LDDepInfo	./LDDProfilingRuntime.h	/^typedef std::map<int, DepInfo> LDDepInfo;$/;"	t
+LDDepResult	./LDDHashRT.cpp	/^LDDepInfo LDDepResult;$/;"	v
+LIADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > LIADep;$/;"	m	class:LICDep	file:
+LICDep	./LDDParallelAnalysis.cpp	/^class LICDep {$/;"	c	file:
+LIDAAddrInterval	./LDDParallelAnalysis.cpp	/^    interval_set<long> LIDAAddrInterval; \/\/ For what?$/;"	m	class:LIDAFilter	file:
+LIDAAddrInterval	./LDDParallelAnalysis.cpp	/^  interval_set<long> LIDAAddrInterval; \/\/ For what?$/;"	m	class:ReadLIDAFilter	file:
+LIDAAddrInterval	./LDDParallelAnalysis.cpp	/^  interval_set<long> LIDAAddrInterval[PROCNUM]; \/\/ For what?$/;"	m	class:ReadLIDAFilter	file:
+LIDACTime	./LDDParallelAnalysis.cpp	/^volatile float LIDAPTime = 0.0, LIDACTime = 0.0,  LCDAPTime = 0.0, LCDACTime = 0.0;$/;"	v
+LIDAFilter	./LDDParallelAnalysis.cpp	/^LIDAFilter::LIDAFilter( ):$/;"	f	class:LIDAFilter
+LIDAFilter	./LDDParallelAnalysis.cpp	/^class LIDAFilter: public tbb::filter {$/;"	c	file:
+LIDAGlobalMax	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAGlobalMax	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAGlobalMin	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAGlobalMin	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAHeapMax	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAHeapMax	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAHeapMin	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAHeapMin	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAPTime	./LDDParallelAnalysis.cpp	/^volatile float LIDAPTime = 0.0, LIDACTime = 0.0,  LCDAPTime = 0.0, LCDACTime = 0.0;$/;"	v
+LIDAPtr	./LDDParallelAnalysis.cpp	/^    class LIDAFilter *LIDAPtr;$/;"	m	struct:LIDAFilter::ParLIDA	typeref:class:LIDAFilter::ParLIDA::LIDAFilter	file:
+LIDAPtr	./LDDParallelAnalysis.cpp	/^    class LIDAFilter *LIDAPtr;$/;"	m	struct:LIDAFilter::ParLIDACheck	typeref:class:LIDAFilter::ParLIDACheck::LIDAFilter	file:
+LIDAPtr	./LDDParallelAnalysis.cpp	/^    class ReadLIDAFilter *LIDAPtr;$/;"	m	struct:ReadLIDAFilter::ParLIDA	typeref:class:ReadLIDAFilter::ParLIDA::ReadLIDAFilter	file:
+LIDAPtr	./LDDParallelAnalysis.cpp	/^    class ReadLIDAFilter *LIDAPtr;$/;"	m	struct:ReadLIDAFilter::ParLIDACheck	typeref:class:ReadLIDAFilter::ParLIDACheck::ReadLIDAFilter	file:
+LIDAPtr	./LDDParallelAnalysis.cpp	/^    class ReadLIDAFilter *LIDAPtr;$/;"	m	struct:ReadLIDAFilter::ParReadLIDA	typeref:class:ReadLIDAFilter::ParReadLIDA::ReadLIDAFilter	file:
+LIDAStackMax	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAStackMax	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAStackMin	./LDDParallelAnalysis.cpp	/^    long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:LIDAFilter	file:
+LIDAStackMin	./LDDParallelAnalysis.cpp	/^  long LIDAStackMin, LIDAStackMax, LIDAHeapMax, LIDAHeapMin, LIDAGlobalMin, LIDAGlobalMax;$/;"	m	class:ReadLIDAFilter	file:
+LIDAThreadNum	./LDDParallelAnalysis.cpp	68;"	d	file:
+LIDATime	./LDDParallelAnalysis.cpp	/^volatile float GTime = 0.0,  ReadTime = 0.0, LIDATime = 0.0,  LCDATime = 0.0,  OutputTime = 0.0;$/;"	v
+LIDDep	./LDDHashRT.h	/^  LIDepInfo LIDDep;$/;"	m	struct:__DepInfo
+LIDDep	./LDDProfilingRuntime.h	/^  LIDepInfo LIDDep;$/;"	m	struct:__DepInfo
+LIDep	./LDDLightShadowRT.h	/^    LSLIDepInfo *LIDep;$/;"	m	struct:__Deps
+LIDep	./LDDLightShadowRT.h	/^    LSLIDepInfo *LIDep;$/;"	m	struct:__Trace
+LIDepInfo	./LDDCompleteShadowRT.h	/^}LIDepInfo;$/;"	t	typeref:struct:__LIDepInfo
+LIDepInfo	./LDDDAShadowRT.h	/^}LIDepInfo;$/;"	t	typeref:struct:__LIDepInfo
+LIDepInfo	./LDDHashRT.h	/^}LIDepInfo;$/;"	t	typeref:struct:__LIDepInfo
+LIDepInfo	./LDDProfilingRuntime.h	/^}LIDepInfo;$/;"	t	typeref:struct:__LIDepInfo
+LIDepInfoMallocTime	./LDDLightShadowRT.cpp	/^long LCDepInfoMallocTime, LCDepMallocTime, LCDepDistMallocTime,  LIDepMallocTime, LIDepInfoMallocTime;$/;"	v
+LIDepMallocTime	./LDDLightShadowRT.cpp	/^long LCDepInfoMallocTime, LCDepMallocTime, LCDepDistMallocTime,  LIDepMallocTime, LIDepInfoMallocTime;$/;"	v
+LIDepNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+LIDepResult	./LDDCompleteShadowRT.cpp	/^std::map<int , LIDepInfo>  LIDepResult; \/\/µ±Ç°±í$/;"	v
+LIODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > LIODep;$/;"	m	class:LICDep	file:
+LITDep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > LITDep;$/;"	m	class:LICDep	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum, Length;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum;$/;"	m	struct:LIDAFilter::ParLIDA	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum;$/;"	m	struct:ReadLIDAFilter::ParReadLIDA	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    long LRStreamNum[PROCNUM];$/;"	m	class:ReadLIDAFilter	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    long LWPresNum, LRStreamNum;$/;"	m	class:LIDAFilter	file:
+LRStreamNum	./LDDParallelAnalysis.cpp	/^    long LWPresNum, LRStreamNum;$/;"	m	class:ReadFilter	file:
+LSAddRWToPrecedeTraceTime	./LDDLightShadowRT.cpp	/^long LSAddRWToPrecedeTraceTime;$/;"	v
+LSAddrShadowStream	./LDDLightShadowRT.h	/^  }LSAddrShadowStream;$/;"	t	typeref:struct:__LSAddrShadowStream
+LSAddrShadowStrmItem	./LDDLightShadowRT.h	/^  }LSAddrShadowStrmItem;$/;"	t	typeref:struct:__LSAddrShadowStrmItem
+LSAddrShadowTime	./LDDLightShadowRT.cpp	/^long LSAddrShadowTime, LSPCShadowTime;$/;"	v
+LSBufReuseTime	./LDDLightShadowRT.cpp	/^long LSPresentTraceMallocTime, LSPrecedeTraceMallocTime,  LSPresentBufFreeTime,LSBufReuseTime; $/;"	v
+LSDep	./LDDLightShadowRT.h	/^  }LSDep;$/;"	t	typeref:struct:__LSDep
+LSDepDist	./LDDLightShadowRT.h	/^  }LSDepDist;$/;"	t	typeref:struct:__LSDepDist
+LSDepInfo	./LDDLightShadowRT.h	/^  }LSDepInfo;$/;"	t	typeref:struct:__LSDepInfo
+LSDepSinkPCMax	./LDDParallelAnalysis.cpp	/^      long LSDepSinkPCMin, LSDepSinkPCMax; \/\/ DepSinkPC-scope. Thread safe?$/;"	m	class:OutputLCDepFilter	file:
+LSDepSinkPCMin	./LDDParallelAnalysis.cpp	/^      long LSDepSinkPCMin, LSDepSinkPCMax; \/\/ DepSinkPC-scope. Thread safe?$/;"	m	class:OutputLCDepFilter	file:
+LSLCDep	./LDDLightShadowRT.h	/^  }LSLCDep;$/;"	t	typeref:struct:__LSLCDep
+LSLCDepInfo	./LDDLightShadowRT.h	/^  }LSLCDepInfo;$/;"	t	typeref:struct:__LSLCDepInfo
+LSLCDepSinkPCMax	./LDDLightShadowRT.cpp	/^long LSLIDepSinkPCMax, LSLIDepSinkPCMin, LSLCDepSinkPCMax, LSLCDepSinkPCMin;$/;"	v
+LSLCDepSinkPCMin	./LDDLightShadowRT.cpp	/^long LSLIDepSinkPCMax, LSLIDepSinkPCMin, LSLCDepSinkPCMax, LSLCDepSinkPCMin;$/;"	v
+LSLIDep	./LDDLightShadowRT.h	/^  }LSLIDep;$/;"	t	typeref:struct:__LSLIDep
+LSLIDepInfo	./LDDLightShadowRT.h	/^  }LSLIDepInfo;$/;"	t	typeref:struct:__LSLIDepInfo
+LSLIDepSinkPCMax	./LDDLightShadowRT.cpp	/^long LSLIDepSinkPCMax, LSLIDepSinkPCMin, LSLCDepSinkPCMax, LSLCDepSinkPCMin;$/;"	v
+LSLIDepSinkPCMin	./LDDLightShadowRT.cpp	/^long LSLIDepSinkPCMax, LSLIDepSinkPCMin, LSLCDepSinkPCMax, LSLCDepSinkPCMin;$/;"	v
+LSOutputLCDepFinish	./LDDParallelAnalysis.cpp	/^volatile bool LSOutputLCDepFinish  = 0;$/;"	v
+LSPCShadowTime	./LDDLightShadowRT.cpp	/^long LSAddrShadowTime, LSPCShadowTime;$/;"	v
+LSPrecedeRWAddrID	./LDDLightShadowRT.h	/^  }LSPrecedeRWAddrID;$/;"	t	typeref:struct:__LSPrecedeRWAddrID
+LSPrecedeRWTrace	./LDDLightShadowRT.h	/^  }LSPrecedeRWTrace;$/;"	t	typeref:struct:__LSPrecedRWTrace
+LSPrecedeTraceMallocTime	./LDDLightShadowRT.cpp	/^long LSPresentTraceMallocTime, LSPrecedeTraceMallocTime,  LSPresentBufFreeTime,LSBufReuseTime; $/;"	v
+LSPresentBuf	./LDDParallelAnalysis.cpp	/^LSPresentRWAddrID *LSPresentBuf; \/\/ Present[]'s Reuse buffer. $/;"	v
+LSPresentBufFreeTime	./LDDLightShadowRT.cpp	/^long LSPresentTraceMallocTime, LSPrecedeTraceMallocTime,  LSPresentBufFreeTime,LSBufReuseTime; $/;"	v
+LSPresentRWAddrID	./LDDLightShadowRT.h	/^  }LSPresentRWAddrID;$/;"	t	typeref:struct:__LSPresentRWAddrID
+LSPresentRWBuf	./LDDLightShadowRT.cpp	/^LSPresentRWAddrID *LSPresentRWBuf; $/;"	v
+LSPresentRWTrace	./LDDLightShadowRT.h	/^  }LSPresentRWTrace;$/;"	t	typeref:struct:__LSPresentRWTrace
+LSPresentTraceMallocTime	./LDDLightShadowRT.cpp	/^long LSPresentTraceMallocTime, LSPrecedeTraceMallocTime,  LSPresentBufFreeTime,LSBufReuseTime; $/;"	v
+LSRWStreamItemMallocTime	./LDDParallelAnalysis.cpp	/^long LSStreamItemBufReuseTime, LSRWStreamItemMallocTime;$/;"	v
+LSStreamItemBuf	./LDDParallelAnalysis.cpp	/^LSAddrShadowStrmItem *LSStreamItemBuf; \/\/ AddrShadowStreamItem's Reuse buffer.$/;"	v
+LSStreamItemBufReuseTime	./LDDParallelAnalysis.cpp	/^long LSStreamItemBufReuseTime, LSRWStreamItemMallocTime;$/;"	v
+LWPresNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum, Length;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+LWPresNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum;$/;"	m	struct:LIDAFilter::ParLIDA	file:
+LWPresNum	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum;$/;"	m	struct:ReadLIDAFilter::ParReadLIDA	file:
+LWPresNum	./LDDParallelAnalysis.cpp	/^    long LWPresNum, LRStreamNum;$/;"	m	class:LIDAFilter	file:
+LWPresNum	./LDDParallelAnalysis.cpp	/^    long LWPresNum, LRStreamNum;$/;"	m	class:ReadFilter	file:
+LastItem	./LDDLightShadowRT.h	/^    LSAddrShadowStrmItem *LastItem;   \/\/ Write Position number.$/;"	m	struct:__LSAddrShadowStream
+Left	./RedBlackTree.h	/^  struct __RBTreeNode *Left;$/;"	m	struct:__RBTreeNode	typeref:struct:__RBTreeNode::__RBTreeNode
+Length	./LDDParallelAnalysis.cpp	/^    int LRStreamNum, LWPresNum, Length;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+LinuxCShadowAppBeg	./LDDCompleteShadowRT.h	/^static const uptr LinuxCShadowAppBeg = 0x7CF000000000ULL;$/;"	v
+LinuxCShadowAppEnd	./LDDCompleteShadowRT.h	/^static const uptr LinuxCShadowAppEnd = 0x7FFFFFFFFFFFULL;  \/\/ 3TB$/;"	v
+LinuxCShadowBeg	./LDDCompleteShadowRT.h	/^static const uptr LinuxCShadowBeg = 0x6CF000000000ULL; \/\/ 3TB$/;"	v
+LinuxCShadowEnd	./LDDCompleteShadowRT.h	/^static const uptr LinuxCShadowEnd = 0x6FFFFFFFFFFFULL; $/;"	v
+LinuxLShadowAppBeg	./LDDLightShadowRT.h	/^  static const uptr LinuxLShadowAppBeg = 0x7CF000000000ULL;$/;"	v
+LinuxLShadowAppEnd	./LDDLightShadowRT.h	/^  static const uptr LinuxLShadowAppEnd = 0x7FFFFFFFFFFFULL;  \/\/ 3TB$/;"	v
+LinuxLShadowBeg	./LDDLightShadowRT.h	/^  static const uptr LinuxLShadowBeg = 0x6CF000000000ULL; \/\/ 3TB$/;"	v
+LinuxLShadowEnd	./LDDLightShadowRT.h	/^  static const uptr LinuxLShadowEnd = 0x6FFFFFFFFFFFULL; $/;"	v
+LoopID2Name	./TimerProfilingRuntime.cpp	/^std::map<long, std::string > LoopID2Name; $/;"	v
+LoopIter	./LDDLightShadowRT.h	/^    unsigned int LoopIter;$/;"	m	struct:__LSAddrShadowStream
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter; \/\/ Input of LIDep.$/;"	m	class:LICDep	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter;$/;"	m	struct:LIDAFilter::ParLIDA	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter;$/;"	m	struct:LIDAFilter::ParLIDACheck	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter;$/;"	m	struct:ReadLIDAFilter::ParLIDACheck	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^    unsigned int LoopIter;$/;"	m	struct:ReadLIDAFilter::ParReadLIDA	file:
+LoopIter	./LDDParallelAnalysis.cpp	/^  unsigned int LoopIter; \/\/ Input of LIDA.$/;"	m	class:RWTrace	file:
+LoopIter	./LDDParallelAnalysis.h	/^  unsigned int LoopIter;$/;"	m	struct:__AddrStream
+LoopIterPresNum	./LDDParallelAnalysis.cpp	/^    std::map<int,int> LoopIterPresNum;$/;"	m	class:LCDAFilter	file:
+LoopPos	./LDDCompleteShadowRT.h	/^  std::string LoopPos;  \/\/ FileName_LineNo$/;"	m	struct:__DepInfo
+LoopPos	./LDDDAShadowRT.h	/^  std::string LoopPos;  \/\/ FileName_LineNo$/;"	m	struct:__DepInfo
+LoopPos	./LDDHashRT.h	/^  std::string LoopPos;  \/\/ FileName_LineNo$/;"	m	struct:__DepInfo
+LoopPos	./LDDProfilingRuntime.h	/^  std::string LoopPos;  \/\/ FileName_LineNo$/;"	m	struct:__DepInfo
+MasterThrEnd	./LDDParallelAnalysis.cpp	/^long MasterThrStart, MasterThrEnd;$/;"	v
+MasterThrStart	./LDDParallelAnalysis.cpp	/^long MasterThrStart, MasterThrEnd;$/;"	v
+MaxPCNum	./LDDParallelAnalysis.cpp	/^int MaxPCNum;$/;"	v
+MaxProfilingLoopID	./LDDHashRT.cpp	/^std::map<int, int> MaxProfilingLoopID; \/\/ Record current max Profiled Loop ID.$/;"	v
+MaxSize	./LDDLightShadowRT.h	/^    int MaxSize;$/;"	m	struct:__Trace
+MaxSize	./LDDLightShadowRT.h	/^    int MaxSize[STREAMNUM];$/;"	m	struct:__Trace
+MaxSize	./LDDLightShadowRT.h	/^  int *MaxSize; \/\/ PROCID$/;"	m	struct:__Trace
+MyInterval	./interval_custom.hpp	/^    MyInterval(): _first(), _past(){}$/;"	f	class:MyInterval
+MyInterval	./interval_custom.hpp	/^    MyInterval(long lo, long up): _first(lo), _past(up){}$/;"	f	class:MyInterval
+MyInterval	./interval_custom.hpp	/^class MyInterval$/;"	c
+N	./LDDCompleteShadowRT.cpp	39;"	d	file:
+N	./LDDHashRT.cpp	32;"	d	file:
+NWTotalUpWrite	./LDDLightShadowRT.cpp	/^unsigned long TotalUpWrite, NWTotalUpWrite ;$/;"	v
+Next	./LDDHashRT.h	/^  struct __RWTraceInfo *Next;  \/\/ Hash confiliction buckets.$/;"	m	struct:__RWTraceInfo	typeref:struct:__RWTraceInfo::__RWTraceInfo
+Next	./LDDLightShadowRT.h	/^    struct __LSAddrShadowStrmItem *Next;$/;"	m	struct:__LSAddrShadowStrmItem	typeref:struct:__LSAddrShadowStrmItem::__LSAddrShadowStrmItem
+Next	./LDDLightShadowRT.h	/^    struct __LSPrecedeRWAddrID *Next;$/;"	m	struct:__LSPrecedeRWAddrID	typeref:struct:__LSPrecedeRWAddrID::__LSPrecedeRWAddrID
+Next	./LDDLightShadowRT.h	/^    struct __LSPresentRWAddrID *Next;$/;"	m	struct:__LSPresentRWAddrID	typeref:struct:__LSPresentRWAddrID::__LSPresentRWAddrID
+Next	./LDDLightShadowRT.h	/^    struct __RWTraceShdNode * Next;$/;"	m	struct:__RWTraceShdNode	typeref:struct:__RWTraceShdNode::__RWTraceShdNode
+Next	./LDDProfilingRuntime.h	/^  struct __RWTraceInfo *Next;  \/\/ Hash confiliction buckets.$/;"	m	struct:__RWTraceInfo	typeref:struct:__RWTraceInfo::__RWTraceInfo
+Next	./RedBlackTree.h	/^  struct __RBTreeNode *Next; $/;"	m	struct:__RBTreeNode	typeref:struct:__RBTreeNode::__RBTreeNode
+OFECheckLoad	./LDDLightShadowRT.cpp	/^unsigned long OFSCheckLoad, OFECheckLoad, OFSCheckStore, OFECheckStore;$/;"	v
+OFECheckStore	./LDDLightShadowRT.cpp	/^unsigned long OFSCheckLoad, OFECheckLoad, OFSCheckStore, OFECheckStore;$/;"	v
+OFSCheckLoad	./LDDLightShadowRT.cpp	/^unsigned long OFSCheckLoad, OFECheckLoad, OFSCheckStore, OFECheckStore;$/;"	v
+OFSCheckStore	./LDDLightShadowRT.cpp	/^unsigned long OFSCheckLoad, OFECheckLoad, OFSCheckStore, OFECheckStore;$/;"	v
+OUTPUTN	./LDDCompleteShadowRT.cpp	42;"	d	file:
+OUTPUTN	./LDDHashRT.cpp	35;"	d	file:
+OutDep	./LDDCompleteShadowRT.h	/^  std::map<Dep, std::set<signed int> > OutDep;$/;"	m	struct:__LCDepInfo
+OutDep	./LDDCompleteShadowRT.h	/^  std::set<Dep> OutDep;$/;"	m	struct:__LIDepInfo
+OutDep	./LDDDAShadowRT.h	/^  std::map<Dep, std::set<signed int> > OutDep;$/;"	m	struct:__LCDepInfo
+OutDep	./LDDDAShadowRT.h	/^  std::set<Dep> OutDep;$/;"	m	struct:__LIDepInfo
+OutDep	./LDDHashRT.h	/^  std::map<Dep, std::set<int> > OutDep;$/;"	m	struct:__LCDepInfo
+OutDep	./LDDHashRT.h	/^  std::set<Dep> OutDep;$/;"	m	struct:__LIDepInfo
+OutDep	./LDDLightShadowRT.h	/^    LSDep *OutDep;$/;"	m	struct:__LSDepInfo
+OutDep	./LDDLightShadowRT.h	/^    LSLCDep *OutDep;$/;"	m	struct:__LSLCDepInfo
+OutDep	./LDDLightShadowRT.h	/^    LSLIDep *OutDep;$/;"	m	struct:__LSLIDepInfo
+OutDep	./LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > OutDep;$/;"	m	struct:__LCDepInfo
+OutDep	./LDDProfilingRuntime.h	/^  std::set<Dep> OutDep;$/;"	m	struct:__LIDepInfo
+OutputLCADep	./LDDParallelAnalysis.cpp	/^  void OutputLCDepFilter::OutputLCADep( class LICDep & Dep)$/;"	f	class:OutputLCDepFilter
+OutputLCDepFilter	./LDDParallelAnalysis.cpp	/^  OutputLCDepFilter::OutputLCDepFilter(  ) : $/;"	f	class:OutputLCDepFilter
+OutputLCDepFilter	./LDDParallelAnalysis.cpp	/^  class OutputLCDepFilter: public tbb::filter {$/;"	c	file:
+OutputLCODep	./LDDParallelAnalysis.cpp	/^  void OutputLCDepFilter::OutputLCODep( class LICDep &Dep)$/;"	f	class:OutputLCDepFilter
+OutputLCTDep	./LDDParallelAnalysis.cpp	/^  void OutputLCDepFilter::OutputLCTDep( class LICDep & Dep)$/;"	f	class:OutputLCDepFilter
+OutputLIAODep	./LDDParallelAnalysis.cpp	/^  void OutputLCDepFilter::OutputLIAODep( class LICDep &LIDep )  $/;"	f	class:OutputLCDepFilter
+OutputLITDep	./LDDParallelAnalysis.cpp	/^  void OutputLCDepFilter::OutputLITDep( class LICDep &LIDep )  $/;"	f	class:OutputLCDepFilter
+OutputTime	./LDDParallelAnalysis.cpp	/^volatile float GTime = 0.0,  ReadTime = 0.0, LIDATime = 0.0,  LCDATime = 0.0,  OutputTime = 0.0;$/;"	v
+PARLIDAMASK	./LDDParallelAnalysis.cpp	66;"	d	file:
+PC	./LDDLightShadowRT.h	/^    long PC; $/;"	m	struct:__LSPrecedeRWAddrID
+PC	./LDDLightShadowRT.h	/^    long PC;$/;"	m	struct:__LSAddrShadowStrmItem
+PC	./LDDLightShadowRT.h	/^    long PC;$/;"	m	struct:__LSPresentRWAddrID
+PC	./LDDLightShadowRT.h	/^    long PC;$/;"	m	struct:__RWTraceShdArray
+PC	./LDDLightShadowRT.h	/^    long PC;$/;"	m	struct:__RWTraceShdNode
+PC	./LDDParallelAnalysis.h	/^  void *PC;$/;"	m	struct:__AddrStreamItem
+PC32	./LDDLightShadowRT.h	/^  typedef unsigned int  PC32;$/;"	t
+PC32	./LDDShadowCommonRT.h	/^typedef unsigned int  PC32;$/;"	t
+PC64	./LDDLightShadowRT.h	/^  typedef unsigned long  PC64;$/;"	t
+PC64	./LDDShadowCommonRT.h	/^typedef unsigned long  PC64;$/;"	t
+PERF_RUN_ARGS	./Makefile	/^PERF_RUN_ARGS=auto input.txt output.txt silent$/;"	m
+PLIDACurNum	./LDDParallelAnalysis.cpp	/^    int PLIDACurNum[LIDAThreadNum];$/;"	m	class:LIDAFilter	file:
+PLIDACurNum	./LDDParallelAnalysis.cpp	/^    int PLIDACurNum[LIDAThreadNum];$/;"	m	class:ReadLIDAFilter	file:
+PLIDALength	./LDDParallelAnalysis.cpp	/^    int PLIDALength;$/;"	m	class:LIDAFilter	file:
+PLIDALength	./LDDParallelAnalysis.cpp	/^    int PLIDALength;$/;"	m	class:ReadLIDAFilter	file:
+PLIDALength	./LDDParallelAnalysis.cpp	/^int PLIDALength[PROCNUM];$/;"	v
+PLIDAPtrItems	./LDDParallelAnalysis.cpp	/^AddrStreamItem *PLIDAPtrItems;$/;"	v
+PLIDAPtrItems	./LDDParallelAnalysis.cpp	/^AddrStreamItem *PLIDAPtrItems[PROCNUM];$/;"	v
+PLIDAPtrShdAddr	./LDDParallelAnalysis.cpp	/^    long *PLIDAPtrShdAddr; \/\/ ShdAddrStream generated by GenerateAddrStream. $/;"	m	class:LIDAFilter	file:
+PLIDAPtrShdAddr	./LDDParallelAnalysis.cpp	/^    long *PLIDAPtrShdAddr; \/\/ ShdAddrStream generated by GenerateAddrStream. $/;"	m	class:ReadLIDAFilter	file:
+PLIDAShdAddr	./LDDParallelAnalysis.cpp	/^    long *PLIDAShdAddr[LIDAThreadNum];$/;"	m	class:LIDAFilter	file:
+PLIDAShdAddr	./LDDParallelAnalysis.cpp	/^    long *PLIDAShdAddr[LIDAThreadNum];$/;"	m	class:ReadLIDAFilter	file:
+PPStreamIsFull	./LDDParallelAnalysis.cpp	/^atomic_t **PPStreamIsFull; \/\/ PROCID\/ STREAMNUM$/;"	v
+PPStreamIsFull	./LDDParallelAnalysis.cpp	/^atomic_t **PPStreamIsFull; \/\/ PROCID\/STREAMNUM$/;"	v
+PRESBUFNUM	./LDDCommonConst.h	14;"	d
+PRETIME	./LDDParallelAnalysis.cpp	/^volatile float PRETIME = 0.0, PROTIME = 0.0;$/;"	v
+PROCID	./LDDParallelAnalysis.cpp	/^int PROCID;$/;"	v
+PROG	./Makefile	/^PROG=square$/;"	m
+PROTIME	./LDDParallelAnalysis.cpp	/^volatile float PRETIME = 0.0, PROTIME = 0.0;$/;"	v
+PUASSTime	./LDDParallelAnalysis.cpp	/^volatile float PUASSTime = 0.0, ReadPreTime = 0.0, ReadUpdateTime = 0.0;$/;"	v
+ParLIDA	./LDDParallelAnalysis.cpp	/^  struct ParLIDA{$/;"	s	class:LIDAFilter	file:
+ParLIDA	./LDDParallelAnalysis.cpp	/^  struct ParLIDA{$/;"	s	class:ReadLIDAFilter	file:
+ParLIDACheck	./LDDParallelAnalysis.cpp	/^  struct ParLIDACheck{$/;"	s	class:LIDAFilter	file:
+ParLIDACheck	./LDDParallelAnalysis.cpp	/^  struct ParLIDACheck{$/;"	s	class:ReadLIDAFilter	file:
+ParLIDACurProc	./LDDParallelAnalysis.cpp	/^    int ParLIDACurProc;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+ParReadLIDA	./LDDParallelAnalysis.cpp	/^  struct ParReadLIDA{$/;"	s	class:ReadLIDAFilter	file:
+ParUpdateTaskNum	./LDDParallelAnalysis.cpp	60;"	d	file:
+Parent	./RedBlackTree.h	/^  struct __RBTreeNode *Parent;$/;"	m	struct:__RBTreeNode	typeref:struct:__RBTreeNode::__RBTreeNode
+PendLoopIter	./LDDParallelAnalysis.cpp	/^    int PendLoopIter; \/\/ Number of loop iter.$/;"	m	class:LCDAFilter	file:
+PipeThreadNum	./LDDParallelAnalysis.cpp	65;"	d	file:
+PrecedRWAddrID	./LDDCompleteShadowRT.h	/^}PrecedRWAddrID;$/;"	t	typeref:struct:__PrecedingRWAddrID
+PrecedRWAddrID	./LDDDAShadowRT.h	/^}PrecedRWAddrID;$/;"	t	typeref:struct:__PrecedingRWAddrID
+PrecedRWTrace	./LDDCompleteShadowRT.h	/^}PrecedRWTrace;$/;"	t	typeref:struct:__PrecedRWTrace
+PrecedRWTrace	./LDDDAShadowRT.h	/^}PrecedRWTrace;$/;"	t	typeref:struct:__PrecedRWTrace
+Precede	./LDDCompleteShadowRT.h	/^   PrecedRWTrace Precede; $/;"	m	struct:__RWTraceInfo
+Precede	./LDDDAShadowRT.h	/^ PrecedRWTrace Precede; $/;"	m	struct:__Trace
+Precede	./LDDLightShadowRT.h	/^    LSPrecedeRWTrace *Precede; $/;"	m	struct:__Trace
+PresIsFull	./LDDParallelAnalysis.cpp	/^tbb::atomic<long>  PresIsFull[PRESBUFNUM];$/;"	v
+Present	./LDDCompleteShadowRT.h	/^   std::map<int, PresentRWTrace> Present;$/;"	m	struct:__RWTraceInfo
+Present	./LDDDAShadowRT.h	/^ map<int, PresentRWTrace> Present;$/;"	m	struct:__Trace
+Present	./LDDLightShadowRT.h	/^    LSPresentRWTrace *Present; \/\/ <iteration, PresentTable>$/;"	m	struct:__Trace
+Present	./LDDLightShadowRT.h	/^    LSPresentRWTrace *Present[PRESBUFNUM]; \/\/ <iteration, PresentTable>$/;"	m	struct:__Trace
+PresentRWAddrID	./LDDCompleteShadowRT.h	/^}PresentRWAddrID;$/;"	t	typeref:struct:__PresentRWAddrID
+PresentRWAddrID	./LDDDAShadowRT.h	/^}PresentRWAddrID;$/;"	t	typeref:struct:__PresentRWAddrID
+PresentRWTrace	./LDDCompleteShadowRT.h	/^}PresentRWTrace;$/;"	t	typeref:struct:__PresentRWTrace
+PresentRWTrace	./LDDDAShadowRT.h	/^}PresentRWTrace;$/;"	t	typeref:struct:__PresentRWTrace
+Prev	./LDDLightShadowRT.h	/^    struct __RWTraceShdNode * Prev;$/;"	m	struct:__RWTraceShdNode	typeref:struct:__RWTraceShdNode::__RWTraceShdNode
+Prev	./RedBlackTree.h	/^  struct __RBTreeNode *Prev;$/;"	m	struct:__RBTreeNode	typeref:struct:__RBTreeNode::__RBTreeNode
+ProcThrLIADep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ProcThrLIADep[PROCNUM];$/;"	v
+ProcThrLIODep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ProcThrLIODep[PROCNUM];$/;"	v
+ProcThrLITDep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ProcThrLITDep[PROCNUM];$/;"	v
+ProcWPresNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> ProcWPresNum[PROCNUM], ProcWPresNumTh[PROCNUM]; \/\/ the first is 0, PROCNUM, 2*PROCNUM; later mask 0, 1, 2, 3$/;"	v
+ProcWPresNumTh	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> ProcWPresNum[PROCNUM], ProcWPresNumTh[PROCNUM]; \/\/ the first is 0, PROCNUM, 2*PROCNUM; later mask 0, 1, 2, 3$/;"	v
+ProfilingLoopIterID	./LDDHashRT.cpp	/^int ProfilingLoopIterID = 0;$/;"	v
+PtrItems	./LDDParallelAnalysis.cpp	/^    AddrStreamItem *PtrItems;$/;"	m	struct:ReadLIDAFilter::ParLIDA	file:
+RAddrLen	./LDDCompleteShadowRT.h	/^  char RAddrLen; \/\/ 8 bits$/;"	m	struct:__PrecedingRWAddrID
+RAddrLen	./LDDCompleteShadowRT.h	/^  char RAddrLen;$/;"	m	struct:__PresentRWAddrID
+RAddrLen	./LDDDAShadowRT.h	/^  char RAddrLen; \/\/ 8 bits$/;"	m	struct:__PrecedingRWAddrID
+RBClear	./RedBlackTree.cpp	/^void RBClear(RBTree *RBT, RBTreeNode *Root)$/;"	f
+RBDelFixup	./RedBlackTree.cpp	/^void RBDelFixup(RBTree *RBT, RBTreeNode *XNode )$/;"	f
+RBDelete	./RedBlackTree.cpp	/^void RBDelete( RBTree *RBT, RBTreeNode *DelNode)$/;"	f
+RBDeleteVal	./RedBlackTree.cpp	/^void RBDeleteVal( RBTree*RBT, long Val)$/;"	f
+RBDestroy	./RedBlackTree.cpp	/^void RBDestroy(RBTree *RBT, RBTreeNode *Root)$/;"	f
+RBInsert	./RedBlackTree.cpp	/^void RBInsert( RBTree *RBT, RBTreeNode *NewNode)$/;"	f
+RBInsertFixup	./RedBlackTree.cpp	/^void RBInsertFixup( RBTree *RBT, RBTreeNode *ZNode)$/;"	f
+RBInsertVal	./RedBlackTree.cpp	/^void RBInsertVal( RBTree *RBT, long Val)$/;"	f
+RBLeftRotate	./RedBlackTree.cpp	/^void RBLeftRotate(RBTree *RBT, RBTreeNode *Parent)$/;"	f
+RBMinimum	./RedBlackTree.cpp	/^RBTreeNode *RBMinimum( RBTree *RBT, RBTreeNode *Parent)$/;"	f
+RBRightRotate	./RedBlackTree.cpp	/^void RBRightRotate( RBTree *RBT, RBTreeNode *Parent)$/;"	f
+RBTransplant	./RedBlackTree.cpp	/^void RBTransplant( RBTree *RBT, RBTreeNode *ToDel, RBTreeNode *ToDelChild)$/;"	f
+RBTree	./RedBlackTree.h	/^}RBTree;$/;"	t	typeref:struct:__RBTree
+RBTreeInit	./RedBlackTree.cpp	/^RBTree *RBTreeInit(RBTree *RBT)$/;"	f
+RBTreeNode	./RedBlackTree.h	/^}RBTreeNode;$/;"	t	typeref:struct:__RBTreeNode
+RBTreeRoot	./RedBlackTree.cpp	/^RBTreeNode *RBTreeRoot; \/\/$/;"	v
+RCTime	./LDDParallelAnalysis.cpp	/^volatile float RCTime = 0.0, RPTime = 0.0;$/;"	v
+READBUFNUM	./LDDParallelAnalysis.cpp	62;"	d	file:
+RED	./RedBlackTree.h	5;"	d
+RItemNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> WShadowStrmNum,  RShadowStrmNum, WPresNum, RPresNum, RItemNum;$/;"	v
+RLIDATASKNUM	./LDDParallelAnalysis.cpp	67;"	d	file:
+RPTime	./LDDParallelAnalysis.cpp	/^volatile float RCTime = 0.0, RPTime = 0.0;$/;"	v
+RPresNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> WShadowStrmNum,  RShadowStrmNum, WPresNum, RPresNum, RItemNum;$/;"	v
+RShadowStrmNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> WShadowStrmNum,  RShadowStrmNum, WPresNum, RPresNum, RItemNum;$/;"	v
+RStreamNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> RStreamNum;$/;"	v
+RStreamNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> RStreamNum[PROCNUM];$/;"	v
+RTrace	./LDDCompleteShadowRT.h	/^  std::map<int,PrecedRWAddrID> RTrace;  $/;"	m	struct:__PrecedRWTrace
+RTrace	./LDDCompleteShadowRT.h	/^  std::map<int,PresentRWAddrID> RTrace;$/;"	m	struct:__PresentRWTrace
+RTrace	./LDDDAShadowRT.h	/^  PresentRWAddrID RTrace; \/\/ First read.$/;"	m	struct:__PresentRWTrace
+RTrace	./LDDDAShadowRT.h	/^  std::vector<PrecedRWAddrID> RTrace;$/;"	m	struct:__PrecedRWTrace
+RTrace	./LDDHashRT.h	/^  std::vector<RWAddrID> RTrace;$/;"	m	struct:__RWTraceInfo
+RTrace	./LDDLightShadowRT.h	/^    LSPrecedeRWAddrID *RTrace;  $/;"	m	struct:__LSPrecedRWTrace
+RTrace	./LDDLightShadowRT.h	/^    LSPresentRWAddrID *RTrace; \/\/ First read.$/;"	m	struct:__LSPresentRWTrace
+RTrace	./LDDProfilingRuntime.h	/^  std::vector<RWAddrID> RTrace;$/;"	m	struct:__RWTraceInfo
+RWAddrID	./LDDHashRT.h	/^}RWAddrID;$/;"	t	typeref:struct:__RWAddrID
+RWAddrID	./LDDProfilingRuntime.h	/^}RWAddrID;$/;"	t	typeref:struct:__RWAddrID
+RWFlag	./LDDLightShadowRT.h	/^    short int RWFlag; $/;"	m	struct:__LSAddrShadowStrmItem
+RWFlag	./LDDParallelAnalysis.h	/^  short int RWFlag;  \/\/ R = 0; W = 1; Items[0].RWFlag: StartLCDA = 1, CancelPipeline = 2.$/;"	m	struct:__AddrStreamItem
+RWIter	./LDDLightShadowRT.h	/^    int RWIter; $/;"	m	struct:__LSPresentRWTrace
+RWIter	./LDDLightShadowRT.h	/^    int RWIter; \/\/ Iteration$/;"	m	struct:__LSPrecedeRWAddrID
+RWIterNo	./LDDCompleteShadowRT.h	/^  int RWIterNo; \/\/ Used to label present trace ID and compute LC deps.$/;"	m	struct:__PresentRWTrace
+RWIterNo	./LDDCompleteShadowRT.h	/^  int RWIterNo; \/\/(10);  \/\/ Only keep the latest iteration number.$/;"	m	struct:__PrecedingRWAddrID
+RWIterNo	./LDDDAShadowRT.h	/^  int RWIterNo; \/\/ Used to label present trace ID and compute LC deps.$/;"	m	struct:__PresentRWTrace
+RWIterNo	./LDDDAShadowRT.h	/^  int RWIterNo; \/\/(10);  \/\/ Only keep the latest iteration number.$/;"	m	struct:__PrecedingRWAddrID
+RWIterNo	./LDDHashRT.h	/^  std::vector<int> RWIterNo; \/\/(10);  \/\/ RWIterNo[0]: current, [1]: history$/;"	m	struct:__RWAddrID
+RWIterNo	./LDDProfilingRuntime.h	/^  std::vector<int> RWIterNo; \/\/(10);  \/\/ RWIterNo[0]: current, [1]: history$/;"	m	struct:__RWAddrID
+RWMallocTime	./RedBlackTree.cpp	/^int FreeListLen, RWMallocTime;$/;"	v
+RWMask	./LDDLightShadowRT.h	/^    unsigned char RWMask; \/\/ 8 bits$/;"	m	struct:__LSPrecedeRWAddrID
+RWMask	./LDDLightShadowRT.h	/^    unsigned char RWMask; \/\/ read\/write mask.$/;"	m	struct:__LSAddrShadowStrmItem
+RWMask	./LDDLightShadowRT.h	/^    unsigned char RWMask; \/\/ read\/write mask.$/;"	m	struct:__LSPresentRWAddrID
+RWMask	./LDDLightShadowRT.h	/^    unsigned char RWMask[2];  \/\/ RWMask[0]: 1->read, 2->write; RWMask[1]: mask.$/;"	m	struct:__RWTraceShdNode
+RWMask	./LDDLightShadowRT.h	/^    unsigned char RWMask[2];$/;"	m	struct:__RWTraceShdArray
+RWNum	./LDDLightShadowRT.cpp	/^int RWNum;$/;"	v
+RWTrace	./LDDParallelAnalysis.cpp	/^class RWTrace{$/;"	c	file:
+RWTraceInfo	./LDDCompleteShadowRT.h	/^}RWTraceInfo;$/;"	t	typeref:struct:__RWTraceInfo
+RWTraceInfo	./LDDHashRT.h	/^}RWTraceInfo;$/;"	t	typeref:struct:__RWTraceInfo
+RWTraceInfo	./LDDProfilingRuntime.h	/^}RWTraceInfo;$/;"	t	typeref:struct:__RWTraceInfo
+RWTraceInterval	./LDDParallelAnalysis.cpp	/^  interval_set<long> RWTraceInterval;$/;"	m	class:RWTrace	file:
+RWTraceShdArrayEle	./LDDLightShadowRT.h	/^  }RWTraceShdArrayEle;$/;"	t	typeref:struct:__RWTraceShdArray
+RWTraceShdNode	./LDDLightShadowRT.h	/^  }RWTraceShdNode;$/;"	t	typeref:struct:__RWTraceShdNode
+RangeCacheLen	./LDDParallelAnalysis.cpp	64;"	d	file:
+ReadAddrNum	./LDDParallelAnalysis.cpp	/^long ReadAddrNum = 0;$/;"	v
+ReadFilter	./LDDParallelAnalysis.cpp	/^ReadFilter::ReadFilter( ):$/;"	f	class:ReadFilter
+ReadFilter	./LDDParallelAnalysis.cpp	/^class ReadFilter: public tbb::filter{$/;"	c	file:
+ReadLIDAFilter	./LDDParallelAnalysis.cpp	/^ReadLIDAFilter::ReadLIDAFilter( ):$/;"	f	class:ReadLIDAFilter
+ReadLIDAFilter	./LDDParallelAnalysis.cpp	/^class ReadLIDAFilter: public tbb::filter{$/;"	c	file:
+ReadPreTime	./LDDParallelAnalysis.cpp	/^volatile float PUASSTime = 0.0, ReadPreTime = 0.0, ReadUpdateTime = 0.0;$/;"	v
+ReadThreadNum	./LDDParallelAnalysis.cpp	58;"	d	file:
+ReadTime	./LDDParallelAnalysis.cpp	/^volatile float GTime = 0.0,  ReadTime = 0.0, LIDATime = 0.0,  LCDATime = 0.0,  OutputTime = 0.0;$/;"	v
+ReadUpdateThreadNum	./LDDParallelAnalysis.cpp	59;"	d	file:
+ReadUpdateTime	./LDDParallelAnalysis.cpp	/^volatile float PUASSTime = 0.0, ReadPreTime = 0.0, ReadUpdateTime = 0.0;$/;"	v
+Right	./RedBlackTree.h	/^  struct __RBTreeNode *Right; $/;"	m	struct:__RBTreeNode	typeref:struct:__RBTreeNode::__RBTreeNode
+Root	./RedBlackTree.h	/^  RBTreeNode *Root;$/;"	m	struct:__RBTree
+SHADOWSTRMNUM	./LDDCommonConst.h	13;"	d
+SHDMAXSIZE	./LDDCommonConst.h	15;"	d
+SOURCES	./Makefile	/^SOURCES = LDDParallelAnalysis.cpp gen_input.cpp$/;"	m
+STREAMITEMNUM	./LDDCommonConst.h	12;"	d
+STREAMNUM	./LDDCommonConst.h	10;"	d
+ShadowLowBound	./LDDLightShadowRT.cpp	/^long ShadowLowBound, ShadowUpBound;$/;"	v
+ShadowUpBound	./LDDLightShadowRT.cpp	/^long ShadowLowBound, ShadowUpBound;$/;"	v
+ShdArray	./LDDLightShadowRT.h	/^    RWTraceShdArrayEle *ShdArray[STREAMNUM];$/;"	m	struct:__Trace
+ShdArray	./LDDLightShadowRT.h	/^  RWTraceShdArrayEle **ShdArray;$/;"	m	struct:__Trace
+ShdArraySequence	./LDDLightShadowRT.h	/^    int *ShdArraySequence;$/;"	m	struct:__Trace
+SinkAddrPos	./LDDCompleteShadowRT.h	/^ std::string SinkAddrPos;   $/;"	m	struct:Dependence
+SinkAddrPos	./LDDDAShadowRT.h	/^ std::string SinkAddrPos;   $/;"	m	struct:Dependence
+SinkAddrPos	./LDDHashRT.h	/^ std::string SinkAddrPos;   $/;"	m	struct:Dependence
+SinkAddrPos	./LDDProfilingRuntime.h	/^ std::string SinkAddrPos;   $/;"	m	struct:Dependence
+SinkPC	./LDDLightShadowRT.h	/^    long SinkPC;   $/;"	m	struct:__LSDep
+SinkPC	./LDDLightShadowRT.h	/^    long SinkPC;   $/;"	m	struct:__LSLCDep
+SinkPC	./LDDLightShadowRT.h	/^    long SinkPC;   $/;"	m	struct:__LSLIDep
+SinkPC	./LDDParallelAnalysis.h	/^  long SinkPC;$/;"	m	struct:__DepPair
+SinkVarName	./LDDCompleteShadowRT.h	/^ std::string SinkVarName;   $/;"	m	struct:Dependence
+SinkVarName	./LDDDAShadowRT.h	/^ std::string SinkVarName;   $/;"	m	struct:Dependence
+SinkVarName	./LDDHashRT.h	/^ std::string SinkVarName;   $/;"	m	struct:Dependence
+SinkVarName	./LDDProfilingRuntime.h	/^ std::string SinkVarName;   $/;"	m	struct:Dependence
+SortedResults	./TimerProfilingRuntime.cpp	/^std::multimap<unsigned long long, long> SortedResults;$/;"	v
+SpawnThread	./LDDParallelAnalysis.cpp	/^std::thread *SpawnThread;$/;"	v
+SrcAddrPos	./LDDCompleteShadowRT.h	/^ std::string SrcAddrPos;   $/;"	m	struct:Dependence
+SrcAddrPos	./LDDDAShadowRT.h	/^ std::string SrcAddrPos;   $/;"	m	struct:Dependence
+SrcAddrPos	./LDDHashRT.h	/^ std::string SrcAddrPos;   $/;"	m	struct:Dependence
+SrcAddrPos	./LDDProfilingRuntime.h	/^ std::string SrcAddrPos;   $/;"	m	struct:Dependence
+SrcPC	./LDDLightShadowRT.h	/^    long SrcPC;   $/;"	m	struct:__LSDep
+SrcPC	./LDDLightShadowRT.h	/^    long SrcPC;   $/;"	m	struct:__LSLCDep
+SrcPC	./LDDLightShadowRT.h	/^    long SrcPC;   $/;"	m	struct:__LSLIDep
+SrcPC	./LDDParallelAnalysis.h	/^  long SrcPC;$/;"	m	struct:__DepPair
+SrcPC	./LDDParallelAnalysis.h	/^  long SrcPC;$/;"	m	struct:__SrcPCDist
+SrcPCDist	./LDDParallelAnalysis.h	/^}SrcPCDist;$/;"	t	typeref:struct:__SrcPCDist
+SrcVarName	./LDDCompleteShadowRT.h	/^ std::string SrcVarName;   $/;"	m	struct:Dependence
+SrcVarName	./LDDDAShadowRT.h	/^ std::string SrcVarName;   $/;"	m	struct:Dependence
+SrcVarName	./LDDHashRT.h	/^ std::string SrcVarName;   $/;"	m	struct:Dependence
+SrcVarName	./LDDProfilingRuntime.h	/^ std::string SrcVarName;   $/;"	m	struct:Dependence
+StackBeg	./LDDLightShadowRT.h	/^  static const uptr StackBeg = 0x6fff00000000;  \/\/ 4G stack segments. $/;"	v
+StackEnd	./LDDLightShadowRT.h	/^  static const uptr StackEnd = 0x6fffffffffff;$/;"	v
+StackMax	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+StackMin	./LDDParallelAnalysis.cpp	/^  long StackMin, StackMax, HeapMax, HeapMin, GlobalMin, GlobalMax;$/;"	m	class:RWTrace	file:
+StartLCDA	./LDDParallelAnalysis.cpp	/^    bool StartLCDA;$/;"	m	class:LICDep	file:
+StartLCDA	./LDDParallelAnalysis.cpp	/^  bool StartLCDA;$/;"	m	class:RWTrace	file:
+StreamIsFull	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> StreamIsFull[STREAMNUM];$/;"	v
+Streams	./LDDParallelAnalysis.cpp	/^  AddrStream *Streams; \/\/ Used by ReadFilter.$/;"	m	class:RWTrace	file:
+Streams	./LDDParallelAnalysis.cpp	/^AddrStream **Streams; \/\/ PROCID\/STREAMITEMNUM$/;"	v
+Streams	./LDDParallelAnalysis.cpp	/^AddrStream *Streams;$/;"	v
+Stride	./RedBlackTree.h	/^  int Stride; \/\/ Not used now.$/;"	m	struct:__RBTreeNode
+TRUEN	./LDDCompleteShadowRT.cpp	40;"	d	file:
+TRUEN	./LDDHashRT.cpp	33;"	d	file:
+ThrLIADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > *ThrLIADep;$/;"	m	class:LIDAFilter	file:
+ThrLIADep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > *ThrLIADep;$/;"	m	class:ReadLIDAFilter	file:
+ThrLIADep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ThrLIADep;$/;"	v
+ThrLIODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > *ThrLIODep;$/;"	m	class:LIDAFilter	file:
+ThrLIODep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > *ThrLIODep;$/;"	m	class:ReadLIDAFilter	file:
+ThrLIODep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ThrLIODep;$/;"	v
+ThrLITDep	./LDDParallelAnalysis.cpp	/^    std::map<long,std::set<long> > *ThrLITDep;$/;"	m	class:LIDAFilter	file:
+ThrLITDep	./LDDParallelAnalysis.cpp	/^  std::map<long,std::set<long> > *ThrLITDep;$/;"	m	class:ReadLIDAFilter	file:
+ThrLITDep	./LDDParallelAnalysis.cpp	/^std::map<long,std::set<long> > *ThrLITDep;$/;"	v
+TimerResults	./TimerProfilingRuntime.cpp	/^std::map<long , unsigned long long > TimerResults; $/;"	v
+TotalUpWrite	./LDDLightShadowRT.cpp	/^unsigned long TotalUpWrite, NWTotalUpWrite ;$/;"	v
+Trace	./LDDLightShadowRT.h	/^  }Trace;$/;"	t	typeref:struct:__Trace
+TraceByteNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+TracePCNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+TraceRangeNum	./LDDLightShadowRT.cpp	/^long TraceByteNum, TraceRangeNum, TracePCNum, LCDepNum, LIDepNum, DepRangeNum;$/;"	v
+TrueDep	./LDDCompleteShadowRT.h	/^  std::map<Dep, std::set<signed int> > TrueDep;$/;"	m	struct:__LCDepInfo
+TrueDep	./LDDCompleteShadowRT.h	/^  std::set<Dep> TrueDep;$/;"	m	struct:__LIDepInfo
+TrueDep	./LDDDAShadowRT.h	/^  std::map<Dep, std::set<signed int> > TrueDep;$/;"	m	struct:__LCDepInfo
+TrueDep	./LDDDAShadowRT.h	/^  std::set<Dep> TrueDep;$/;"	m	struct:__LIDepInfo
+TrueDep	./LDDHashRT.h	/^  std::map<Dep, std::set<int> > TrueDep;$/;"	m	struct:__LCDepInfo
+TrueDep	./LDDHashRT.h	/^  std::set<Dep> TrueDep;$/;"	m	struct:__LIDepInfo
+TrueDep	./LDDLightShadowRT.h	/^    LSDep *TrueDep;$/;"	m	struct:__LSDepInfo
+TrueDep	./LDDLightShadowRT.h	/^    LSLCDep *TrueDep;$/;"	m	struct:__LSLCDepInfo
+TrueDep	./LDDLightShadowRT.h	/^    LSLIDep *TrueDep;$/;"	m	struct:__LSLIDepInfo
+TrueDep	./LDDProfilingRuntime.h	/^  std::map<Dep, std::set<int> > TrueDep;$/;"	m	struct:__LCDepInfo
+TrueDep	./LDDProfilingRuntime.h	/^  std::set<Dep> TrueDep;$/;"	m	struct:__LIDepInfo
+ValBeg	./RedBlackTree.h	/^  long ValBeg;$/;"	m	struct:__RBTreeNode
+ValEnd	./RedBlackTree.h	/^  long ValEnd; \/\/ A continual value scope, like (0,24):0,8,16,24$/;"	m	struct:__RBTreeNode
+ValNum	./RedBlackTree.h	/^  int ValNum; $/;"	m	struct:__RBTreeNode
+VarName	./LDDCompleteShadowRT.h	/^  std::string VarName;$/;"	m	struct:__PrecedingRWAddrID
+VarName	./LDDCompleteShadowRT.h	/^  std::string VarName;$/;"	m	struct:__PresentRWAddrID
+VarName	./LDDDAShadowRT.h	/^  std::string VarName;$/;"	m	struct:__PrecedingRWAddrID
+VarName	./LDDDAShadowRT.h	/^  std::string VarName;$/;"	m	struct:__PresentRWAddrID
+VarName	./LDDHashRT.h	/^  std::string VarName;$/;"	m	struct:__RWAddrID
+VarName	./LDDProfilingRuntime.h	/^  std::string VarName;$/;"	m	struct:__RWAddrID
+WAddrLen	./LDDCompleteShadowRT.h	/^  char WAddrLen;$/;"	m	struct:__PrecedingRWAddrID
+WAddrLen	./LDDCompleteShadowRT.h	/^  char WAddrLen;$/;"	m	struct:__PresentRWAddrID
+WAddrLen	./LDDDAShadowRT.h	/^  char WAddrLen;$/;"	m	struct:__PrecedingRWAddrID
+WItemNum	./LDDParallelAnalysis.cpp	/^long WItemNum, WStreamNum;$/;"	v
+WPresNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> WShadowStrmNum,  RShadowStrmNum, WPresNum, RPresNum, RItemNum;$/;"	v
+WShadowStrmNum	./LDDParallelAnalysis.cpp	/^tbb::atomic<long> WShadowStrmNum,  RShadowStrmNum, WPresNum, RPresNum, RItemNum;$/;"	v
+WStreamNum	./LDDParallelAnalysis.cpp	/^long WItemNum, WStreamNum;$/;"	v
+WTrace	./LDDCompleteShadowRT.h	/^  std::map<int,PrecedRWAddrID> WTrace; $/;"	m	struct:__PrecedRWTrace
+WTrace	./LDDCompleteShadowRT.h	/^  std::map<int,PresentRWAddrID> WTrace;$/;"	m	struct:__PresentRWTrace
+WTrace	./LDDDAShadowRT.h	/^  presentRWAddrID WTrace; \/\/ Last write.$/;"	m	struct:__PresentRWTrace
+WTrace	./LDDDAShadowRT.h	/^  std::vector<precedRWAddrID> WTrace;$/;"	m	struct:__PrecedRWTrace
+WTrace	./LDDHashRT.h	/^  std::vector<RWAddrID> WTrace;$/;"	m	struct:__RWTraceInfo
+WTrace	./LDDLightShadowRT.h	/^    LSPrecedeRWAddrID  *WTrace;$/;"	m	struct:__LSPrecedRWTrace
+WTrace	./LDDLightShadowRT.h	/^    LSPresentRWAddrID *WTrace; \/\/ Last write.$/;"	m	struct:__LSPresentRWTrace
+WTrace	./LDDProfilingRuntime.h	/^  std::vector<RWAddrID> WTrace;$/;"	m	struct:__RWTraceInfo
+_GLIBCXX_VISIBILITY	./stl_interval_set.h	/^namespace std _GLIBCXX_VISIBILITY(default)$/;"	f
+_GLIBCXX_VISIBILITY	./stl_interval_tree.h	/^namespace std  _GLIBCXX_VISIBILITY(default)$/;"	f
+_LDDCOMMONCONST_H	./LDDCommonConst.h	2;"	d
+_RDTSC	./LDDShadowCommonRT.cpp	475;"	d	file:
+_RDTSC	./rdtscc.h	6;"	d
+_STL_INTERVAL_SET_H	./stl_interval_set.h	60;"	d
+_STL_INTERVAL_TREE_H	./stl_interval_tree.h	61;"	d
+__ADDRDEF	./LDDLightShadowRT.cpp	95;"	d	file:
+__ADDRKEY	./LDDLightShadowRT.h	38;"	d
+__AddrStream	./LDDParallelAnalysis.h	/^typedef struct __AddrStream{$/;"	s
+__AddrStreamItem	./LDDParallelAnalysis.h	/^typedef struct __AddrStreamItem{$/;"	s
+__DepInfo	./LDDCompleteShadowRT.h	/^typedef struct __DepInfo{$/;"	s
+__DepInfo	./LDDDAShadowRT.h	/^typedef struct __DepInfo{$/;"	s
+__DepInfo	./LDDHashRT.h	/^typedef struct __DepInfo{$/;"	s
+__DepInfo	./LDDProfilingRuntime.h	/^typedef struct __DepInfo{$/;"	s
+__DepPair	./LDDParallelAnalysis.h	/^typedef struct __DepPair{$/;"	s
+__Deps	./LDDLightShadowRT.h	/^  typedef struct __Deps{$/;"	s
+__LCDepInfo	./LDDCompleteShadowRT.h	/^typedef struct __LCDepInfo{$/;"	s
+__LCDepInfo	./LDDDAShadowRT.h	/^typedef struct __LCDepInfo{$/;"	s
+__LCDepInfo	./LDDHashRT.h	/^typedef struct __LCDepInfo{$/;"	s
+__LCDepInfo	./LDDProfilingRuntime.h	/^typedef struct __LCDepInfo{$/;"	s
+__LDDPARALLELANALYSIS_H	./LDDParallelAnalysis.h	2;"	d
+__LDDPROFILINGCOMMON_H	./LDDHashRT.h	18;"	d
+__LDDPROFILINGCOMMON_H	./LDDProfilingRuntime.h	18;"	d
+__LDDPROFILINGSHADOWRT_H	./LDDCompleteShadowRT.h	18;"	d
+__LDDPROFILINGSHADOWRT_H	./LDDDAShadowRT.h	19;"	d
+__LDDPROFILINGSHADOWRT_H	./LDDLightShadowRT.h	19;"	d
+__LDDSHADOWCOMMONRT_H	./LDDShadowCommonRT.h	19;"	d
+__LIDepInfo	./LDDCompleteShadowRT.h	/^typedef struct __LIDepInfo{$/;"	s
+__LIDepInfo	./LDDDAShadowRT.h	/^typedef struct __LIDepInfo{$/;"	s
+__LIDepInfo	./LDDHashRT.h	/^typedef struct __LIDepInfo{$/;"	s
+__LIDepInfo	./LDDProfilingRuntime.h	/^typedef struct __LIDepInfo{$/;"	s
+__LSAddrShadowStream	./LDDLightShadowRT.h	/^  typedef struct __LSAddrShadowStream{$/;"	s
+__LSAddrShadowStrmItem	./LDDLightShadowRT.h	/^  typedef struct __LSAddrShadowStrmItem{$/;"	s
+__LSDep	./LDDLightShadowRT.h	/^  typedef struct __LSDep{$/;"	s
+__LSDepDist	./LDDLightShadowRT.h	/^  typedef struct __LSDepDist{$/;"	s
+__LSDepInfo	./LDDLightShadowRT.h	/^  typedef struct __LSDepInfo{$/;"	s
+__LSLCDep	./LDDLightShadowRT.h	/^  typedef struct __LSLCDep{$/;"	s
+__LSLCDepInfo	./LDDLightShadowRT.h	/^  typedef struct __LSLCDepInfo{$/;"	s
+__LSLIDep	./LDDLightShadowRT.h	/^  typedef struct __LSLIDep{$/;"	s
+__LSLIDepInfo	./LDDLightShadowRT.h	/^  typedef struct __LSLIDepInfo{$/;"	s
+__LSPrecedRWTrace	./LDDLightShadowRT.h	/^  typedef struct __LSPrecedRWTrace{$/;"	s
+__LSPrecedeRWAddrID	./LDDLightShadowRT.h	/^  typedef struct __LSPrecedeRWAddrID{$/;"	s
+__LSPresentRWAddrID	./LDDLightShadowRT.h	/^  typedef struct __LSPresentRWAddrID{$/;"	s
+__LSPresentRWTrace	./LDDLightShadowRT.h	/^  typedef struct __LSPresentRWTrace{$/;"	s
+__PrecedRWTrace	./LDDCompleteShadowRT.h	/^typedef struct __PrecedRWTrace{$/;"	s
+__PrecedRWTrace	./LDDDAShadowRT.h	/^typedef struct __PrecedRWTrace{$/;"	s
+__PrecedingRWAddrID	./LDDCompleteShadowRT.h	/^typedef struct __PrecedingRWAddrID{$/;"	s
+__PrecedingRWAddrID	./LDDDAShadowRT.h	/^typedef struct __PrecedingRWAddrID{$/;"	s
+__PresentRWAddrID	./LDDCompleteShadowRT.h	/^typedef struct __PresentRWAddrID{$/;"	s
+__PresentRWAddrID	./LDDDAShadowRT.h	/^typedef struct __PresentRWAddrID{$/;"	s
+__PresentRWTrace	./LDDCompleteShadowRT.h	/^typedef struct __PresentRWTrace{$/;"	s
+__PresentRWTrace	./LDDDAShadowRT.h	/^typedef struct __PresentRWTrace{$/;"	s
+__RBTree	./RedBlackTree.h	/^typedef struct __RBTree{$/;"	s
+__RBTreeNode	./RedBlackTree.h	/^typedef struct __RBTreeNode{$/;"	s
+__REDBLACKTREE_H	./RedBlackTree.h	2;"	d
+__RWAddrID	./LDDHashRT.h	/^typedef struct __RWAddrID{$/;"	s
+__RWAddrID	./LDDProfilingRuntime.h	/^typedef struct __RWAddrID{$/;"	s
+__RWTraceInfo	./LDDCompleteShadowRT.h	/^typedef struct __RWTraceInfo{$/;"	s
+__RWTraceInfo	./LDDHashRT.h	/^typedef struct __RWTraceInfo{$/;"	s
+__RWTraceInfo	./LDDProfilingRuntime.h	/^typedef struct __RWTraceInfo{$/;"	s
+__RWTraceShdArray	./LDDLightShadowRT.h	/^  typedef struct __RWTraceShdArray{$/;"	s
+__RWTraceShdNode	./LDDLightShadowRT.h	/^  typedef struct __RWTraceShdNode{$/;"	s
+__SrcPCDist	./LDDParallelAnalysis.h	/^typedef struct __SrcPCDist{$/;"	s
+__TIMERPROFILINGCOMMON_H	./TimerProfilingRuntime.h	18;"	d
+__Trace	./LDDDAShadowRT.h	/^typedef struct __Trace{$/;"	s
+__Trace	./LDDLightShadowRT.h	/^  typedef struct __Trace{$/;"	s
+__addPresentToPrecedeTrace	./LDDLightShadowRT.cpp	/^void __addPresentToPrecedeTrace()$/;"	f
+__addReadToPrecedeTrace	./LDDLightShadowRT.cpp	/^void __addReadToPrecedeTrace(Trace* TPtr)$/;"	f
+__addWriteToPrecedeTrace	./LDDLightShadowRT.cpp	/^void __addWriteToPrecedeTrace(Trace* TPtr)$/;"	f
+__addnewDepInfo	./LDDCompleteShadowRT.cpp	/^void __addnewDepInfo(int *DDAProfilingFlagnum , char* FuncName, char* LoopPos)$/;"	f
+__addnewprofilingbuffer	./LDDHashRT.cpp	/^void __addnewprofilingbuffer(char* FuncName, char* LoopPos)$/;"	f
+__checkLIDandUpdatePresentRTrace	./LDDLightShadowRT.cpp	/^void __checkLIDandUpdatePresentRTrace(void *PC, void **ShadowAddr, $/;"	f
+__checkLIDandUpdatePresentRTrace2	./LDDLightShadowRT.cpp	/^void __checkLIDandUpdatePresentRTrace2(void *pc, void** ShadowAddr,$/;"	f
+__checkLIDandUpdatePresentWTrace	./LDDLightShadowRT.cpp	/^void __checkLIDandUpdatePresentWTrace(void *PC, void **ShadowAddr, $/;"	f
+__checkLIDandUpdatePresentWTrace2	./LDDLightShadowRT.cpp	/^void __checkLIDandUpdatePresentWTrace2(void *PC, void** ShadowAddr,$/;"	f
+__checkLoadCShadow	./LDDCompleteShadowRT.cpp	/^void __checkLoadCShadow(long *ptr, long AddrLen, char *Pos, char* Name)$/;"	f
+__checkLoadCShadowStackVar	./LDDCompleteShadowRT.cpp	/^void __checkLoadCShadowStackVar( long *ptr, long AddrLen, char *Pos, char* Name,  int TargetLoopFunc){$/;"	f
+__checkLoadLShadow	./LDDLightShadowRT.cpp	/^void __checkLoadLShadow(int *Ptr, long AddrLen)$/;"	f
+__checkLoadLShadowDebug	./LDDLightShadowRT.cpp	/^void __checkLoadLShadowDebug(int *ptr, long AddrLen, char *AddrPos, char *VarName)$/;"	f
+__checkLoadStackVarLShadow	./LDDLightShadowRT.cpp	/^void __checkLoadStackVarLShadow(int *Ptr, long AddrLen)$/;"	f
+__checkStoreCShadow	./LDDCompleteShadowRT.cpp	/^void __checkStoreCShadow(long *ptr, long AddrLen, char* Pos, char* Name)$/;"	f
+__checkStoreCShadowStackVar	./LDDCompleteShadowRT.cpp	/^void __checkStoreCShadowStackVar( long *ptr, long AddrLen, char *Pos, char* Name, int TargetLoopFunc){$/;"	f
+__checkStoreLShadow	./LDDLightShadowRT.cpp	/^void __checkStoreLShadow(int *Ptr, long AddrLen)$/;"	f
+__checkStoreLShadowDebug	./LDDLightShadowRT.cpp	/^void __checkStoreLShadowDebug(int *ptr, long AddrLen, char *AddrPos, char *VarName)$/;"	f
+__checkStoreStackVarLShadow	./LDDLightShadowRT.cpp	/^void __checkStoreStackVarLShadow(int *Ptr, long AddrLen)$/;"	f
+__determinInner8bytesInfo	./LDDLightShadowRT.cpp	/^int __determinInner8bytesInfo(void *ptr, long AddrLen, $/;"	f
+__determinReadLID	./LDDLightShadowRT.cpp	/^void __determinReadLID(void * PC, unsigned char *ReadMask,$/;"	f
+__determinWriteLID	./LDDLightShadowRT.cpp	/^void __determinWriteLID(void * PC, unsigned char *WriteMask, $/;"	f
+__die	./LDDShadowCommonRT.cpp	/^void __die()$/;"	f
+__doLCDASetupPrecedeTrace	./LDDLightShadowRT.cpp	/^void __doLCDASetupPrecedeTrace(long Addr)  $/;"	f
+__doLCDASetupPrecedeTraceWithSinkPCAsKey	./LDDLightShadowRT.cpp	/^void __doLCDASetupPrecedeTraceWithSinkPCAsKey(long Addr)$/;"	f
+__doReadLIDWithAddrAsKey	./LDDLightShadowRT.cpp	/^inline void __doReadLIDWithAddrAsKey(void * PC, unsigned char *ReadMask,$/;"	f
+__doReadLIDWithSinkPCAsKey	./LDDLightShadowRT.cpp	/^inline void __doReadLIDWithSinkPCAsKey(void * PC, unsigned char *ReadMask,$/;"	f
+__doReadLIDWithSinkPCAsKeyLICDep	./LDDLightShadowRT.cpp	/^inline void __doReadLIDWithSinkPCAsKeyLICDep(void * PC, unsigned char *ReadMask,$/;"	f
+__doWriteLIDWithAddrAsKey	./LDDLightShadowRT.cpp	/^void __doWriteLIDWithAddrAsKey(void * PC, unsigned char *WriteMask, $/;"	f
+__doWriteLIDWithSinkPCAsKey	./LDDLightShadowRT.cpp	/^void __doWriteLIDWithSinkPCAsKey(void * PC, unsigned char *WriteMask, $/;"	f
+__doWriteLIDWithSinkPCAsKeyLICDep	./LDDLightShadowRT.cpp	/^void __doWriteLIDWithSinkPCAsKeyLICDep(void * PC, unsigned char *WriteMask, $/;"	f
+__finiCompleteShadowMemory	./LDDCompleteShadowRT.cpp	/^void __finiCompleteShadowMemory()$/;"	f
+__finiLDDCompleteShadow	./LDDCompleteShadowRT.cpp	/^void __finiLDDCompleteShadow()$/;"	f
+__finiLDDLightShadow	./LDDLightShadowRT.cpp	/^void __finiLDDLightShadow()$/;"	f
+__finiLightShadowMemory	./LDDLightShadowRT.cpp	/^void __finiLightShadowMemory()$/;"	f
+__initCompleteShadowMemory	./LDDCompleteShadowRT.cpp	/^void __initCompleteShadowMemory()$/;"	f
+__initLDDCompleteShadow	./LDDCompleteShadowRT.cpp	/^void __initLDDCompleteShadow()$/;"	f
+__initLDDLightShadow	./LDDLightShadowRT.cpp	/^void __initLDDLightShadow()$/;"	f
+__initLightShadowMemory	./LDDLightShadowRT.cpp	/^void __initLightShadowMemory()$/;"	f
+__initPlatform	./LDDShadowCommonRT.cpp	/^void __initPlatform()$/;"	f
+__init_proc	./LDDParallelAnalysis.cpp	/^void __init_proc()$/;"	f
+__initprofiling	./LDDHashRT.cpp	/^void __initprofiling()$/;"	f
+__initshadowbuffer	./LDDLightShadowRT.cpp	/^void __initshadowbuffer(char *FuncName, char* LoopPos)$/;"	f
+__internal_close	./LDDShadowCommonRT.cpp	/^int __internal_close(fd_t fd)$/;"	f
+__internal_mmap	./LDDShadowCommonRT.cpp	/^void * __internal_mmap(void *addr, uptr length, int prot, int flags,$/;"	f
+__internal_munmap	./LDDShadowCommonRT.cpp	/^int __internal_munmap(void *addr, uptr length)$/;"	f
+__loadcheck	./LDDHashRT.cpp	/^void __loadcheck(int *ptr, long AddrLen, char *Pos, char* Name)$/;"	f
+__loadcheckstackvar	./LDDHashRT.cpp	/^void __loadcheckstackvar( int *ptr, long AddrLen, char *Pos, char* Name,  int TargetLoopFunc){$/;"	f
+__maskToByteNum	./LDDLightShadowRT.cpp	/^int __maskToByteNum( unsigned char mask )$/;"	f
+__mmapFixedReserveVMA	./LDDShadowCommonRT.cpp	/^void * __mmapFixedReserveVMA(uptr fixedAddr, uptr size)$/;"	f
+__outputLDDCSDependence	./LDDCompleteShadowRT.cpp	/^void __outputLDDCSDependence()$/;"	f
+__outputLDDDependenceLShadow	./LDDLightShadowRT.cpp	/^void __outputLDDDependenceLShadow()$/;"	f
+__outputLSResultWithAddrAsKey	./LDDLightShadowRT.cpp	/^void __outputLSResultWithAddrAsKey()$/;"	f
+__outputLSResultWithSinkPCAsKey	./LDDLightShadowRT.cpp	/^void  __outputLSResultWithSinkPCAsKey()$/;"	f
+__outputLoopID2Name	./TimerProfilingRuntime.cpp	/^__outputLoopID2Name()$/;"	f
+__outputTimerResults	./TimerProfilingRuntime.cpp	/^__outputTimerResults()$/;"	f
+__outputdependence	./LDDHashRT.cpp	/^void __outputdependence()$/;"	f
+__rdtsc	./TimerProfilingRuntime.cpp	/^__rdtsc()$/;"	f
+__recordLoopID2Name	./TimerProfilingRuntime.cpp	/^__recordLoopID2Name( char *Name, long LoopID)$/;"	f
+__recordTimerResults	./TimerProfilingRuntime.cpp	/^__recordTimerResults(long LoopID, unsigned long long Time)$/;"	f
+__shadowR	./LDDCompleteShadowRT.cpp	/^void __shadowR(long *ptr, long AddrLen, char *Pos, char* Name,int AddrInnerOffset,void **shadow_addr,int Keyword)$/;"	f
+__shadowW	./LDDCompleteShadowRT.cpp	/^void __shadowW( long AddrLen, char *Pos, char* Name,void **shadow_addr,int Keyword)$/;"	f
+__startNewIteration	./LDDLightShadowRT.cpp	/^void __startNewIteration()$/;"	f
+__storecheck	./LDDHashRT.cpp	/^void __storecheck(int *ptr, long AddrLen, char* Pos, char* Name)$/;"	f
+__storecheckstackvar	./LDDHashRT.cpp	/^void __storecheckstackvar( int *ptr, long AddrLen, char *Pos, char* Name, int TargetLoopFunc){$/;"	f
+__traverseRBTreeRWTrace	./LDDLightShadowRT.cpp	/^void __traverseRBTreeRWTrace()$/;"	f
+__traverseTriSectionRWTrace	./LDDLightShadowRT.cpp	/^void __traverseTriSectionRWTrace()$/;"	f
+__updatePresentRTrace	./LDDLightShadowRT.cpp	/^void __updatePresentRTrace(void *PC, void **ShadowAddr, unsigned char *ReadMask,$/;"	f
+__updatePresentWTrace	./LDDLightShadowRT.cpp	/^inline void __updatePresentWTrace(void *PC, void **ShadowAddr, unsigned char WriteMask,$/;"	f
+_first	./interval_custom.hpp	/^    long _first, _past;$/;"	m	class:MyInterval
+_past	./interval_custom.hpp	/^    long _first, _past;$/;"	m	class:MyInterval
+access_offsetMASK	./LDDCompleteShadowRT.cpp	/^long access_offsetMASK = 0 ;$/;"	v
+addReadToPrecedeTrace	./LDDParallelAnalysis.cpp	/^    void addReadToPrecedeTrace(Trace* TPtr, int LoopIter, long RWAddr)$/;"	f	class:LCDAFilter
+addReadToPrecedeTracePA	./LDDParallelAnalysis.cpp	/^    void addReadToPrecedeTracePA(Trace* TPtr, int LoopIter, long RWAddr)$/;"	f	class:LCDAFilter
+addReadtoHashTraceInfo	./LDDHashRT.cpp	/^unsigned  addReadtoHashTraceInfo( void *Addr, long AddrLen, RWTraceInfo *CurRWAddrNode , std::string AddrPos, std::string VarName)$/;"	f
+addWriteToPrecedeTrace	./LDDParallelAnalysis.cpp	/^    void addWriteToPrecedeTrace(Trace* TPtr, int LoopIter, long RWAddr)$/;"	f	class:LCDAFilter
+addWriteToPrecedeTracePA	./LDDParallelAnalysis.cpp	/^    void addWriteToPrecedeTracePA(Trace* TPtr, int LoopIter, long RWAddr)$/;"	f	class:LCDAFilter
+addWritetoHashTraceInfo	./LDDHashRT.cpp	/^unsigned  addWritetoHashTraceInfo( void *Addr, long AddrLen, RWTraceInfo *CurRWAddrNode , std::string AddrPos, std::string VarName)$/;"	f
+addpendingtohistory	./LDDCompleteShadowRT.cpp	/^void addpendingtohistory()$/;"	f
+allocate	./LDDParallelAnalysis.cpp	/^    static LICDep* allocate( size_t max_size ) {$/;"	f	class:LICDep
+analyzeReadAddrDepSet	./LDDCompleteShadowRT.cpp	/^void analyzeReadAddrDepSet(void** CurRWAddrNode,std::string AddrPos,std::string VarName,int Keyword)$/;"	f
+analyzeReadAddrDepSet	./LDDHashRT.cpp	/^void analyzeReadAddrDepSet(RWTraceInfo *CurRWAddrNode,std::string AddrPos,std::string VarName)$/;"	f
+analyzeWriteAddrDepSet	./LDDCompleteShadowRT.cpp	/^void analyzeWriteAddrDepSet(void** CurRWAddrNode,std::string AddrPos,std::string VarName, int Keyword)$/;"	f
+analyzeWriteAddrDepSet	./LDDHashRT.cpp	/^void analyzeWriteAddrDepSet(RWTraceInfo *CurRWAddrNode,std::string AddrPos,std::string VarName)$/;"	f
+boost	./interval_custom.hpp	/^namespace boost{ namespace icl $/;"	n
+check	./LDDParallelAnalysis.cpp	/^void check(int LoopIter, int ThreadID)$/;"	f	class:LIDAFilter
+check	./LDDParallelAnalysis.cpp	/^void check(int LoopIter, int ThreadID)$/;"	f	class:ReadLIDAFilter
+construct	./interval_custom.hpp	/^    static interval_type construct(const domain_type& lo, const domain_type& up) $/;"	f	struct:boost::icl::interval_traits
+copysize	./LDDParallelAnalysis.cpp	/^    int copysize;$/;"	m	class:ReadFilter	file:
+doLCDAandUpdatePrecedeTraceWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void LCDAFilter::doLCDAandUpdatePrecedeTraceWithSinkPCAsKey( class LICDep &input )$/;"	f	class:LCDAFilter
+doLCDAandUpdatePrecedeTraceWithSinkPCAsKeyPA	./LDDParallelAnalysis.cpp	/^void LCDAFilter::doLCDAandUpdatePrecedeTraceWithSinkPCAsKeyPA( class LICDep &input )$/;"	f	class:LCDAFilter
+doLIDAandUpdatePresentRTrace	./LDDParallelAnalysis.cpp	/^    void doLIDAandUpdatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask, int LoopIter)$/;"	f	class:LIDAFilter
+doLIDAandUpdatePresentRTrace	./LDDParallelAnalysis.cpp	/^    void doLIDAandUpdatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask, int LoopIter)$/;"	f	class:ReadLIDAFilter
+doLIDAandUpdatePresentRTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask, int LoopIter, int TaskNum, int ThrID)$/;"	f	class:LIDAFilter
+doLIDAandUpdatePresentRTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask, int LoopIter, int TaskNum, int ThrID)$/;"	f	class:ReadLIDAFilter
+doLIDAandUpdatePresentRTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask, int LoopIter, int TaskNum, int ThrID, int CurProc)$/;"	f	class:LIDAFilter
+doLIDAandUpdatePresentWTrace	./LDDParallelAnalysis.cpp	/^    void doLIDAandUpdatePresentWTrace(void *PC, void **ShadowAddr, unsigned char  WriteMask, int LoopIter )$/;"	f	class:LIDAFilter
+doLIDAandUpdatePresentWTrace	./LDDParallelAnalysis.cpp	/^    void doLIDAandUpdatePresentWTrace(void *PC, void **ShadowAddr, unsigned char  WriteMask, int LoopIter )$/;"	f	class:ReadLIDAFilter
+doLIDAandUpdatePresentWTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentWTrace(void *PC, void **ShadowAddr, unsigned char  WriteMask, int LoopIter, int TaskNum, int ThrID )$/;"	f	class:LIDAFilter
+doLIDAandUpdatePresentWTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentWTrace(void *PC, void **ShadowAddr, unsigned char  WriteMask, int LoopIter, int TaskNum, int ThrID )$/;"	f	class:ReadLIDAFilter
+doLIDAandUpdatePresentWTrace	./LDDParallelAnalysis.cpp	/^void doLIDAandUpdatePresentWTrace(void *PC, void **ShadowAddr, unsigned char  WriteMask, int LoopIter, int TaskNum, int ThrID, int CurProc )$/;"	f	class:LIDAFilter
+doReadLIDA	./LDDParallelAnalysis.cpp	/^inline void ReadLIDAFilter::doReadLIDA(void * PC, unsigned char ReadMask,$/;"	f	class:ReadLIDAFilter
+doReadLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void doReadLIDAWithSinkPCAsKey(void * PC, unsigned char ReadMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef)$/;"	f	class:LIDAFilter
+doReadLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void doReadLIDAWithSinkPCAsKey(void * PC, unsigned char ReadMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef)$/;"	f	class:ReadLIDAFilter
+doReadLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void doReadLIDAWithSinkPCAsKey(void * PC, unsigned char ReadMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThreadID)$/;"	f	class:LIDAFilter
+doReadLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void doReadLIDAWithSinkPCAsKey(void * PC, unsigned char ReadMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThreadID)$/;"	f	class:ReadLIDAFilter
+doReadLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^void doReadLIDAWithSinkPCAsKey(void * PC, unsigned char ReadMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThreadID, int CurProc)$/;"	f	class:LIDAFilter
+doWriteLIDA	./LDDParallelAnalysis.cpp	/^void LIDAFilter::doWriteLIDA(void * PC, unsigned char WriteMask, $/;"	f	class:LIDAFilter
+doWriteLIDA	./LDDParallelAnalysis.cpp	/^void ReadLIDAFilter::doWriteLIDA(void * PC, unsigned char WriteMask, $/;"	f	class:ReadLIDAFilter
+doWriteLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^  inline void  LIDAFilter::doWriteLIDAWithSinkPCAsKey(void * PC, unsigned char WriteMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThrID)$/;"	f	class:LIDAFilter
+doWriteLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^  inline void  ReadLIDAFilter::doWriteLIDAWithSinkPCAsKey(void * PC, unsigned char WriteMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThrID)$/;"	f	class:ReadLIDAFilter
+doWriteLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^  inline void  ReadLIDAFilter::doWriteLIDAWithSinkPCAsKey(void * PC, unsigned char WriteMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef, int ThrID, int CurProc)$/;"	f	class:ReadLIDAFilter
+doWriteLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^LIDAFilter::doWriteLIDAWithSinkPCAsKey(void * PC, unsigned char WriteMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef)$/;"	f	class:LIDAFilter
+doWriteLIDAWithSinkPCAsKey	./LDDParallelAnalysis.cpp	/^ReadLIDAFilter::doWriteLIDAWithSinkPCAsKey(void * PC, unsigned char WriteMask, LSPresentRWTrace &PRWTraceRef, Trace &TraceRef)$/;"	f	class:ReadLIDAFilter
+domain_compare	./interval_custom.hpp	/^    typedef std::less<long> domain_compare; \/\/2.3 This is the way our element shall be ordered.$/;"	t	struct:boost::icl::interval_traits
+domain_type	./interval_custom.hpp	/^    typedef long           domain_type;    \/\/2.2 The elements of the domain are ints $/;"	t	struct:boost::icl::interval_traits
+fd_t	./LDDLightShadowRT.h	/^  typedef int fd_t; \/\/ Not used now.$/;"	t
+fd_t	./LDDShadowCommonRT.h	/^typedef int fd_t; \/\/ Not used now.$/;"	t
+findRWAddrIDIndex	./LDDHashRT.cpp	/^unsigned findRWAddrIDIndex(std::vector<RWAddrID> &RWTrace, std::string AddrPos, std::string VarName)$/;"	f
+first	./interval_custom.hpp	/^    long first()const{ return _first; }$/;"	f	class:MyInterval
+free	./LDDParallelAnalysis.cpp	/^    void free() {$/;"	f	class:LICDep
+getVmData	./LDDShadowCommonRT.cpp	/^long long getVmData()                                                                                                     $/;"	f
+getVmExe	./LDDShadowCommonRT.cpp	/^long long getVmExe()                                                                                                     $/;"	f
+getVmHWM	./LDDShadowCommonRT.cpp	/^long long getVmHWM()                                                                                                     $/;"	f
+getVmLib	./LDDShadowCommonRT.cpp	/^long long getVmLib()                                                                                                     $/;"	f
+getVmPTE	./LDDShadowCommonRT.cpp	/^long long getVmPTE()                                                                                                     $/;"	f
+getVmPeak	./LDDShadowCommonRT.cpp	/^long long getVmPeak()                                                                                                     $/;"	f
+getVmSize	./LDDShadowCommonRT.cpp	/^long long getVmSize()                                                                                                     $/;"	f
+getVmStk	./LDDShadowCommonRT.cpp	/^long long getVmStk()                                                                                                     $/;"	f
+global	./LDDLightShadowRT.cpp	/^int global;$/;"	v
+icl	./interval_custom.hpp	/^namespace boost{ namespace icl $/;"	n	namespace:boost
+interval_bound_type	./interval_custom.hpp	/^struct interval_bound_type<MyInterval>     \/\/4.  Finally we define the interval borders.$/;"	s	namespace:boost::icl
+interval_traits	./interval_custom.hpp	/^struct interval_traits< MyInterval >       \/\/1.  Partially specialize interval_traits for $/;"	s	namespace:boost::icl
+interval_type	./interval_custom.hpp	/^    typedef MyInterval     interval_type;  \/\/2.1 MyInterval will be the interval_type$/;"	t	struct:boost::icl::interval_traits
+isStackVar	./LDDLightShadowRT.cpp	/^int isStackVar = 0;$/;"	v
+lookupRWTraceInfo	./LDDHashRT.cpp	/^RWTraceInfo * lookupRWTraceInfo(size_t key, int *Addr)$/;"	f
+lower	./interval_custom.hpp	/^    static domain_type lower(const interval_type& inter_val){ return inter_val.first(); };$/;"	f	struct:boost::icl::interval_traits
+next	./LDDLightShadowRT.h	/^    struct __LSDep *next;$/;"	m	struct:__LSDep	typeref:struct:__LSDep::__LSDep
+next	./LDDLightShadowRT.h	/^    struct __LSDepDist *next;$/;"	m	struct:__LSDepDist	typeref:struct:__LSDepDist::__LSDepDist
+next	./LDDLightShadowRT.h	/^    struct __LSLCDep *next;$/;"	m	struct:__LSLCDep	typeref:struct:__LSLCDep::__LSLCDep
+next	./LDDLightShadowRT.h	/^    struct __LSLIDep *next;$/;"	m	struct:__LSLIDep	typeref:struct:__LSLIDep::__LSLIDep
+next_lidep	./LDDParallelAnalysis.cpp	/^    class LICDep *next_lidep;$/;"	m	class:LIDAFilter	typeref:class:LIDAFilter::LICDep	file:
+next_lidep	./LDDParallelAnalysis.cpp	/^    class LICDep *next_lidep;$/;"	m	class:ReadFilter	typeref:class:ReadFilter::LICDep	file:
+next_lidep	./LDDParallelAnalysis.cpp	/^  class LICDep *next_lidep;$/;"	m	class:ReadLIDAFilter	typeref:class:ReadLIDAFilter::LICDep	file:
+next_lidep	./LDDParallelAnalysis.cpp	/^  class LICDep *next_lidep[PROCNUM];  \/\/ PRIVATE$/;"	m	class:ReadLIDAFilter	typeref:class:ReadLIDAFilter::LICDep	file:
+next_rwtrace	./LDDParallelAnalysis.cpp	/^    class RWTrace* next_rwtrace;$/;"	m	class:LIDAFilter	typeref:class:LIDAFilter::RWTrace	file:
+next_rwtrace	./LDDParallelAnalysis.cpp	/^    class RWTrace* next_rwtrace;$/;"	m	class:ReadFilter	typeref:class:ReadFilter::RWTrace	file:
+next_rwtrace	./LDDParallelAnalysis.cpp	/^    class RWTrace* next_rwtrace;$/;"	m	class:ReadLIDAFilter	typeref:class:ReadLIDAFilter::RWTrace	file:
+nil	./RedBlackTree.h	/^  RBTreeNode *nil;$/;"	m	struct:__RBTree
+nowAddrLen	./LDDCompleteShadowRT.cpp	/^long *nowptr; long nowAddrLen; char *nowPos; char *nowName;$/;"	v
+nowName	./LDDCompleteShadowRT.cpp	/^long *nowptr; long nowAddrLen; char *nowPos; char *nowName;$/;"	v
+nowPos	./LDDCompleteShadowRT.cpp	/^long *nowptr; long nowAddrLen; char *nowPos; char *nowName;$/;"	v
+nowptr	./LDDCompleteShadowRT.cpp	/^long *nowptr; long nowAddrLen; char *nowPos; char *nowName;$/;"	v
+num	./LDDParallelAnalysis.cpp	/^ int num = 0;$/;"	v
+operator ()	./LDDParallelAnalysis.cpp	/^    void operator()(const blocked_range<int>& range) const{$/;"	f	struct:LIDAFilter::ParLIDA
+operator ()	./LDDParallelAnalysis.cpp	/^    void operator()(const blocked_range<int>& range) const{$/;"	f	struct:LIDAFilter::ParLIDACheck
+operator ()	./LDDParallelAnalysis.cpp	/^    void operator()(const blocked_range<int>& range) const{$/;"	f	struct:ReadLIDAFilter::ParLIDA
+operator ()	./LDDParallelAnalysis.cpp	/^    void operator()(const blocked_range<int>& range) const{$/;"	f	struct:ReadLIDAFilter::ParLIDACheck
+operator ()	./LDDParallelAnalysis.cpp	/^    void operator()(const blocked_range<int>& range) const{$/;"	f	struct:ReadLIDAFilter::ParReadLIDA
+operator ()	./LDDParallelAnalysis.cpp	/^  void* LCDAFilter::operator()( void* item ) $/;"	f	class:LCDAFilter
+operator ()	./LDDParallelAnalysis.cpp	/^  void* OutputLCDepFilter::operator()( void* item ) $/;"	f	class:OutputLCDepFilter
+operator ()	./LDDParallelAnalysis.cpp	/^void* LIDAFilter::operator()(void* item) $/;"	f	class:LIDAFilter
+operator ()	./LDDParallelAnalysis.cpp	/^void* ReadFilter::operator()(void*) $/;"	f	class:ReadFilter
+operator ()	./LDDParallelAnalysis.cpp	/^void* ReadLIDAFilter::operator()(void*) $/;"	f	class:ReadLIDAFilter
+operator <	./LDDCompleteShadowRT.cpp	/^bool operator< ( Dep LI1, Dep LI2)$/;"	f
+operator <	./LDDCompleteShadowRT.cpp	/^bool operator< ( PrecedRWAddrID PreRW1, PrecedRWAddrID PreRW2)$/;"	f
+operator <	./LDDHashRT.cpp	/^bool operator< ( const Dep &LI1, const  Dep &LI2)$/;"	f
+operator <	./LDDParallelAnalysis.cpp	/^bool operator<(DepPair &Src1, DepPair &Src2){$/;"	f
+operator <	./LDDParallelAnalysis.cpp	/^bool operator<(SrcPCDist Src1, SrcPCDist Src2){$/;"	f
+parcheck	./LDDParallelAnalysis.cpp	/^void parcheck(int LoopIter, int ThrID)$/;"	f	class:LIDAFilter
+parcheck	./LDDParallelAnalysis.cpp	/^void parcheck(int LoopIter, int ThrID)$/;"	f	class:ReadLIDAFilter
+parreadlida	./LDDParallelAnalysis.cpp	/^void parreadlida(int LoopIter, int CurProc)$/;"	f	class:ReadLIDAFilter
+partstart	./LDDParallelAnalysis.cpp	/^tbb::tick_count partstart;$/;"	v
+past	./interval_custom.hpp	/^    long past ()const{ return _past; }$/;"	f	class:MyInterval
+rdtsc	./LDDShadowCommonRT.cpp	/^inline unsigned long long rdtsc(){$/;"	f
+rdtsc	./rdtscc.h	/^inline unsigned long long rdtsc(){$/;"	f
+run_cmd	./Makefile	/^run_cmd=$/;"	m
+run_cmd	./Makefile	/^run_cmd=..\/..\/common\/android.linux.launcher.sh$/;"	m
+run_pipeline	./LDDParallelAnalysis.cpp	/^  int run_pipeline( int nthreads )$/;"	f
+shadow	./LDDCompleteShadowRT.cpp	/^void **shadow;$/;"	v
+shadow_addr_Array	./LDDCompleteShadowRT.cpp	/^std::set<void**> shadow_addr_Array;$/;"	v
+shadow_num	./LDDCompleteShadowRT.cpp	/^long shadow_num = 0;$/;"	v
+sibling	./RedBlackTree.cpp	/^RBTreeNode * sibling( RBTreeNode *NewNode)$/;"	f
+silent	./LDDParallelAnalysis.cpp	/^  bool silent = false;$/;"	v
+tasknum	./LDDParallelAnalysis.cpp	/^int tasknum = 0;$/;"	v
+type	./interval_custom.hpp	/^    typedef interval_bound_type type;      \/\/                   static_left_open    (lo..up]$/;"	t	struct:boost::icl::interval_bound_type
+u64	./LDDCompleteShadowRT.h	/^typedef unsigned long u64;$/;"	t
+u64	./LDDLightShadowRT.h	/^  typedef unsigned long u64;$/;"	t
+u64	./LDDShadowCommonRT.h	/^typedef unsigned long u64;$/;"	t
+updatePresentRTrace	./LDDParallelAnalysis.cpp	/^    void updatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask,$/;"	f	class:LIDAFilter
+updatePresentRTrace	./LDDParallelAnalysis.cpp	/^    void updatePresentRTrace(void *PC, void **ShadowAddr, unsigned char ReadMask,$/;"	f	class:ReadLIDAFilter
+updatePresentWTrace	./LDDParallelAnalysis.cpp	/^    void updatePresentWTrace(void *PC, void **ShadowAddr, unsigned char WriteMask,$/;"	f	class:LIDAFilter
+updatePresentWTrace	./LDDParallelAnalysis.cpp	/^    void updatePresentWTrace(void *PC, void **ShadowAddr, unsigned char WriteMask,$/;"	f	class:ReadLIDAFilter
+upper	./interval_custom.hpp	/^    static domain_type upper(const interval_type& inter_val){ return inter_val.past(); };$/;"	f	struct:boost::icl::interval_traits
+uptr	./LDDCompleteShadowRT.h	/^typedef unsigned long uptr;$/;"	t
+uptr	./LDDLightShadowRT.h	/^  typedef unsigned long uptr;$/;"	t
+uptr	./LDDShadowCommonRT.h	/^typedef unsigned long uptr;$/;"	t
+~LIDAFilter	./LDDParallelAnalysis.cpp	/^LIDAFilter::~LIDAFilter() $/;"	f	class:LIDAFilter
+~ReadFilter	./LDDParallelAnalysis.cpp	/^ReadFilter::~ReadFilter() $/;"	f	class:ReadFilter
+~ReadLIDAFilter	./LDDParallelAnalysis.cpp	/^ReadLIDAFilter::~ReadLIDAFilter() $/;"	f	class:ReadLIDAFilter

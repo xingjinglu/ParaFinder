@@ -1,0 +1,15 @@
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 0          gdm        600        393216     2          dest         
+0x00000000 32769      gdm        600        393216     2          dest         
+0x00000000 65538      gdm        600        393216     2          dest         
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+0x00000000 0          root       600        1         
+0x00000000 32769      root       600        1         
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+

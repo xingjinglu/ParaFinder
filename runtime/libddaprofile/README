@@ -1,0 +1,136 @@
+
+Changes:
+
+v0.1 2014-10-08
+r13 | lxj | 2014-10-08 13:53:09 +0800 (Wed, 08 Oct 2014) | 8 lines
+Version before changing the pipeline.
+The current version has 5 stages: 
+1) Generate
+2) Read: Partiton the AddrSpace, and record the address into shared memory.
+3) LIDA: Do LIDA.
+4) LCDA: Do LCDA.
+5) Output:
+
+v0.1.1 2014-11-29
+r15 | lxj | 2014-11-29 12:56:35 +0800 (Sat, 29 Nov 2014) | 7 lines
+The last version before change to  remove read phase
+1) collect
+2) LIDA
+3) LCDA
+4) Output
+
+--------------------------------------------------------------------------------------------
+
+v0.2 2014-12-15
+  The current version is
+1) collect
+2) LIDA
+3) LCDA
+4) Output
+  after all these opts, the performance is better that the serial version.(14s
+compared to 26.885s )
+
+v0.2.1 2014-12-15
+r17 | lxj | 2014-12-15 22:26:16 +0800 (Mon, 15 Dec 2014) | 1 line
+opt for interval.insert: only do insertion when firt read/write for the cur iteration
+
+v0.2.2 2014-12-16
+r18 | lxj | 2014-12-16 00:51:37 +0800 (Tue, 16 Dec 2014) | 1 line
+opt2 for keep LIDepInfo: only keep these LIDepInfo that does not exist in shadow-lidep info.
+
+0.2.3. 2014-12-16
+r19 | lxj | 2014-12-16 01:31:13 +0800 (Tue, 16 Dec 2014) | 1 line
+opt3: reduce atomic operations, keep local non-atomic version, such as WItem, WStreamNum, WPresNum, RStreamNum.
+
+--------------------------------------------------------------------------------------------
+
+v0.3 2014-12-22
+r20 | lxj | 2014-12-22 10:33:59 +0800 (Mon, 22 Dec 2014) | 6 lines
+-D_GAS_SHADOW
+Rearrange the pipeline stages:
+1) GenerateAddrStream: a) Addr->ShdAddr; b) RWtrace->RWTraceShd(stored in shadow
+memory); c) Store the accessed ShdAddr in Array RWTraceAcc ShdAddrStream[][], so
+other stage can get the ShdAddr-Scope thata are needed to be analyszed. 
+2) ReadLIDAFilter: Do-LIDA and update present table.
+
+v0.3.1 2014-12-22
+r21 | lxj | 2014-12-22 17:35:13 +0800 (Mon, 22 Dec 2014) | 3 lines
+Fix some bugs for the Buffer-Reuse of list, the list version is sound but has
+worse performance.
+The reuse buffer node has two direction pointers.
+
+v0.3.2 2014-12-24
+r22 | lxj | 2014-12-24 02:32:16 +0800 (Wed, 24 Dec 2014) | 3 lines
+We want to parallelize the ReadLIDAFitler stage, but the current version will
+introduce too much effects, such as partion the address space.
+1) Change the implementation of buffer-reuse.
+  ShdArrayPool[STREAMNUM][STREAMITEMNUM] store the exact(PC, RWMask[2])
+  long AccShdAddrStream[STREAMNUM][STREAMITEMNUM]; //[][1,2,..]
+  int AccShdNum[STREAMNUM]; // Length. 0, 1,2, ...
+  int AccShdLoopIter[STREAMNUM];// Keep LoopIter number.  
+2) OPT5.3, still has worse performance.
+
+v0.3.3 2014-12-26
+r23 | lxj | 2014-12-26 13:20:57 +0800 (Fri, 26 Dec 2014)
+  The stable version of Pipeline-Analysis + GenerateAddrStream stage will record
+the trace info into the Shadow memory.
+-D_GAS_SHADOW
+
+OPT:
+1) _OPT1: buffer reuse, first implemented with RWTraceShdNode; 
+2) OPT2: Setup reuse-buffer for each STREAMNUM;
+3) Change the implementation of buffer-reuse.
+  ShdArrayPool[STREAMNUM][STREAMITEMNUM] store the exact(PC, RWMask[2])
+  long AccShdAddrStream[STREAMNUM][STREAMITEMNUM]; //[][1,2,..]
+  int AccShdNum[STREAMNUM]; // Length. 0, 1,2, ...
+  int AccShdLoopIter[STREAMNUM];// Keep LoopIter number.  
+4) Replace struct/array access methods with pointer/reference method in
+GenerateAddrStream.(Reduce 50% overhead)
+Reduce reduntant  address computations, such as ShdArrayPool[][].PC ->
+PtrShdArrayPool->PC;
+The best performance is 16s, worse than the previous version, which
+GenerateAddrStream just emits Addr-stream(Not insert into the Shadow Memory).
+(Reduce 50% overhead)
+5) Replace struct/array access methods with pointer/reference method in
+ReadLIDA.(Reduce 50% overhead)
+6) -D_MUTEX: Change while(StreamIsFull[]) to cond_wait/cond_signal. 
+7) STREAMNUM = 40, STREAMITEMNUM = 600000, the latter too large give worse
+effects to GenerateAddrStream;
+8) Reduce atomic operations.  
+
+--------------------------------------------------------------------------------------------
+
+v0.4 2014-12-26
+  Parallelizing the ReadLIDA filter. 
+
+v0.4.1 2014-12-26
+-D_GAS_SHADOW_PARLIDA
+ Parallelizing the  process of LIDA.
+a) Has bugs?
+b) Performance has no big improvement.
+
+v0.4.2 2014-12-30
+-D_PARLIDA
+a) GenerateAddrStream only generate the addrstream; 
+b) v0.4.2.1:  ReadLIDAFilter do two parts: Preprocess and Parprocess, Preprocess
+move the RWTrace to the shadow memory. (Pre:10s, Pro:18s)
+c) v0.4.2.2: The Preprocess just get the ShdAddrStream in the set, store them in a new
+array; then, in the Parprocess, it parition the task
+set.size/ThreadNum.(Preprocess 5s.)
+d) v0.4.2.3: Remove the preprocess part, through (Addr & 0xF0) to partition the
+task. It seems the GenerateAddrStreams takes too much time. 
+
+v0.4.3 20150108
+a) Change the pipeline phases. ReadFilter, LIDAFilter, LCDAFilter, OuputFilter.
+b) The read filter just memcpy the RWTrace of the master thread, and then copy
+into a new buffer. At the same time, assign a smaller buf to
+GenerateAddrStream.(But it still seems Genernate has big overhead)
+c) If the StreamItemNum is too small, there are no enough parallelism for
+LIDAFilter; too large will give too much overhead to GenerateAddrStream. 
+
+The performance is worse.
+
+
+
+
+
